@@ -2508,7 +2508,7 @@ ul.feature-icons li:before {
 }
 .microsoft-icon:before {
   content: "";
-  background-image: url("https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_100_100/B56ZYQ0mrGGoAU-/0/1744038948046/microsoft_logo?e=1756944000&v=beta&t=3mKgkG9PPXkJUHkvfex7HcMDUpTNxe87NTc8TaqdJrA");
+  background-image: url("images/microsoft_logo.jfif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
