@@ -2506,17 +2506,18 @@ ul.feature-icons li:before {
   top: 0;
   width: 2.5em;
 }
-ul.feature-icons li.microsoft-icon:before {
-  content: "";
-  background: #4acaa8 url("images/microsoft_logo.jfif") center center no-repeat;
-  background-size: 70%;
-  border-radius: 100%;
-  display: block;
-  height: 2.5em;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 2.5em;
+ul.feature-icons li.icon.microsoft-icon:before {
+  content: "" !important;
+  background: #4acaa8 url("images/microsoft_logo.jfif") center center no-repeat !important;
+  background-size: 60% !important;
+  border-radius: 100% !important;
+  display: block !important;
+  height: 2.5em !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 2.5em !important;
+  font-family: inherit !important;
 }
 
 /* Icons */
