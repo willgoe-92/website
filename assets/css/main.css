@@ -2509,7 +2509,7 @@ ul.feature-icons li:before {
 /* Microsoft Icon Override - Logo Only */
 ul.feature-icons li.icon.microsoft-icon:before {
   content: "" !important;
-  background: transparent url("images/microsoft_logo.jfif") center center
+  background: transparent url("images/microsoft_logo.jpg") center center
     no-repeat !important;
   background-size: contain !important;
   border-radius: 0 !important;
