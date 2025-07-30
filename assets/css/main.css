@@ -2506,20 +2506,56 @@ ul.feature-icons li:before {
   top: 0;
   width: 2.5em;
 }
-/* Microsoft Icon Override - Logo Only */
-ul.feature-icons li.icon.microsoft-icon:before {
-  content: "" !important;
-  background: transparent url("images/microsoft_logo.jpg") center center
-    no-repeat !important;
-  background-size: contain !important;
-  border-radius: 0 !important;
-  display: block !important;
-  height: 2.5em !important;
-  left: 0 !important;
-  position: absolute !important;
-  top: 0 !important;
-  width: 2.5em !important;
-  font-family: inherit !important;
+
+/* Custom Icon System */
+ul.custom-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.custom-icons li {
+  display: inline-block;
+  margin: 0 0 1.6875em 0;
+  padding: 0.35em 0 0 3.5em;
+  position: relative;
+  vertical-align: top;
+  width: 48%;
+}
+
+/* Font Awesome Icons (keeping the green circles) */
+ul.custom-icons li.fa-icon:before {
+  background: #4acaa8;
+  border-radius: 100%;
+  color: #ffffff;
+  display: block;
+  height: 2.5em;
+  left: 0;
+  line-height: 2.5em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 2.5em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+ul.custom-icons li.fa-code:before {
+  content: "\f121";
+}
+ul.custom-icons li.fa-cubes:before {
+  content: "\f1b3";
+}
+ul.custom-icons li.fa-book:before {
+  content: "\f02d";
+}
+ul.custom-icons li.fa-coffee:before {
+  content: "\f0f4";
+}
+ul.custom-icons li.fa-bolt:before {
+  content: "\f0e7";
+}
+ul.custom-icons li.fa-users:before {
+  content: "\f0c0";
 }
 
 /* Icons */
