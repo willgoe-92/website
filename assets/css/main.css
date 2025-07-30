@@ -2506,15 +2506,17 @@ ul.feature-icons li:before {
   top: 0;
   width: 2.5em;
 }
-.microsoft-icon:before {
+ul.feature-icons li.microsoft-icon:before {
   content: "";
-  background-image: url("images/microsoft_logo.jfif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
+  background: #4acaa8 url("images/microsoft_logo.jfif") center center no-repeat;
+  background-size: 70%;
+  border-radius: 100%;
+  display: block;
+  height: 2.5em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2.5em;
 }
 
 /* Icons */
