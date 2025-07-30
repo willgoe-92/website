@@ -2506,11 +2506,13 @@ ul.feature-icons li:before {
   top: 0;
   width: 2.5em;
 }
+/* Microsoft Icon Override - Logo Only */
 ul.feature-icons li.icon.microsoft-icon:before {
   content: "" !important;
-  background: #4acaa8 url("images/microsoft_logo.jfif") center center no-repeat !important;
-  background-size: 60% !important;
-  border-radius: 100% !important;
+  background: transparent url("images/microsoft_logo.jfif") center center
+    no-repeat !important;
+  background-size: contain !important;
+  border-radius: 0 !important;
   display: block !important;
   height: 2.5em !important;
   left: 0 !important;
