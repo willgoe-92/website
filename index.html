@@ -74,6 +74,29 @@
         left: 0 !important;
         top: 0 !important;
       }
+
+      /* Larger Leaflet Map Styles */
+      .map-section {
+        margin-top: 4em;
+        text-align: left;
+      }
+
+      .map-section h4 {
+        margin-bottom: 1em;
+      }
+
+      .map-section p {
+        margin-bottom: 2em;
+        color: #666;
+        font-style: italic;
+      }
+
+      #demo-map {
+        height: 500px !important;
+        width: 700px !important;
+        border: 1px solid #ccc;
+        margin: 1em 0;
+      }
     </style>
     <title>W. Elliot Goe</title>
     <meta charset="utf-8" />
@@ -82,6 +105,8 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -144,7 +169,12 @@
               <p>Kansan, GISP, Chief's Fan and World's Greatest Uncle.<br /></p>
             </header>
             <p>
-             Currently a GIS Solutions Engineer for geocgi, I work primarily on the Marine Corps Critical Asset Management System (MCCAMS). I hold a Bachelor's degree in Geography from Kansas State University and am pursuing a Master's in Cybersecurity from the University of Maryland, Baltimore County. I created this website as a working demo for my mentees in the Geospatial Professional Network.
+              Currently a GIS Solutions Engineer for geocgi, I work primarily on
+              the Marine Corps Critical Asset Management System (MCCAMS). I hold
+              a Bachelor's degree in Geography from Kansas State University and
+              am pursuing a Master's in Cybersecurity from the University of
+              Maryland, Baltimore County. I created this website as a working
+              demo for my mentees in the Geospatial Professional Network.
             </p>
           </div>
         </section>
@@ -162,7 +192,7 @@
               Server for imagery processing, conducted field surveying and data
               collection, and authored technical documentation and graphics.
             </p>
-			<h3>Certifications</h3>
+            <h3>Certifications</h3>
             <ul class="feature-icons">
               <li class="icon microsoft-icon">
                 Microsoft: Azure Data Fundamentals
@@ -184,50 +214,18 @@
           <div class="container">
             <h3>A Few Demo Maps</h3>
             <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer. Integer eu ante ornare amet commetus.
+              Below are some interactive mapping examples showcasing different
+              GIS capabilities and data visualization techniques.
             </p>
-            <div class="features">
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/pic01.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Possibly broke spacetime</h4>
-                  <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/pic02.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Terraformed a small moon</h4>
-                  <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/pic03.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Snapped dark matter in the wild</h4>
-                  <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
-                  </p>
-                </div>
-              </article>
+
+            <!-- Interactive Leaflet Map Demo -->
+            <div class="map-section">
+              <h4>Map of Manhattan Kansas</h4>
+              <div id="demo-map"></div>
             </div>
           </div>
         </section>
+      </div>
     </div>
 
     <!-- Scripts -->
@@ -238,5 +236,9 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Custom Map Script -->
+    <script src="assets/js/demo-map1.js"></script>
   </body>
 </html>
