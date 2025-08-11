@@ -1,14 +1,11 @@
 // assets/js/demo-map1.js
-
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Initializing map...");
-
   var mapDiv = document.getElementById("demo-map");
   if (!mapDiv) {
     console.error("Map container not found!");
     return;
   }
-
   try {
     // Create map centered on Manhattan, Kansas (K-State area)
     var map = L.map("demo-map", {
@@ -28,13 +25,57 @@ document.addEventListener("DOMContentLoaded", function () {
     // Create map panes for layer ordering
     map.createPane("soilsPane");
     map.getPane("soilsPane").style.zIndex = 400;
-
     map.createPane("parcelsPane");
     map.getPane("parcelsPane").style.zIndex = 450;
+
+    // GeoJSON data embedded directly in this file
+    const displayPointsData = {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          id: 1,
+          geometry: {
+            type: "Point",
+            coordinates: [-76.993370753164555, 38.989181279126925],
+          },
+          properties: {
+            OBJECTID: 1,
+            Address: "8011 Carroll Ave Takoma Park MD, 20912",
+            Name: "Elliot Goe",
+            Date: "2025-08-11",
+          },
+        },
+      ],
+    };
+
+    // Create Display Points layer
+    var displayPointsLayer = L.geoJSON(displayPointsData, {
+      pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, {
+          radius: 8,
+          fillColor: "#ff7800",
+          color: "#fff",
+          weight: 2,
+          opacity: 1,
+          fillOpacity: 0.8,
+        });
+      },
+      onEachFeature: function (feature, layer) {
+        if (feature.properties) {
+          let popupContent = "<strong>Display Point</strong><br>";
+          Object.keys(feature.properties).forEach((key) => {
+            popupContent += `<strong>${key}:</strong> ${feature.properties[key]}<br>`;
+          });
+          layer.bindPopup(popupContent);
+        }
+      },
+    });
 
     // Add layers to map first
     Soils.addTo(map);
     Parcels.addTo(map);
+    displayPointsLayer.addTo(map);
 
     // Use standard Leaflet layer control for simple checkboxes
     var overlayMaps = {
