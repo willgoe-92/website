@@ -1,7 +1,3 @@
-// assets/js/displaypoints-data.js
-// GeoJSON data for Display Points
-
-const displayPointsData = 
 {
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
@@ -5725,4 +5721,4 @@ const displayPointsData =
       "id": "node/12710075032"
     }
   ]
-};
+}

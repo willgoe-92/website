@@ -6,98 +6,6 @@
 -->
 <html>
   <head>
-    <style>
-      .microsoft-icon:before {
-        content: "" !important;
-        background: url("./images/microsoft_logo.jpg") center center no-repeat !important;
-        background-size: contain !important;
-        border-radius: 0 !important;
-        display: block !important;
-        height: 2.5em !important;
-        width: 2.5em !important;
-        position: absolute !important;
-        left: 0 !important;
-        top: 0 !important;
-      }
-
-      .aws-icon:before {
-        content: "" !important;
-        background: url("./images/amazon_web_services_logo.jpg") center center
-          no-repeat !important;
-        background-size: contain !important;
-        border-radius: 0 !important;
-        display: block !important;
-        height: 2.5em !important;
-        width: 2.5em !important;
-        position: absolute !important;
-        left: 0 !important;
-        top: 0 !important;
-      }
-
-      .comptia-icon:before {
-        content: "" !important;
-        background: url("./images/comptia_logo.jpg") center center no-repeat !important;
-        background-size: contain !important;
-        border-radius: 0 !important;
-        display: block !important;
-        height: 2.5em !important;
-        width: 2.5em !important;
-        position: absolute !important;
-        left: 0 !important;
-        top: 0 !important;
-      }
-
-      .gis-icon:before {
-        content: "" !important;
-        background: url("./images/gis_certification_institute_logo.jpg") center
-          center no-repeat !important;
-        background-size: contain !important;
-        border-radius: 0 !important;
-        display: block !important;
-        height: 2.5em !important;
-        width: 2.5em !important;
-        position: absolute !important;
-        left: 0 !important;
-        top: 0 !important;
-      }
-
-      .scrum-icon:before {
-        content: "" !important;
-        background: url("./images/scrum_alliance_logo.jpg") center center
-          no-repeat !important;
-        background-size: contain !important;
-        border-radius: 0 !important;
-        display: block !important;
-        height: 2.5em !important;
-        width: 2.5em !important;
-        position: absolute !important;
-        left: 0 !important;
-        top: 0 !important;
-      }
-
-      /* Larger Leaflet Map Styles */
-      .map-section {
-        margin-top: 4em;
-        text-align: left;
-      }
-
-      .map-section h4 {
-        margin-bottom: 1em;
-      }
-
-      .map-section p {
-        margin-bottom: 2em;
-        color: #666;
-        font-style: italic;
-      }
-
-      #demo-map {
-        height: 500px !important;
-        width: 700px !important;
-        border: 1px solid #ccc;
-        margin: 1em 0;
-      }
-    </style>
     <title>W. Elliot Goe</title>
     <meta charset="utf-8" />
     <meta
@@ -228,7 +136,43 @@
             <!-- Interactive Leaflet Map Demo -->
             <div class="map-section">
               <h4>Map of Manhattan Kansas</h4>
-              <div id="demo-map"></div>
+              
+              <!-- Map and Filter Row -->
+              <div class="map-filter-row">
+                <div class="map-container">
+                  <div id="demo-map"></div>
+                </div>
+                
+                <div class="filter-sidebar">
+                  <div class="filter-section">
+                    <label for="cuisine-filter">Filter by Cuisine:</label>
+                    <select id="cuisine-filter">
+                      <option value="all">All Cuisines</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Table Section Below Map -->
+              <div class="table-section">
+                <div class="table-container">
+                  <h5>Restaurants in Current View</h5>
+                  <div class="table-wrapper">
+                    <table id="restaurants-table">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Cuisine Type</th>
+                          <th>Hours</th>
+                          <th>Phone</th>
+                        </tr>
+                      </thead>
+                      <tbody id="restaurants-tbody">
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -247,12 +191,9 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <!-- Esri Leaflet for ArcGIS services -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/esri-leaflet/3.0.12/esri-leaflet.js"></script>
+    <!-- Chart.js for dashboard charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- Manhattan Parcels Layer (MUST load before demo-map1.js) -->
-    <script src="assets/js/Manhattan_Parcels_Layer.js"></script>
-
-    <!-- Manhattan Soils Layer (MUST load before demo-map1.js) -->
-    <script src="assets/js/Manhattan_Soils_Layer.js"></script>
     <!-- Display Points Layer (MUST load before demo-map1.js) -->
     <script src="assets/js/displaypoints-data.js"></script>
 

@@ -3484,3 +3484,365 @@ input[type="button"]:disabled,
     padding: 0;
   }
 }
+
+/* Custom Icon Styles for Certifications */
+.microsoft-icon:before {
+  content: "" !important;
+  background: url("../../images/microsoft_logo.jpg") center center no-repeat !important;
+  background-size: contain !important;
+  border-radius: 0 !important;
+  display: block !important;
+  height: 2.5em !important;
+  width: 2.5em !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.aws-icon:before {
+  content: "" !important;
+  background: url("../../images/amazon_web_services_logo.jpg") center center no-repeat !important;
+  background-size: contain !important;
+  border-radius: 0 !important;
+  display: block !important;
+  height: 2.5em !important;
+  width: 2.5em !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.comptia-icon:before {
+  content: "" !important;
+  background: url("../../images/comptia_logo.jpg") center center no-repeat !important;
+  background-size: contain !important;
+  border-radius: 0 !important;
+  display: block !important;
+  height: 2.5em !important;
+  width: 2.5em !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.gis-icon:before {
+  content: "" !important;
+  background: url("../../images/gis_certification_institute_logo.jpg") center center no-repeat !important;
+  background-size: contain !important;
+  border-radius: 0 !important;
+  display: block !important;
+  height: 2.5em !important;
+  width: 2.5em !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.scrum-icon:before {
+  content: "" !important;
+  background: url("../../images/scrum_alliance_logo.jpg") center center no-repeat !important;
+  background-size: contain !important;
+  border-radius: 0 !important;
+  display: block !important;
+  height: 2.5em !important;
+  width: 2.5em !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+/* Map Section Styles */
+.map-section {
+  margin-top: 4em;
+  text-align: left;
+}
+
+.map-section h4 {
+  margin-bottom: 1em;
+}
+
+.map-section p {
+  margin-bottom: 2em;
+  color: #666;
+  font-style: italic;
+}
+
+/* Map and Filter Row Layout */
+.map-filter-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.map-container {
+  flex: 1;
+}
+
+#demo-map {
+  height: 500px !important;
+  width: 100% !important;
+  max-width: 700px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.filter-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.filter-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.filter-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.filter-section select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filter-section select:focus {
+  outline: none;
+  border-color: #49bf9d;
+  box-shadow: 0 0 0 2px rgba(73, 191, 157, 0.2);
+}
+
+/* Table Section */
+.table-section {
+  margin-top: 0;
+}
+
+/* Dashboard Styles - Updated for new layout */
+.dashboard-charts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.table-container h5 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.table-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#restaurants-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+#restaurants-table thead {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  z-index: 10;
+}
+
+#restaurants-table th {
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  font-weight: bold;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+#restaurants-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+#restaurants-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+#restaurants-table tr:nth-child(even) {
+  background-color: #fdfdfd;
+}
+
+#restaurants-table tr:nth-child(even):hover {
+  background-color: #f0f0f0;
+}
+
+.cuisine-cell {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Enhanced Popup Styles */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2) !important;
+  border: none !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  min-width: 250px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.leaflet-popup-tip {
+  background: white !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2) !important;
+}
+
+.restaurant-popup {
+  background: white;
+  color: #333;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.popup-header {
+  background: #f8f9fa;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.restaurant-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  /* Color will be set dynamically in JavaScript */
+}
+
+.cuisine-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+  /* Background color will be set dynamically in JavaScript */
+}
+
+.popup-body {
+  padding: 20px;
+}
+
+.popup-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.popup-info:last-child {
+  margin-bottom: 0;
+}
+
+.popup-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+.popup-label {
+  font-weight: 600;
+  min-width: 60px;
+  color: #666;
+}
+
+.popup-value {
+  flex: 1;
+  color: #333;
+}
+
+.popup-website {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.popup-website:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.popup-address {
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .map-filter-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .filter-sidebar {
+    width: 100%;
+  }
+  
+  #demo-map {
+    max-width: 100%;
+  }
+  
+  .table-container {
+    max-width: 100%;
+  }
+  
+  .table-wrapper {
+    max-height: 250px;
+  }
+}
