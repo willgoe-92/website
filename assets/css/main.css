@@ -3636,6 +3636,22 @@ input[type="button"]:disabled,
   text-overflow: clip;
 }
 
+/* Clickable table rows */
+.clickable-row {
+  transition: background-color 0.2s ease;
+}
+
+.clickable-row:hover {
+  background-color: #f8f9fa !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.clickable-row:active {
+  transform: translateY(0);
+  background-color: #e9ecef !important;
+}
+
 /* Table Section */
 .table-section {
   margin-top: 0;

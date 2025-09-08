@@ -279,12 +279,32 @@ document.addEventListener("DOMContentLoaded", function () {
         const row = document.createElement('tr');
         const cuisineColor = cuisineColors[cuisine] || cuisineColors['cafe'];
         
+        // Make the row clickable
+        row.classList.add('clickable-row');
+        row.style.cursor = 'pointer';
+        
         row.innerHTML = `
           <td>${name}</td>
           <td><span class="cuisine-cell" style="background-color: ${cuisineColor}">${cuisine.replace('_', ' ')}</span></td>
           <td>${hours}</td>
           <td>${phone}</td>
         `;
+        
+        // Add click event to zoom to restaurant
+        row.addEventListener('click', function() {
+          const coords = feature.geometry.coordinates;
+          const latlng = L.latLng(coords[1], coords[0]);
+          
+          // Zoom to the restaurant location
+          map.setView(latlng, 17);
+          
+          // Find and open the popup for this restaurant
+          displayPointsLayer.eachLayer(layer => {
+            if (layer.feature === feature) {
+              layer.openPopup();
+            }
+          });
+        });
         
         tbody.appendChild(row);
       });
