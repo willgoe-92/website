@@ -1,912 +1,573 @@
 // assets/js/displaypoints-data.js
 // GeoJSON data for Display Points
 
-const displayPointsData = 
-{
-  "type": "FeatureCollection",
-  "generator": "overpass-turbo",
-  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2025-09-06T19:58:59Z",
-  "features": [
+const displayPointsData = {
+  type: "FeatureCollection",
+  generator: "overpass-turbo",
+  copyright:
+    "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  timestamp: "2025-09-06T19:58:59Z",
+  features: [
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/59527941",
         "addr:city": "Manhattan",
         "addr:housenumber": "606",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "North Manhattan Avenue",
-        "alt_name": "Chipotle Mexican Grill",
-        "amenity": "fast_food",
-        "brand": "Chipotle",
+        alt_name: "Chipotle Mexican Grill",
+        amenity: "fast_food",
+        brand: "Chipotle",
         "brand:wikidata": "Q465751",
-        "building": "yes",
-        "cuisine": "mexican",
-        "drive_through": "no",
-        "name": "Chipotle",
-        "official_name": "Chipotle Mexican Grill",
-        "opening_hours": "11:00-22:00",
-        "phone": "+1 785-587-8029",
-        "takeaway": "yes",
-        "website": "https://locations.chipotle.com/ks/manhattan/606-n-manhattan-ave"
+        building: "yes",
+        cuisine: "mexican",
+        drive_through: "no",
+        name: "Chipotle",
+        official_name: "Chipotle Mexican Grill",
+        opening_hours: "11:00-22:00",
+        phone: "+1 785-587-8029",
+        takeaway: "yes",
+        website:
+          "https://locations.chipotle.com/ks/manhattan/606-n-manhattan-ave",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5761709,
-              39.1851766
-            ],
-            [
-              -96.5761717,
-              39.1851212
-            ],
-            [
-              -96.5761738,
-              39.1849879
-            ],
-            [
-              -96.5761019,
-              39.1849884
-            ],
-            [
-              -96.5760937,
-              39.1849885
-            ],
-            [
-              -96.5760005,
-              39.1849878
-            ],
-            [
-              -96.5759982,
-              39.1851769
-            ],
-            [
-              -96.5761709,
-              39.1851766
-            ]
-          ]
-        ]
+            [-96.5761709, 39.1851766],
+            [-96.5761717, 39.1851212],
+            [-96.5761738, 39.1849879],
+            [-96.5761019, 39.1849884],
+            [-96.5760937, 39.1849885],
+            [-96.5760005, 39.1849878],
+            [-96.5759982, 39.1851769],
+            [-96.5761709, 39.1851766],
+          ],
+        ],
       },
-      "id": "way/59527941"
+      id: "way/59527941",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/61512080",
         "addr:city": "Manhattan",
         "addr:housenumber": "2700",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "amenity": "cafe",
-        "branch": "Anderson & Hylton - Manhattan",
-        "brand": "Starbucks",
+        amenity: "cafe",
+        branch: "Anderson & Hylton - Manhattan",
+        brand: "Starbucks",
         "brand:wikidata": "Q37158",
-        "building": "yes",
-        "cuisine": "coffee_shop",
-        "name": "Starbucks",
-        "official_name": "Starbucks Coffee",
-        "phone": "+1 785-587-1888",
-        "ref": "1025408",
-        "takeaway": "yes",
-        "website": "https://www.starbucks.com/store-locator/store/1025408/anderson-hylton-manhattan-2700-anderson-ave-manhattan-ks-665022804-us"
+        building: "yes",
+        cuisine: "coffee_shop",
+        name: "Starbucks",
+        official_name: "Starbucks Coffee",
+        phone: "+1 785-587-1888",
+        ref: "1025408",
+        takeaway: "yes",
+        website:
+          "https://www.starbucks.com/store-locator/store/1025408/anderson-hylton-manhattan-2700-anderson-ave-manhattan-ks-665022804-us",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6056578,
-              39.1904549
-            ],
-            [
-              -96.6056529,
-              39.19027
-            ],
-            [
-              -96.6055189,
-              39.1902722
-            ],
-            [
-              -96.6055238,
-              39.1904571
-            ],
-            [
-              -96.6056578,
-              39.1904549
-            ]
-          ]
-        ]
+            [-96.6056578, 39.1904549],
+            [-96.6056529, 39.19027],
+            [-96.6055189, 39.1902722],
+            [-96.6055238, 39.1904571],
+            [-96.6056578, 39.1904549],
+          ],
+        ],
       },
-      "id": "way/61512080"
+      id: "way/61512080",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/62155656",
-        "amenity": "restaurant",
-        "brand": "Houlihan's",
+        amenity: "restaurant",
+        brand: "Houlihan's",
         "brand:wikidata": "Q5913100",
-        "building": "yes",
-        "name": "Houlihan's",
-        "phone": "+1 785-776-5909",
-        "website": "https://www.houlihans.com/location/manhattan-houlihans/"
+        building: "yes",
+        name: "Houlihan's",
+        phone: "+1 785-776-5909",
+        website: "https://www.houlihans.com/location/manhattan-houlihans/",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5827946,
-              39.1856133
-            ],
-            [
-              -96.5829449,
-              39.185612
-            ],
-            [
-              -96.5829424,
-              39.1854324
-            ],
-            [
-              -96.5827408,
-              39.1854342
-            ],
-            [
-              -96.5827433,
-              39.1856137
-            ],
-            [
-              -96.5827946,
-              39.1856133
-            ]
-          ]
-        ]
+            [-96.5827946, 39.1856133],
+            [-96.5829449, 39.185612],
+            [-96.5829424, 39.1854324],
+            [-96.5827408, 39.1854342],
+            [-96.5827433, 39.1856137],
+            [-96.5827946, 39.1856133],
+          ],
+        ],
       },
-      "id": "way/62155656"
+      id: "way/62155656",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/62217785",
         "addr:city": "Manhattan",
         "addr:housenumber": "315",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Southwind Place",
-        "amenity": "fast_food",
-        "brand": "Panera Bread",
+        amenity: "fast_food",
+        brand: "Panera Bread",
         "brand:wikidata": "Q7130852",
-        "building": "yes",
-        "cuisine": "sandwich;bakery",
-        "fax": "+1 785-539-7522",
-        "name": "Panera Bread",
-        "opening_hours": "Mo-Sa 06:00-21:00; Su 06:30-20:30",
-        "phone": "+1 785-539-7500",
-        "ref": "2721",
-        "short_name": "Panera",
-        "takeaway": "yes",
-        "website": "https://locations.panerabread.com/ks/manhattan/315-southwind-place.html"
+        building: "yes",
+        cuisine: "sandwich",
+        fax: "+1 785-539-7522",
+        name: "Panera Bread",
+        opening_hours: "Mo-Sa 06:00-21:00; Su 06:30-20:30",
+        phone: "+1 785-539-7500",
+        ref: "2721",
+        short_name: "Panera",
+        takeaway: "yes",
+        website:
+          "https://locations.panerabread.com/ks/manhattan/315-southwind-place.html",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6047419,
-              39.1745688
-            ],
-            [
-              -96.6047401,
-              39.1744336
-            ],
-            [
-              -96.6046414,
-              39.1744344
-            ],
-            [
-              -96.604479,
-              39.1744357
-            ],
-            [
-              -96.6044272,
-              39.1744361
-            ],
-            [
-              -96.604429,
-              39.1745712
-            ],
-            [
-              -96.6047419,
-              39.1745688
-            ]
-          ]
-        ]
+            [-96.6047419, 39.1745688],
+            [-96.6047401, 39.1744336],
+            [-96.6046414, 39.1744344],
+            [-96.604479, 39.1744357],
+            [-96.6044272, 39.1744361],
+            [-96.604429, 39.1745712],
+            [-96.6047419, 39.1745688],
+          ],
+        ],
       },
-      "id": "way/62217785"
+      id: "way/62217785",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/64624585",
         "addr:city": "Manhattan",
         "addr:housenumber": "1228",
         "addr:postcode": "66502",
         "addr:street": "Westloop Place",
-        "amenity": "fast_food",
-        "brand": "Smoothie King",
+        amenity: "fast_food",
+        brand: "Smoothie King",
         "brand:wikidata": "Q5491421",
-        "building": "yes",
-        "cuisine": "juice",
-        "name": "Smoothie King",
-        "outdoor_seating": "no",
-        "takeaway": "yes"
+        building: "yes",
+        cuisine: "juice",
+        name: "Smoothie King",
+        outdoor_seating: "no",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6087809,
-              39.1919738
-            ],
-            [
-              -96.609117,
-              39.1918893
-            ],
-            [
-              -96.6090798,
-              39.1917971
-            ],
-            [
-              -96.6090237,
-              39.1917595
-            ],
-            [
-              -96.6087809,
-              39.1919738
-            ]
-          ]
-        ]
+            [-96.6087809, 39.1919738],
+            [-96.609117, 39.1918893],
+            [-96.6090798, 39.1917971],
+            [-96.6090237, 39.1917595],
+            [-96.6087809, 39.1919738],
+          ],
+        ],
       },
-      "id": "way/64624585"
+      id: "way/64624585",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/65579237",
         "addr:city": "Manhattan",
         "addr:housenumber": "3002",
         "addr:postcode": "66503",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "amenity": "fast_food",
-        "building": "yes",
+        amenity: "fast_food",
+        building: "yes",
         "building:levels": "1",
-        "capacity": "76",
-        "cuisine": "american;burger",
-        "drive_through": "yes",
-        "indoor_seating": "yes",
-        "name": "Beef-A-Roo",
-        "takeaway": "yes"
+        capacity: "76",
+        cuisine: "burger",
+        drive_through: "yes",
+        indoor_seating: "yes",
+        name: "Beef-A-Roo",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.613139,
-              39.1900759
-            ],
-            [
-              -96.6131368,
-              39.1898433
-            ],
-            [
-              -96.6130117,
-              39.189844
-            ],
-            [
-              -96.6130139,
-              39.1900766
-            ],
-            [
-              -96.613139,
-              39.1900759
-            ]
-          ]
-        ]
+            [-96.613139, 39.1900759],
+            [-96.6131368, 39.1898433],
+            [-96.6130117, 39.189844],
+            [-96.6130139, 39.1900766],
+            [-96.613139, 39.1900759],
+          ],
+        ],
       },
-      "id": "way/65579237"
+      id: "way/65579237",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/65579300",
         "addr:city": "Manhattan",
         "addr:housenumber": "3116",
         "addr:postcode": "66503-2810",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "alt_name": "Dairy Queen",
-        "amenity": "fast_food",
-        "brand": "DQ Grill & Chill",
+        alt_name: "Dairy Queen",
+        amenity: "fast_food",
+        brand: "DQ Grill & Chill",
         "brand:wikidata": "Q1141226",
-        "building": "yes",
-        "cuisine": "ice_cream;burger",
-        "name": "DQ Grill & Chill",
-        "opening_hours": "11:00-23:00",
-        "phone": "+1 785-539-5389",
-        "takeaway": "yes",
-        "website": "https://www.dairyqueen.com/locations/ks/manhattan/3116-anderson-ave/8732"
+        building: "yes",
+        cuisine: "burger",
+        name: "DQ Grill & Chill",
+        opening_hours: "11:00-23:00",
+        phone: "+1 785-539-5389",
+        takeaway: "yes",
+        website:
+          "https://www.dairyqueen.com/locations/ks/manhattan/3116-anderson-ave/8732",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6158414,
-              39.1894371
-            ],
-            [
-              -96.6156976,
-              39.1894396
-            ],
-            [
-              -96.6157046,
-              39.1896772
-            ],
-            [
-              -96.6158484,
-              39.1896747
-            ],
-            [
-              -96.6158414,
-              39.1894371
-            ]
-          ]
-        ]
+            [-96.6158414, 39.1894371],
+            [-96.6156976, 39.1894396],
+            [-96.6157046, 39.1896772],
+            [-96.6158484, 39.1896747],
+            [-96.6158414, 39.1894371],
+          ],
+        ],
       },
-      "id": "way/65579300"
+      id: "way/65579300",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/65579303",
         "addr:city": "Manhattan",
         "addr:housenumber": "3006",
         "addr:postcode": "66503",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "amenity": "fast_food",
-        "brand": "Wendy's",
+        amenity: "fast_food",
+        brand: "Wendy's",
         "brand:wikidata": "Q550258",
-        "building": "yes",
-        "capacity": "66",
-        "cuisine": "burger",
-        "internet_access": "wlan",
+        building: "yes",
+        capacity: "66",
+        cuisine: "burger",
+        internet_access: "wlan",
         "internet_access:fee": "no",
-        "name": "Wendy's",
-        "note": "drive through open until 1AM",
-        "opening_hours": "09:00-22:00",
+        name: "Wendy's",
+        note: "drive through open until 1AM",
+        opening_hours: "09:00-22:00",
         "opening_hours:drive_through": "Mo-Su 06:30-00:00",
-        "phone": "+1 785-539-8657",
+        phone: "+1 785-539-8657",
         "ref:wendys": "3896",
-        "takeaway": "yes",
-        "website": "https://locations.wendys.com/united-states/ks/manhattan/3006-anderson",
-        "wheelchair": "yes"
+        takeaway: "yes",
+        website:
+          "https://locations.wendys.com/united-states/ks/manhattan/3006-anderson",
+        wheelchair: "yes",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6135172,
-              39.1899716
-            ],
-            [
-              -96.613517,
-              39.1898192
-            ],
-            [
-              -96.6135169,
-              39.1897431
-            ],
-            [
-              -96.613391,
-              39.1897432
-            ],
-            [
-              -96.613391,
-              39.1897953
-            ],
-            [
-              -96.6133807,
-              39.1897953
-            ],
-            [
-              -96.6133807,
-              39.1898534
-            ],
-            [
-              -96.6133918,
-              39.1898534
-            ],
-            [
-              -96.6133919,
-              39.1899717
-            ],
-            [
-              -96.6134042,
-              39.1899717
-            ],
-            [
-              -96.6135172,
-              39.1899716
-            ]
-          ]
-        ]
+            [-96.6135172, 39.1899716],
+            [-96.613517, 39.1898192],
+            [-96.6135169, 39.1897431],
+            [-96.613391, 39.1897432],
+            [-96.613391, 39.1897953],
+            [-96.6133807, 39.1897953],
+            [-96.6133807, 39.1898534],
+            [-96.6133918, 39.1898534],
+            [-96.6133919, 39.1899717],
+            [-96.6134042, 39.1899717],
+            [-96.6135172, 39.1899716],
+          ],
+        ],
       },
-      "id": "way/65579303"
+      id: "way/65579303",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/65596918",
         "addr:city": "Manhattan",
         "addr:housenumber": "3210",
         "addr:postcode": "66503",
         "addr:street": "Kimball Avenue",
-        "amenity": "restaurant",
-        "building": "yes",
-        "name": "Early Edition",
-        "opening_hours": "Mo-Fr 6:30-14:00;Sa-Su 7:00-14:00"
+        amenity: "restaurant",
+        building: "yes",
+        name: "Early Edition",
+        opening_hours: "Mo-Fr 6:30-14:00;Sa-Su 7:00-14:00",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6178551,
-              39.2046419
-            ],
-            [
-              -96.6180942,
-              39.2046294
-            ],
-            [
-              -96.6180755,
-              39.2044151
-            ],
-            [
-              -96.6180211,
-              39.2044179
-            ],
-            [
-              -96.6178128,
-              39.2044288
-            ],
-            [
-              -96.6178154,
-              39.2044579
-            ],
-            [
-              -96.617839,
-              39.2044567
-            ],
-            [
-              -96.6178551,
-              39.2046419
-            ]
-          ]
-        ]
+            [-96.6178551, 39.2046419],
+            [-96.6180942, 39.2046294],
+            [-96.6180755, 39.2044151],
+            [-96.6180211, 39.2044179],
+            [-96.6178128, 39.2044288],
+            [-96.6178154, 39.2044579],
+            [-96.617839, 39.2044567],
+            [-96.6178551, 39.2046419],
+          ],
+        ],
       },
-      "id": "way/65596918"
+      id: "way/65596918",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/71079533",
         "addr:city": "Manhattan",
         "addr:housenumber": "326",
         "addr:postcode": "66503",
         "addr:state": "KS",
         "addr:street": "Southwind Place",
-        "amenity": "fast_food",
-        "brand": "Arby's",
+        amenity: "fast_food",
+        brand: "Arby's",
         "brand:wikidata": "Q630866",
-        "building": "commercial",
-        "check_date": "2024-06-21",
-        "cuisine": "sandwich",
-        "description": "Drive-through only after Su-Th 22:00, Fr-Sa 23:00",
-        "name": "Arby's",
-        "opening_hours": "Su-Th 10:00-23:00; Fr-Sa 10:00-24:00",
-        "phone": "+1 785-537-3436",
+        building: "commercial",
+        check_date: "2024-06-21",
+        cuisine: "sandwich",
+        description: "Drive-through only after Su-Th 22:00, Fr-Sa 23:00",
+        name: "Arby's",
+        opening_hours: "Su-Th 10:00-23:00; Fr-Sa 10:00-24:00",
+        phone: "+1 785-537-3436",
         "ref:arbys": "7620",
-        "takeaway": "yes",
-        "website": "https://www.arbys.com/locations/us/ks/manhattan/326-southwind-pl/store-7620/"
+        takeaway: "yes",
+        website:
+          "https://www.arbys.com/locations/us/ks/manhattan/326-southwind-pl/store-7620/",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6059381,
-              39.1742159
-            ],
-            [
-              -96.605935,
-              39.174139
-            ],
-            [
-              -96.6057978,
-              39.1741423
-            ],
-            [
-              -96.6057973,
-              39.174129
-            ],
-            [
-              -96.6057601,
-              39.1741299
-            ],
-            [
-              -96.6057607,
-              39.1741438
-            ],
-            [
-              -96.6056047,
-              39.1741476
-            ],
-            [
-              -96.6056085,
-              39.174244
-            ],
-            [
-              -96.6058937,
-              39.1742371
-            ],
-            [
-              -96.6058929,
-              39.174217
-            ],
-            [
-              -96.6059381,
-              39.1742159
-            ]
-          ]
-        ]
+            [-96.6059381, 39.1742159],
+            [-96.605935, 39.174139],
+            [-96.6057978, 39.1741423],
+            [-96.6057973, 39.174129],
+            [-96.6057601, 39.1741299],
+            [-96.6057607, 39.1741438],
+            [-96.6056047, 39.1741476],
+            [-96.6056085, 39.174244],
+            [-96.6058937, 39.1742371],
+            [-96.6058929, 39.174217],
+            [-96.6059381, 39.1742159],
+          ],
+        ],
       },
-      "id": "way/71079533"
+      id: "way/71079533",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/74173001",
-        "amenity": "cafe",
-        "building": "yes",
-        "name": "Radina's Coffee",
-        "opening_hours": "Mo-Fr 06:30-19:00; Sa-Su 07:00-17:00"
+        amenity: "cafe",
+        building: "yes",
+        name: "Radina's Coffee",
+        opening_hours: "Mo-Fr 06:30-19:00; Sa-Su 07:00-17:00",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6082001,
-              39.1926247
-            ],
-            [
-              -96.608196,
-              39.1924267
-            ],
-            [
-              -96.6080481,
-              39.1924286
-            ],
-            [
-              -96.6080523,
-              39.1926266
-            ],
-            [
-              -96.6082001,
-              39.1926247
-            ]
-          ]
-        ]
+            [-96.6082001, 39.1926247],
+            [-96.608196, 39.1924267],
+            [-96.6080481, 39.1924286],
+            [-96.6080523, 39.1926266],
+            [-96.6082001, 39.1926247],
+          ],
+        ],
       },
-      "id": "way/74173001"
+      id: "way/74173001",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/79884498",
         "addr:city": "Manhattan",
         "addr:housenumber": "1317",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "amenity": "fast_food",
-        "building": "yes",
-        "cuisine": "sandwich",
-        "name": "Goodcents Subs & Pasta",
-        "opening_hours": "10:00-22:00",
-        "phone": "+1-785-539-1900",
-        "ref": "22"
+        amenity: "fast_food",
+        building: "yes",
+        cuisine: "sandwich",
+        name: "Goodcents Subs & Pasta",
+        opening_hours: "10:00-22:00",
+        phone: "+1-785-539-1900",
+        ref: "22",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5772016,
-              39.1857829
-            ],
-            [
-              -96.5772569,
-              39.1857829
-            ],
-            [
-              -96.577316,
-              39.185783
-            ],
-            [
-              -96.5773161,
-              39.1855967
-            ],
-            [
-              -96.5772017,
-              39.1855967
-            ],
-            [
-              -96.5772016,
-              39.1857829
-            ]
-          ]
-        ]
+            [-96.5772016, 39.1857829],
+            [-96.5772569, 39.1857829],
+            [-96.577316, 39.185783],
+            [-96.5773161, 39.1855967],
+            [-96.5772017, 39.1855967],
+            [-96.5772016, 39.1857829],
+          ],
+        ],
       },
-      "id": "way/79884498"
+      id: "way/79884498",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/81004270",
         "addr:city": "Manhattan",
         "addr:housenumber": "2024",
         "addr:postcode": "66502",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "fast_food",
-        "building": "yes",
-        "cuisine": "burger",
-        "name": "Ana's Burger Shack",
-        "opening_hours": "Mo-We 11:00-19:00; Th 11:00-20:30; Fr-Sa 08:00-20:30",
-        "phone": "785-410-4991"
+        amenity: "fast_food",
+        building: "yes",
+        cuisine: "burger",
+        name: "Ana's Burger Shack",
+        opening_hours: "Mo-We 11:00-19:00; Th 11:00-20:30; Fr-Sa 08:00-20:30",
+        phone: "785-410-4991",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5681631,
-              39.2054305
-            ],
-            [
-              -96.5680644,
-              39.2053286
-            ],
-            [
-              -96.5679798,
-              39.2053778
-            ],
-            [
-              -96.5680784,
-              39.2054797
-            ],
-            [
-              -96.5681631,
-              39.2054305
-            ]
-          ]
-        ]
+            [-96.5681631, 39.2054305],
+            [-96.5680644, 39.2053286],
+            [-96.5679798, 39.2053778],
+            [-96.5680784, 39.2054797],
+            [-96.5681631, 39.2054305],
+          ],
+        ],
       },
-      "id": "way/81004270"
+      id: "way/81004270",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/104897518",
         "addr:city": "Manhattan",
         "addr:housenumber": "1219",
         "addr:postcode": "66502",
         "addr:street": "Moro Street",
-        "amenity": "cafe",
-        "building": "yes",
-        "name": "Bluestem Bistro",
-        "opening_hours": "Mo-Su 07:00-23:00",
-        "wheelchair": "no"
+        amenity: "cafe",
+        building: "yes",
+        name: "Bluestem Bistro",
+        opening_hours: "Mo-Su 07:00-23:00",
+        wheelchair: "no",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5757132,
-              39.1856413
-            ],
-            [
-              -96.575837,
-              39.185641
-            ],
-            [
-              -96.575837,
-              39.1856381
-            ],
-            [
-              -96.5758373,
-              39.1854007
-            ],
-            [
-              -96.5757277,
-              39.1853998
-            ],
-            [
-              -96.5757031,
-              39.1853996
-            ],
-            [
-              -96.5757024,
-              39.1856354
-            ],
-            [
-              -96.5757063,
-              39.1856389
-            ],
-            [
-              -96.5757132,
-              39.1856413
-            ]
-          ]
-        ]
+            [-96.5757132, 39.1856413],
+            [-96.575837, 39.185641],
+            [-96.575837, 39.1856381],
+            [-96.5758373, 39.1854007],
+            [-96.5757277, 39.1853998],
+            [-96.5757031, 39.1853996],
+            [-96.5757024, 39.1856354],
+            [-96.5757063, 39.1856389],
+            [-96.5757132, 39.1856413],
+          ],
+        ],
       },
-      "id": "way/104897518"
+      id: "way/104897518",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/104897529",
         "addr:city": "Manhattan",
         "addr:housenumber": "2704",
         "addr:postcode": "66502",
         "addr:street": "Anderson Avenue",
-        "amenity": "restaurant",
-        "building": "yes",
-        "cuisine": "chinese",
-        "drive_through": "yes",
-        "name": "Chens Chinese Restaurant",
-        "opening_hours": "Mo-Sa 10:30-22:00; Su 11:00-20:00",
-        "phone": "+1 785 539 8888"
+        amenity: "restaurant",
+        building: "yes",
+        cuisine: "chinese",
+        drive_through: "yes",
+        name: "Chens Chinese Restaurant",
+        opening_hours: "Mo-Sa 10:30-22:00; Su 11:00-20:00",
+        phone: "+1 785 539 8888",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6058196,
-              39.1903051
-            ],
-            [
-              -96.6058194,
-              39.1902767
-            ],
-            [
-              -96.6057554,
-              39.190277
-            ],
-            [
-              -96.6057555,
-              39.1903038
-            ],
-            [
-              -96.6057246,
-              39.190304
-            ],
-            [
-              -96.6057254,
-              39.1904225
-            ],
-            [
-              -96.6057801,
-              39.1904222
-            ],
-            [
-              -96.6057806,
-              39.1904984
-            ],
-            [
-              -96.6058516,
-              39.1904981
-            ],
-            [
-              -96.6058503,
-              39.190305
-            ],
-            [
-              -96.6058196,
-              39.1903051
-            ]
-          ]
-        ]
+            [-96.6058196, 39.1903051],
+            [-96.6058194, 39.1902767],
+            [-96.6057554, 39.190277],
+            [-96.6057555, 39.1903038],
+            [-96.6057246, 39.190304],
+            [-96.6057254, 39.1904225],
+            [-96.6057801, 39.1904222],
+            [-96.6057806, 39.1904984],
+            [-96.6058516, 39.1904981],
+            [-96.6058503, 39.190305],
+            [-96.6058196, 39.1903051],
+          ],
+        ],
       },
-      "id": "way/104897529"
+      id: "way/104897529",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/104897686",
         "addr:city": "Manhattan",
         "addr:housenumber": "1126",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Moro Street",
-        "amenity": "fast_food",
-        "branch": "Manhattan Moro St",
-        "brand": "Wingstop",
+        amenity: "fast_food",
+        branch: "Manhattan Moro St",
+        brand: "Wingstop",
         "brand:wikidata": "Q8025339",
-        "building": "yes",
-        "cuisine": "wings",
-        "name": "Wingstop",
-        "opening_hours": "10:45-24:00",
-        "phone": "+1 785-320-5600",
-        "takeaway": "yes",
-        "wheelchair": "yes"
+        building: "yes",
+        cuisine: "wings",
+        name: "Wingstop",
+        opening_hours: "10:45-24:00",
+        phone: "+1 785-320-5600",
+        takeaway: "yes",
+        wheelchair: "yes",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5745499,
-              39.1857986
-            ],
-            [
-              -96.5745028,
-              39.1857981
-            ],
-            [
-              -96.5744573,
-              39.1857975
-            ],
-            [
-              -96.5744534,
-              39.1860663
-            ],
-            [
-              -96.5744526,
-              39.1861218
-            ],
-            [
-              -96.5745447,
-              39.1861227
-            ],
-            [
-              -96.5745456,
-              39.1860304
-            ],
-            [
-              -96.5745499,
-              39.1857986
-            ]
-          ]
-        ]
+            [-96.5745499, 39.1857986],
+            [-96.5745028, 39.1857981],
+            [-96.5744573, 39.1857975],
+            [-96.5744534, 39.1860663],
+            [-96.5744526, 39.1861218],
+            [-96.5745447, 39.1861227],
+            [-96.5745456, 39.1860304],
+            [-96.5745499, 39.1857986],
+          ],
+        ],
       },
-      "id": "way/104897686"
+      id: "way/104897686",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/104897753",
         "addr:city": "Manhattan",
         "addr:housename": "McDonald's",
@@ -914,2908 +575,1695 @@ const displayPointsData =
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Westloop Place",
-        "amenity": "fast_food",
-        "brand": "McDonald's",
+        amenity: "fast_food",
+        brand: "McDonald's",
         "brand:wikidata": "Q38076",
-        "building": "yes",
-        "cuisine": "burger",
-        "drive_through": "yes",
-        "internet_access": "wlan",
-        "name": "McDonald's",
-        "opening_hours": "Su-Th 05:00-24:00, Fr,Sa 05:00-01:00",
-        "phone": "+1 785-539-1672",
-        "ref": "10134",
-        "takeaway": "yes",
-        "website": "https://www.mcdonalds.com/us/en-us/location/10134.html",
-        "wheelchair": "yes"
+        building: "yes",
+        cuisine: "burger",
+        drive_through: "yes",
+        internet_access: "wlan",
+        name: "McDonald's",
+        opening_hours: "Su-Th 05:00-24:00, Fr,Sa 05:00-01:00",
+        phone: "+1 785-539-1672",
+        ref: "10134",
+        takeaway: "yes",
+        website: "https://www.mcdonalds.com/us/en-us/location/10134.html",
+        wheelchair: "yes",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6106162,
-              39.1901576
-            ],
-            [
-              -96.6105563,
-              39.190178
-            ],
-            [
-              -96.610552,
-              39.1901705
-            ],
-            [
-              -96.61046,
-              39.1902018
-            ],
-            [
-              -96.6104646,
-              39.19021
-            ],
-            [
-              -96.6104252,
-              39.1902234
-            ],
-            [
-              -96.6104397,
-              39.1902489
-            ],
-            [
-              -96.6104342,
-              39.1902507
-            ],
-            [
-              -96.610428,
-              39.1902528
-            ],
-            [
-              -96.6104446,
-              39.1902821
-            ],
-            [
-              -96.6104512,
-              39.1902799
-            ],
-            [
-              -96.6104602,
-              39.1902768
-            ],
-            [
-              -96.610531,
-              39.1904016
-            ],
-            [
-              -96.6105128,
-              39.1904078
-            ],
-            [
-              -96.6105326,
-              39.1904429
-            ],
-            [
-              -96.6106953,
-              39.1903875
-            ],
-            [
-              -96.610677,
-              39.1903552
-            ],
-            [
-              -96.6107331,
-              39.190336
-            ],
-            [
-              -96.6106425,
-              39.1901761
-            ],
-            [
-              -96.6106363,
-              39.1901783
-            ],
-            [
-              -96.6106292,
-              39.1901807
-            ],
-            [
-              -96.6106162,
-              39.1901576
-            ]
-          ]
-        ]
+            [-96.6106162, 39.1901576],
+            [-96.6105563, 39.190178],
+            [-96.610552, 39.1901705],
+            [-96.61046, 39.1902018],
+            [-96.6104646, 39.19021],
+            [-96.6104252, 39.1902234],
+            [-96.6104397, 39.1902489],
+            [-96.6104342, 39.1902507],
+            [-96.610428, 39.1902528],
+            [-96.6104446, 39.1902821],
+            [-96.6104512, 39.1902799],
+            [-96.6104602, 39.1902768],
+            [-96.610531, 39.1904016],
+            [-96.6105128, 39.1904078],
+            [-96.6105326, 39.1904429],
+            [-96.6106953, 39.1903875],
+            [-96.610677, 39.1903552],
+            [-96.6107331, 39.190336],
+            [-96.6106425, 39.1901761],
+            [-96.6106363, 39.1901783],
+            [-96.6106292, 39.1901807],
+            [-96.6106162, 39.1901576],
+          ],
+        ],
       },
-      "id": "way/104897753"
+      id: "way/104897753",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/104897923",
         "addr:city": "Manhattan",
         "addr:housenumber": "1212",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Moro Street",
-        "amenity": "fast_food",
-        "brand": "Jimmy John's",
+        amenity: "fast_food",
+        brand: "Jimmy John's",
         "brand:wikidata": "Q1689380",
-        "building": "yes",
-        "cuisine": "sandwich",
-        "name": "Jimmy John's",
-        "official_name": "Jimmy John's Gourmet Sandwiches",
-        "opening_hours": "11:00-03:00",
-        "phone": "+1 785-539-7454",
-        "ref": "487",
-        "takeaway": "yes",
+        building: "yes",
+        cuisine: "sandwich",
+        name: "Jimmy John's",
+        official_name: "Jimmy John's Gourmet Sandwiches",
+        opening_hours: "11:00-03:00",
+        phone: "+1 785-539-7454",
+        ref: "487",
+        takeaway: "yes",
         "toilets:wheelchair": "no",
-        "website": "https://locations.jimmyjohns.com/ks/manhattan/sandwiches-487.html",
-        "wheelchair": "limited"
+        website:
+          "https://locations.jimmyjohns.com/ks/manhattan/sandwiches-487.html",
+        wheelchair: "limited",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5754661,
-              39.1858006
-            ],
-            [
-              -96.5754639,
-              39.185994
-            ],
-            [
-              -96.5755931,
-              39.1859949
-            ],
-            [
-              -96.5755966,
-              39.1858039
-            ],
-            [
-              -96.5754661,
-              39.1858006
-            ]
-          ]
-        ]
+            [-96.5754661, 39.1858006],
+            [-96.5754639, 39.185994],
+            [-96.5755931, 39.1859949],
+            [-96.5755966, 39.1858039],
+            [-96.5754661, 39.1858006],
+          ],
+        ],
       },
-      "id": "way/104897923"
+      id: "way/104897923",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/104897936",
         "addr:city": "Manhattan",
         "addr:housenumber": "1155",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Westport Drive",
-        "amenity": "fast_food",
-        "brand": "Taco Bell",
+        amenity: "fast_food",
+        brand: "Taco Bell",
         "brand:wikidata": "Q752941",
-        "building": "yes",
-        "capacity": "95",
-        "cuisine": "tex-mex",
-        "description": "Drive-through only after 22:00",
-        "name": "Taco Bell",
-        "opening_hours": "Su-Th 10:00-23:00; Fr-Sa 10:00-24:00",
-        "phone": "+1 785-539-1225",
-        "ref": "002518",
-        "takeaway": "yes",
-        "website": "https://locations.tacobell.com/ks/manhattan/1155-westport-road.html"
+        building: "yes",
+        capacity: "95",
+        cuisine: "tex-mex",
+        description: "Drive-through only after 22:00",
+        name: "Taco Bell",
+        opening_hours: "Su-Th 10:00-23:00; Fr-Sa 10:00-24:00",
+        phone: "+1 785-539-1225",
+        ref: "002518",
+        takeaway: "yes",
+        website:
+          "https://locations.tacobell.com/ks/manhattan/1155-westport-road.html",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6066127,
-              39.1926197
-            ],
-            [
-              -96.606764,
-              39.192619
-            ],
-            [
-              -96.606764,
-              39.1926089
-            ],
-            [
-              -96.6068552,
-              39.1926085
-            ],
-            [
-              -96.6068547,
-              39.1925302
-            ],
-            [
-              -96.6067641,
-              39.1925306
-            ],
-            [
-              -96.606764,
-              39.1925182
-            ],
-            [
-              -96.606612,
-              39.1925188
-            ],
-            [
-              -96.6066127,
-              39.1926197
-            ]
-          ]
-        ]
+            [-96.6066127, 39.1926197],
+            [-96.606764, 39.192619],
+            [-96.606764, 39.1926089],
+            [-96.6068552, 39.1926085],
+            [-96.6068547, 39.1925302],
+            [-96.6067641, 39.1925306],
+            [-96.606764, 39.1925182],
+            [-96.606612, 39.1925188],
+            [-96.6066127, 39.1926197],
+          ],
+        ],
       },
-      "id": "way/104897936"
+      id: "way/104897936",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/104897953",
         "addr:city": "Manhattan",
         "addr:housenumber": "2615",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "amenity": "fast_food",
-        "brand": "Papa John's",
+        amenity: "fast_food",
+        brand: "Papa John's",
         "brand:wikidata": "Q2759586",
-        "building": "yes",
-        "cuisine": "pizza",
-        "name": "Papa John's",
-        "opening_hours": "Mo-Th 10:00-24:00; Fr-Sa 10:00-01:00; Su 10:00-24:00",
-        "phone": "+1 785-537-1400",
-        "takeaway": "yes",
-        "website": "https://locations.papajohns.com/united-states/ks/66502/manhattan/2615-anderson-avenue"
+        building: "yes",
+        cuisine: "pizza",
+        name: "Papa John's",
+        opening_hours: "Mo-Th 10:00-24:00; Fr-Sa 10:00-01:00; Su 10:00-24:00",
+        phone: "+1 785-537-1400",
+        takeaway: "yes",
+        website:
+          "https://locations.papajohns.com/united-states/ks/66502/manhattan/2615-anderson-avenue",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6053729,
-              39.18989
-            ],
-            [
-              -96.6054185,
-              39.18989
-            ],
-            [
-              -96.6054185,
-              39.1899118
-            ],
-            [
-              -96.6054594,
-              39.1899118
-            ],
-            [
-              -96.6054594,
-              39.189889
-            ],
-            [
-              -96.6054788,
-              39.189889
-            ],
-            [
-              -96.6054788,
-              39.1897803
-            ],
-            [
-              -96.6053729,
-              39.1897803
-            ],
-            [
-              -96.6053729,
-              39.18989
-            ]
-          ]
-        ]
+            [-96.6053729, 39.18989],
+            [-96.6054185, 39.18989],
+            [-96.6054185, 39.1899118],
+            [-96.6054594, 39.1899118],
+            [-96.6054594, 39.189889],
+            [-96.6054788, 39.189889],
+            [-96.6054788, 39.1897803],
+            [-96.6053729, 39.1897803],
+            [-96.6053729, 39.18989],
+          ],
+        ],
       },
-      "id": "way/104897953"
+      id: "way/104897953",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/105925958",
         "addr:city": "Manhattan",
         "addr:housenumber": "910",
         "addr:street": "Commons Place",
-        "amenity": "restaurant",
-        "brand": "Famous Dave's",
+        amenity: "restaurant",
+        brand: "Famous Dave's",
         "brand:wikidata": "Q5433448",
-        "building": "yes",
-        "cuisine": "barbecue",
-        "name": "Famous Dave's",
-        "phone": "+1 785 537 2401",
-        "ref": "3077"
+        building: "yes",
+        cuisine: "barbecue",
+        name: "Famous Dave's",
+        phone: "+1 785 537 2401",
+        ref: "3077",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6053962,
-              39.1699836
-            ],
-            [
-              -96.6055003,
-              39.1701085
-            ],
-            [
-              -96.6055902,
-              39.1700635
-            ],
-            [
-              -96.605621,
-              39.1701004
-            ],
-            [
-              -96.6057159,
-              39.1700528
-            ],
-            [
-              -96.605687,
-              39.170018
-            ],
-            [
-              -96.6057377,
-              39.1699926
-            ],
-            [
-              -96.6057574,
-              39.1700162
-            ],
-            [
-              -96.6058533,
-              39.1699681
-            ],
-            [
-              -96.6057311,
-              39.1698216
-            ],
-            [
-              -96.6056056,
-              39.1698844
-            ],
-            [
-              -96.6055572,
-              39.1698263
-            ],
-            [
-              -96.6055185,
-              39.1698456
-            ],
-            [
-              -96.6054814,
-              39.1698642
-            ],
-            [
-              -96.6055265,
-              39.1699183
-            ],
-            [
-              -96.6053962,
-              39.1699836
-            ]
-          ]
-        ]
+            [-96.6053962, 39.1699836],
+            [-96.6055003, 39.1701085],
+            [-96.6055902, 39.1700635],
+            [-96.605621, 39.1701004],
+            [-96.6057159, 39.1700528],
+            [-96.605687, 39.170018],
+            [-96.6057377, 39.1699926],
+            [-96.6057574, 39.1700162],
+            [-96.6058533, 39.1699681],
+            [-96.6057311, 39.1698216],
+            [-96.6056056, 39.1698844],
+            [-96.6055572, 39.1698263],
+            [-96.6055185, 39.1698456],
+            [-96.6054814, 39.1698642],
+            [-96.6055265, 39.1699183],
+            [-96.6053962, 39.1699836],
+          ],
+        ],
       },
-      "id": "way/105925958"
+      id: "way/105925958",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/114920317",
         "addr:city": "Manhattan",
         "addr:housenumber": "301",
         "addr:postcode": "66502",
         "addr:street": "Poyntz Avenue",
-        "amenity": "restaurant",
-        "building": "yes",
-        "cuisine": "pizza",
-        "name": "AJ's NY Pizzeria"
+        amenity: "restaurant",
+        building: "yes",
+        cuisine: "pizza",
+        name: "AJ's NY Pizzeria",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5603263,
-              39.1792083
-            ],
-            [
-              -96.5605344,
-              39.1792097
-            ],
-            [
-              -96.5605344,
-              39.1792049
-            ],
-            [
-              -96.5605358,
-              39.1790818
-            ],
-            [
-              -96.560536,
-              39.1790694
-            ],
-            [
-              -96.560328,
-              39.179068
-            ],
-            [
-              -96.5603263,
-              39.1792083
-            ]
-          ]
-        ]
+            [-96.5603263, 39.1792083],
+            [-96.5605344, 39.1792097],
+            [-96.5605344, 39.1792049],
+            [-96.5605358, 39.1790818],
+            [-96.560536, 39.1790694],
+            [-96.560328, 39.179068],
+            [-96.5603263, 39.1792083],
+          ],
+        ],
       },
-      "id": "way/114920317"
+      id: "way/114920317",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/131638739",
         "addr:city": "Manhattan",
         "addr:housenumber": "718",
         "addr:postcode": "66502",
         "addr:street": "North Manhattan Avenue",
-        "amenity": "restaurant",
-        "building": "yes",
+        amenity: "restaurant",
+        building: "yes",
         "contact:phone": "785-539-8033",
-        "name": "Rock A Belly Deli",
-        "opening_hours": "Mo-Sa 10:00-02:00",
+        name: "Rock A Belly Deli",
+        opening_hours: "Mo-Sa 10:00-02:00",
         "opening_hours:kitchen": "10:00-22:00",
         "source:outline": "Riley 2011 imagery",
-        "website": "https://www.rockabellydeli.com/"
+        website: "https://www.rockabellydeli.com/",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.576345,
-              39.1865272
-            ],
-            [
-              -96.5763461,
-              39.1864802
-            ],
-            [
-              -96.5761908,
-              39.1864796
-            ],
-            [
-              -96.5761917,
-              39.1865269
-            ],
-            [
-              -96.576345,
-              39.1865272
-            ]
-          ]
-        ]
+            [-96.576345, 39.1865272],
+            [-96.5763461, 39.1864802],
+            [-96.5761908, 39.1864796],
+            [-96.5761917, 39.1865269],
+            [-96.576345, 39.1865272],
+          ],
+        ],
       },
-      "id": "way/131638739"
+      id: "way/131638739",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/131638741",
         "addr:city": "Manhattan",
         "addr:housenumber": "1219",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Bluemont Avenue",
-        "amenity": "cafe",
-        "branch": "Bluemont & Manhattan",
-        "brand": "Starbucks",
+        amenity: "cafe",
+        branch: "Bluemont & Manhattan",
+        brand: "Starbucks",
         "brand:wikidata": "Q37158",
-        "building": "yes",
-        "cuisine": "coffee_shop",
-        "name": "Starbucks",
-        "official_name": "Starbucks Coffee",
-        "phone": "+1 785-537-3984",
-        "ref": "17267",
+        building: "yes",
+        cuisine: "coffee_shop",
+        name: "Starbucks",
+        official_name: "Starbucks Coffee",
+        phone: "+1 785-537-3984",
+        ref: "17267",
         "source:outline": "Riley 2011 imagery",
-        "takeaway": "yes",
-        "website": "https://www.starbucks.com/store-locator/store/17267/bluemont-manhattan-1219-bluemont-ave-manhattan-ks-665025342-us"
+        takeaway: "yes",
+        website:
+          "https://www.starbucks.com/store-locator/store/17267/bluemont-manhattan-1219-bluemont-ave-manhattan-ks-665025342-us",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5759031,
-              39.1865365
-            ],
-            [
-              -96.5759026,
-              39.1863444
-            ],
-            [
-              -96.5757889,
-              39.1863446
-            ],
-            [
-              -96.575789,
-              39.1863787
-            ],
-            [
-              -96.5757791,
-              39.1863788
-            ],
-            [
-              -96.5757792,
-              39.1864301
-            ],
-            [
-              -96.575793,
-              39.1864301
-            ],
-            [
-              -96.5757933,
-              39.1865367
-            ],
-            [
-              -96.5759031,
-              39.1865365
-            ]
-          ]
-        ]
+            [-96.5759031, 39.1865365],
+            [-96.5759026, 39.1863444],
+            [-96.5757889, 39.1863446],
+            [-96.575789, 39.1863787],
+            [-96.5757791, 39.1863788],
+            [-96.5757792, 39.1864301],
+            [-96.575793, 39.1864301],
+            [-96.5757933, 39.1865367],
+            [-96.5759031, 39.1865365],
+          ],
+        ],
       },
-      "id": "way/131638741"
+      id: "way/131638741",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/131638742",
         "addr:city": "Manhattan",
         "addr:housenumber": "704",
         "addr:street": "North Manhattan Avenue",
-        "amenity": "fast_food",
-        "building": "yes",
-        "cuisine": "donut",
-        "name": "Varsity Donuts",
-        "opening_hours": "Mo-Su 07:00-20:00",
+        amenity: "fast_food",
+        building: "yes",
+        cuisine: "donut",
+        name: "Varsity Donuts",
+        opening_hours: "Mo-Su 07:00-20:00",
         "source:outline": "Riley 2011 imagery",
         "toilets:wheelchair": "no",
-        "wheelchair": "limited"
+        wheelchair: "limited",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5763484,
-              39.1860359
-            ],
-            [
-              -96.5763502,
-              39.1859571
-            ],
-            [
-              -96.576094,
-              39.1859536
-            ],
-            [
-              -96.5759948,
-              39.1859522
-            ],
-            [
-              -96.5759931,
-              39.1860312
-            ],
-            [
-              -96.5762693,
-              39.1860344
-            ],
-            [
-              -96.5763484,
-              39.1860359
-            ]
-          ]
-        ]
+            [-96.5763484, 39.1860359],
+            [-96.5763502, 39.1859571],
+            [-96.576094, 39.1859536],
+            [-96.5759948, 39.1859522],
+            [-96.5759931, 39.1860312],
+            [-96.5762693, 39.1860344],
+            [-96.5763484, 39.1860359],
+          ],
+        ],
       },
-      "id": "way/131638742"
+      id: "way/131638742",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/131638769",
         "addr:city": "Manhattan",
         "addr:housenumber": "712",
         "addr:postcode": "66502",
         "addr:street": "North Manhattan Avenue",
-        "amenity": "restaurant",
-        "building": "yes",
+        amenity: "restaurant",
+        building: "yes",
         "building:levels": "1",
-        "cuisine": "indian",
+        cuisine: "indian",
         "diet:gluten_free": "yes",
         "diet:vegetarian": "yes",
-        "name": "Globe Indian Food",
-        "opening_hours": "Tu-Su 11:00-14:30,17:00-21:30",
-        "phone": "+1 785-320-5666",
-        "toilets": "yes",
-        "toilets:access": "customers"
+        name: "Globe Indian Food",
+        opening_hours: "Tu-Su 11:00-14:30,17:00-21:30",
+        phone: "+1 785-320-5666",
+        toilets: "yes",
+        "toilets:access": "customers",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5763479,
-              39.1864083
-            ],
-            [
-              -96.57635,
-              39.1862899
-            ],
-            [
-              -96.5763463,
-              39.1862808
-            ],
-            [
-              -96.5763347,
-              39.186276
-            ],
-            [
-              -96.5761181,
-              39.1862748
-            ],
-            [
-              -96.5761184,
-              39.1864073
-            ],
-            [
-              -96.5763479,
-              39.1864083
-            ]
-          ]
-        ]
+            [-96.5763479, 39.1864083],
+            [-96.57635, 39.1862899],
+            [-96.5763463, 39.1862808],
+            [-96.5763347, 39.186276],
+            [-96.5761181, 39.1862748],
+            [-96.5761184, 39.1864073],
+            [-96.5763479, 39.1864083],
+          ],
+        ],
       },
-      "id": "way/131638769"
+      id: "way/131638769",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/136141276",
         "addr:city": "Manhattan",
         "addr:housenumber": "427",
         "addr:postcode": "66502",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "restaurant",
-        "brand": "McAlister's Deli",
+        amenity: "restaurant",
+        brand: "McAlister's Deli",
         "brand:wikidata": "Q17020829",
-        "building": "yes",
-        "cuisine": "sandwich",
-        "name": "McAlister's Deli"
+        building: "yes",
+        cuisine: "sandwich",
+        name: "McAlister's Deli",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5594757,
-              39.1836844
-            ],
-            [
-              -96.5594794,
-              39.1835461
-            ],
-            [
-              -96.5591883,
-              39.1835414
-            ],
-            [
-              -96.5591846,
-              39.1836798
-            ],
-            [
-              -96.5594757,
-              39.1836844
-            ]
-          ]
-        ]
+            [-96.5594757, 39.1836844],
+            [-96.5594794, 39.1835461],
+            [-96.5591883, 39.1835414],
+            [-96.5591846, 39.1836798],
+            [-96.5594757, 39.1836844],
+          ],
+        ],
       },
-      "id": "way/136141276"
+      id: "way/136141276",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/136141277",
         "addr:city": "Manhattan",
         "addr:housenumber": "715",
         "addr:postcode": "66502",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "restaurant",
-        "brand": "Olive Garden",
+        amenity: "restaurant",
+        brand: "Olive Garden",
         "brand:wikidata": "Q3045312",
-        "building": "yes",
-        "capacity": "287",
-        "cuisine": "italian",
-        "delivery": "no",
-        "name": "Olive Garden",
-        "phone": "785-537-2445",
-        "ref": "1843",
-        "source": "Riley 2011 imagery"
+        building: "yes",
+        capacity: "287",
+        cuisine: "italian",
+        delivery: "no",
+        name: "Olive Garden",
+        phone: "785-537-2445",
+        ref: "1843",
+        source: "Riley 2011 imagery",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5594897,
-              39.1862605
-            ],
-            [
-              -96.5595684,
-              39.1862616
-            ],
-            [
-              -96.5595677,
-              39.1862904
-            ],
-            [
-              -96.5596709,
-              39.1862918
-            ],
-            [
-              -96.5596712,
-              39.1862784
-            ],
-            [
-              -96.5597489,
-              39.1862795
-            ],
-            [
-              -96.5597545,
-              39.186041
-            ],
-            [
-              -96.5597213,
-              39.1860405
-            ],
-            [
-              -96.5597221,
-              39.1860071
-            ],
-            [
-              -96.5595697,
-              39.186005
-            ],
-            [
-              -96.5595692,
-              39.186027
-            ],
-            [
-              -96.5594974,
-              39.186026
-            ],
-            [
-              -96.5594953,
-              39.1861139
-            ],
-            [
-              -96.5594183,
-              39.1861128
-            ],
-            [
-              -96.5594169,
-              39.1861745
-            ],
-            [
-              -96.5594604,
-              39.1861751
-            ],
-            [
-              -96.5594598,
-              39.1861986
-            ],
-            [
-              -96.5594347,
-              39.1861982
-            ],
-            [
-              -96.5594336,
-              39.1862452
-            ],
-            [
-              -96.5594901,
-              39.186246
-            ],
-            [
-              -96.5594897,
-              39.1862605
-            ]
-          ]
-        ]
+            [-96.5594897, 39.1862605],
+            [-96.5595684, 39.1862616],
+            [-96.5595677, 39.1862904],
+            [-96.5596709, 39.1862918],
+            [-96.5596712, 39.1862784],
+            [-96.5597489, 39.1862795],
+            [-96.5597545, 39.186041],
+            [-96.5597213, 39.1860405],
+            [-96.5597221, 39.1860071],
+            [-96.5595697, 39.186005],
+            [-96.5595692, 39.186027],
+            [-96.5594974, 39.186026],
+            [-96.5594953, 39.1861139],
+            [-96.5594183, 39.1861128],
+            [-96.5594169, 39.1861745],
+            [-96.5594604, 39.1861751],
+            [-96.5594598, 39.1861986],
+            [-96.5594347, 39.1861982],
+            [-96.5594336, 39.1862452],
+            [-96.5594901, 39.186246],
+            [-96.5594897, 39.1862605],
+          ],
+        ],
       },
-      "id": "way/136141277"
+      id: "way/136141277",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/136812149",
         "addr:city": "Manhattan",
         "addr:housenumber": "2605",
         "addr:postcode": "66502",
         "addr:street": "Stagg Hill Road",
-        "amenity": "restaurant",
-        "building": "restaurant",
-        "cuisine": "mexican",
-        "name": "El Tapatio Mexican Restaurant",
-        "opening_hours": "11:00-22:00",
-        "phone": "785-539-7272"
+        amenity: "restaurant",
+        building: "restaurant",
+        cuisine: "mexican",
+        name: "El Tapatio Mexican Restaurant",
+        opening_hours: "11:00-22:00",
+        phone: "785-539-7272",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6025635,
-              39.1666041
-            ],
-            [
-              -96.6025736,
-              39.166455
-            ],
-            [
-              -96.6021996,
-              39.1664398
-            ],
-            [
-              -96.6021894,
-              39.1665888
-            ],
-            [
-              -96.6025635,
-              39.1666041
-            ]
-          ]
-        ]
+            [-96.6025635, 39.1666041],
+            [-96.6025736, 39.166455],
+            [-96.6021996, 39.1664398],
+            [-96.6021894, 39.1665888],
+            [-96.6025635, 39.1666041],
+          ],
+        ],
       },
-      "id": "way/136812149"
+      id: "way/136812149",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/136812153",
         "addr:city": "Manhattan",
         "addr:housenumber": "2307",
         "addr:street": "Stagg Hill Road",
-        "amenity": "restaurant",
-        "building": "yes",
-        "cuisine": "mexican",
-        "name": "Hillside Cafe",
-        "opening_hours": "Mo-Fr 11:00-14:30,16:30-21:00;Sa 11:00-21:00"
+        amenity: "restaurant",
+        building: "yes",
+        cuisine: "mexican",
+        name: "Hillside Cafe",
+        opening_hours: "Mo-Fr 11:00-14:30,16:30-21:00;Sa 11:00-21:00",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5987431,
-              39.1671524
-            ],
-            [
-              -96.5987405,
-              39.1669841
-            ],
-            [
-              -96.5985057,
-              39.1669863
-            ],
-            [
-              -96.5985083,
-              39.1671546
-            ],
-            [
-              -96.5987431,
-              39.1671524
-            ]
-          ]
-        ]
+            [-96.5987431, 39.1671524],
+            [-96.5987405, 39.1669841],
+            [-96.5985057, 39.1669863],
+            [-96.5985083, 39.1671546],
+            [-96.5987431, 39.1671524],
+          ],
+        ],
       },
-      "id": "way/136812153"
+      id: "way/136812153",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/139491108",
         "addr:city": "Manhattan",
         "addr:housenumber": "600",
         "addr:postcode": "66502",
         "addr:street": "South 4th Street",
-        "amenity": "restaurant",
-        "building": "yes",
-        "cuisine": "breakfast",
-        "name": "Early Edition"
+        amenity: "restaurant",
+        building: "yes",
+        cuisine: "breakfast",
+        name: "Early Edition",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5621844,
-              39.1739092
-            ],
-            [
-              -96.5621837,
-              39.1740036
-            ],
-            [
-              -96.5624933,
-              39.174005
-            ],
-            [
-              -96.5624944,
-              39.1738576
-            ],
-            [
-              -96.5623478,
-              39.1738569
-            ],
-            [
-              -96.5623474,
-              39.17391
-            ],
-            [
-              -96.5621844,
-              39.1739092
-            ]
-          ]
-        ]
+            [-96.5621844, 39.1739092],
+            [-96.5621837, 39.1740036],
+            [-96.5624933, 39.174005],
+            [-96.5624944, 39.1738576],
+            [-96.5623478, 39.1738569],
+            [-96.5623474, 39.17391],
+            [-96.5621844, 39.1739092],
+          ],
+        ],
       },
-      "id": "way/139491108"
+      id: "way/139491108",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/139639042",
         "addr:city": "Manhattan",
         "addr:housenumber": "1015",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "North 3rd Street",
-        "alt_name": "Dairy Queen",
-        "amenity": "fast_food",
-        "brand": "DQ Grill & Chill",
+        alt_name: "Dairy Queen",
+        amenity: "fast_food",
+        brand: "DQ Grill & Chill",
         "brand:wikidata": "Q1141226",
-        "building": "yes",
-        "cuisine": "ice_cream;burger",
-        "drive_through": "yes",
-        "name": "DQ Grill & Chill",
-        "opening_hours": "11:00-23:00",
-        "phone": "+1 785-776-4117",
-        "takeaway": "yes",
-        "website": "https://www.dairyqueen.com/locations/ks/manhattan/1015-n-3rd-st/1515"
+        building: "yes",
+        cuisine: "burger",
+        drive_through: "yes",
+        name: "DQ Grill & Chill",
+        opening_hours: "11:00-23:00",
+        phone: "+1 785-776-4117",
+        takeaway: "yes",
+        website:
+          "https://www.dairyqueen.com/locations/ks/manhattan/1015-n-3rd-st/1515",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5603525,
-              39.1894897
-            ],
-            [
-              -96.560151,
-              39.1894891
-            ],
-            [
-              -96.5601506,
-              39.1895727
-            ],
-            [
-              -96.560352,
-              39.1895733
-            ],
-            [
-              -96.5603525,
-              39.1894897
-            ]
-          ]
-        ]
+            [-96.5603525, 39.1894897],
+            [-96.560151, 39.1894891],
+            [-96.5601506, 39.1895727],
+            [-96.560352, 39.1895733],
+            [-96.5603525, 39.1894897],
+          ],
+        ],
       },
-      "id": "way/139639042"
+      id: "way/139639042",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/154246521",
         "addr:city": "Manhattan",
         "addr:housenumber": "2711",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "amenity": "fast_food",
-        "brand": "Sonic",
+        amenity: "fast_food",
+        brand: "Sonic",
         "brand:wikidata": "Q7561808",
-        "building": "yes",
-        "cuisine": "burger",
-        "drive_in": "yes",
-        "name": "Sonic",
-        "opening_hours": "Mo-Th 06:00-23:00; Fr-Sa 06:00-24:00; Su 06:00-23:00",
-        "phone": "+1 785-539-5597",
-        "ref": "6145",
-        "takeaway": "yes",
-        "website": "https://locations.sonicdrivein.com/ks/manhattan/2711-anderson-avenue.html"
+        building: "yes",
+        cuisine: "burger",
+        drive_in: "yes",
+        name: "Sonic",
+        opening_hours: "Mo-Th 06:00-23:00; Fr-Sa 06:00-24:00; Su 06:00-23:00",
+        phone: "+1 785-539-5597",
+        ref: "6145",
+        takeaway: "yes",
+        website:
+          "https://locations.sonicdrivein.com/ks/manhattan/2711-anderson-avenue.html",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6064557,
-              39.189368
-            ],
-            [
-              -96.6064543,
-              39.1891811
-            ],
-            [
-              -96.6063688,
-              39.1891815
-            ],
-            [
-              -96.6063697,
-              39.1893115
-            ],
-            [
-              -96.6063391,
-              39.1893116
-            ],
-            [
-              -96.6063396,
-              39.1893685
-            ],
-            [
-              -96.6064397,
-              39.189368
-            ],
-            [
-              -96.6064557,
-              39.189368
-            ]
-          ]
-        ]
+            [-96.6064557, 39.189368],
+            [-96.6064543, 39.1891811],
+            [-96.6063688, 39.1891815],
+            [-96.6063697, 39.1893115],
+            [-96.6063391, 39.1893116],
+            [-96.6063396, 39.1893685],
+            [-96.6064397, 39.189368],
+            [-96.6064557, 39.189368],
+          ],
+        ],
       },
-      "id": "way/154246521"
+      id: "way/154246521",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/155110884",
         "addr:city": "Manhattan",
         "addr:housenumber": "505",
         "addr:postcode": "66502",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "restaurant",
-        "building": "restaurant",
-        "capacity": "319",
-        "cuisine": "steak",
-        "name": "LongHorn Stakehouse",
-        "ref": "5386"
+        amenity: "restaurant",
+        building: "restaurant",
+        capacity: "319",
+        cuisine: "steak",
+        name: "LongHorn Stakehouse",
+        ref: "5386",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5594365,
-              39.1843475
-            ],
-            [
-              -96.5594411,
-              39.1842075
-            ],
-            [
-              -96.5594064,
-              39.1842068
-            ],
-            [
-              -96.5594085,
-              39.1841447
-            ],
-            [
-              -96.5592898,
-              39.1841424
-            ],
-            [
-              -96.5592906,
-              39.1841194
-            ],
-            [
-              -96.559219,
-              39.184118
-            ],
-            [
-              -96.5592183,
-              39.1841396
-            ],
-            [
-              -96.5591829,
-              39.1841389
-            ],
-            [
-              -96.5591791,
-              39.1842551
-            ],
-            [
-              -96.5591657,
-              39.1842548
-            ],
-            [
-              -96.5591628,
-              39.184342
-            ],
-            [
-              -96.5594365,
-              39.1843475
-            ]
-          ]
-        ]
+            [-96.5594365, 39.1843475],
+            [-96.5594411, 39.1842075],
+            [-96.5594064, 39.1842068],
+            [-96.5594085, 39.1841447],
+            [-96.5592898, 39.1841424],
+            [-96.5592906, 39.1841194],
+            [-96.559219, 39.184118],
+            [-96.5592183, 39.1841396],
+            [-96.5591829, 39.1841389],
+            [-96.5591791, 39.1842551],
+            [-96.5591657, 39.1842548],
+            [-96.5591628, 39.184342],
+            [-96.5594365, 39.1843475],
+          ],
+        ],
       },
-      "id": "way/155110884"
+      id: "way/155110884",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/155236843",
         "addr:city": "Manhattan",
         "addr:housenumber": "101",
         "addr:postcode": "66502",
         "addr:street": "Goodfood Place",
-        "amenity": "restaurant",
-        "brand": "IHOP",
+        amenity: "restaurant",
+        brand: "IHOP",
         "brand:wikidata": "Q1185675",
-        "building": "restaurant",
-        "cuisine": "breakfast;pancake",
-        "name": "IHOP",
-        "opening_hours": "24/7",
-        "phone": "785-587-9800",
-        "ref": "3168",
-        "source": "survey"
+        building: "restaurant",
+        cuisine: "breakfast",
+        name: "IHOP",
+        opening_hours: "24/7",
+        phone: "785-587-9800",
+        ref: "3168",
+        source: "survey",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5592012,
-              39.1904758
-            ],
-            [
-              -96.5592442,
-              39.1904706
-            ],
-            [
-              -96.5592605,
-              39.1905515
-            ],
-            [
-              -96.5595176,
-              39.1905204
-            ],
-            [
-              -96.5595005,
-              39.1904356
-            ],
-            [
-              -96.559481,
-              39.1904379
-            ],
-            [
-              -96.5594563,
-              39.1903152
-            ],
-            [
-              -96.5594242,
-              39.1903191
-            ],
-            [
-              -96.55939,
-              39.1903233
-            ],
-            [
-              -96.5593943,
-              39.190345
-            ],
-            [
-              -96.5592258,
-              39.1903654
-            ],
-            [
-              -96.5592279,
-              39.1903758
-            ],
-            [
-              -96.5591822,
-              39.1903813
-            ],
-            [
-              -96.5592012,
-              39.1904758
-            ]
-          ]
-        ]
+            [-96.5592012, 39.1904758],
+            [-96.5592442, 39.1904706],
+            [-96.5592605, 39.1905515],
+            [-96.5595176, 39.1905204],
+            [-96.5595005, 39.1904356],
+            [-96.559481, 39.1904379],
+            [-96.5594563, 39.1903152],
+            [-96.5594242, 39.1903191],
+            [-96.55939, 39.1903233],
+            [-96.5593943, 39.190345],
+            [-96.5592258, 39.1903654],
+            [-96.5592279, 39.1903758],
+            [-96.5591822, 39.1903813],
+            [-96.5592012, 39.1904758],
+          ],
+        ],
       },
-      "id": "way/155236843"
+      id: "way/155236843",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/155236847",
         "addr:city": "Manhattan",
         "addr:housenumber": "1005",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Hostetler Drive",
-        "amenity": "restaurant",
-        "brand": "Pizza Hut",
+        amenity: "restaurant",
+        brand: "Pizza Hut",
         "brand:wikidata": "Q191615",
-        "building": "restaurant",
-        "cuisine": "pizza",
-        "name": "Pizza Hut",
-        "phone": "+1 785-776-4334",
-        "ref": "031934",
-        "source": "survey",
-        "website": "https://locations.pizzahut.com/ks/manhattan/1005-hostetler-drive"
+        building: "restaurant",
+        cuisine: "pizza",
+        name: "Pizza Hut",
+        phone: "+1 785-776-4334",
+        ref: "031934",
+        source: "survey",
+        website:
+          "https://locations.pizzahut.com/ks/manhattan/1005-hostetler-drive",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5578754,
-              39.1901315
-            ],
-            [
-              -96.5578727,
-              39.1899007
-            ],
-            [
-              -96.5577288,
-              39.1899017
-            ],
-            [
-              -96.5577315,
-              39.1901326
-            ],
-            [
-              -96.5578754,
-              39.1901315
-            ]
-          ]
-        ]
+            [-96.5578754, 39.1901315],
+            [-96.5578727, 39.1899007],
+            [-96.5577288, 39.1899017],
+            [-96.5577315, 39.1901326],
+            [-96.5578754, 39.1901315],
+          ],
+        ],
       },
-      "id": "way/155236847"
+      id: "way/155236847",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/155236848",
         "addr:city": "Manhattan",
         "addr:housenumber": "1009",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Limey Pointe",
-        "amenity": "fast_food",
-        "brand": "Taco Bell",
+        amenity: "fast_food",
+        brand: "Taco Bell",
         "brand:wikidata": "Q752941",
-        "building": "restaurant",
-        "cuisine": "tex-mex",
-        "description": "Drive-through only after 22:00",
-        "drive_through": "yes",
-        "name": "Taco Bell",
-        "opening_hours": "Su-Th 10:00-02:00, Fr-Sa 10:00-03:00",
-        "phone": "+1 785-539-8020",
-        "ref": "024102",
-        "source": "survey",
-        "takeaway": "yes",
-        "website": "https://locations.tacobell.com/ks/manhattan/1009-limey-pointe.html",
-        "wheelchair": "yes"
+        building: "restaurant",
+        cuisine: "tex-mex",
+        description: "Drive-through only after 22:00",
+        drive_through: "yes",
+        name: "Taco Bell",
+        opening_hours: "Su-Th 10:00-02:00, Fr-Sa 10:00-03:00",
+        phone: "+1 785-539-8020",
+        ref: "024102",
+        source: "survey",
+        takeaway: "yes",
+        website:
+          "https://locations.tacobell.com/ks/manhattan/1009-limey-pointe.html",
+        wheelchair: "yes",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5587063,
-              39.1900055
-            ],
-            [
-              -96.5586498,
-              39.1897864
-            ],
-            [
-              -96.5585854,
-              39.1897964
-            ],
-            [
-              -96.5585441,
-              39.1898028
-            ],
-            [
-              -96.5585622,
-              39.1898731
-            ],
-            [
-              -96.5585441,
-              39.1898759
-            ],
-            [
-              -96.5585497,
-              39.1898977
-            ],
-            [
-              -96.5585551,
-              39.1899188
-            ],
-            [
-              -96.5585731,
-              39.189916
-            ],
-            [
-              -96.5586005,
-              39.1900219
-            ],
-            [
-              -96.5587063,
-              39.1900055
-            ]
-          ]
-        ]
+            [-96.5587063, 39.1900055],
+            [-96.5586498, 39.1897864],
+            [-96.5585854, 39.1897964],
+            [-96.5585441, 39.1898028],
+            [-96.5585622, 39.1898731],
+            [-96.5585441, 39.1898759],
+            [-96.5585497, 39.1898977],
+            [-96.5585551, 39.1899188],
+            [-96.5585731, 39.189916],
+            [-96.5586005, 39.1900219],
+            [-96.5587063, 39.1900055],
+          ],
+        ],
       },
-      "id": "way/155236848"
+      id: "way/155236848",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/155236849",
         "addr:city": "Manhattan",
         "addr:housenumber": "100",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Goodfood Place",
-        "amenity": "fast_food",
-        "brand": "Wendy's",
+        amenity: "fast_food",
+        brand: "Wendy's",
         "brand:wikidata": "Q550258",
-        "building": "restaurant",
-        "cuisine": "burger",
-        "description": "Drive-through only after 22:00",
-        "drive_through": "yes",
-        "internet_access": "wlan",
+        building: "restaurant",
+        cuisine: "burger",
+        description: "Drive-through only after 22:00",
+        drive_through: "yes",
+        internet_access: "wlan",
         "internet_access:fee": "no",
-        "name": "Wendy's",
-        "opening_hours": "09:00-22:00",
+        name: "Wendy's",
+        opening_hours: "09:00-22:00",
         "opening_hours:drive_through": "Mo-Su 06:30-00:00",
-        "phone": "+1 785-539-8683",
-        "source": "survey",
-        "takeaway": "yes",
-        "website": "https://locations.wendys.com/united-states/ks/manhattan/100-good-food-place"
+        phone: "+1 785-539-8683",
+        source: "survey",
+        takeaway: "yes",
+        website:
+          "https://locations.wendys.com/united-states/ks/manhattan/100-good-food-place",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5591388,
-              39.1899209
-            ],
-            [
-              -96.559094,
-              39.1897529
-            ],
-            [
-              -96.5590843,
-              39.1897544
-            ],
-            [
-              -96.5590729,
-              39.1897562
-            ],
-            [
-              -96.5590575,
-              39.1896985
-            ],
-            [
-              -96.5589322,
-              39.1897185
-            ],
-            [
-              -96.5589597,
-              39.1898219
-            ],
-            [
-              -96.5589775,
-              39.1898191
-            ],
-            [
-              -96.5589911,
-              39.1898169
-            ],
-            [
-              -96.5590023,
-              39.189859
-            ],
-            [
-              -96.558981,
-              39.1898624
-            ],
-            [
-              -96.5590024,
-              39.1899427
-            ],
-            [
-              -96.5591388,
-              39.1899209
-            ]
-          ]
-        ]
+            [-96.5591388, 39.1899209],
+            [-96.559094, 39.1897529],
+            [-96.5590843, 39.1897544],
+            [-96.5590729, 39.1897562],
+            [-96.5590575, 39.1896985],
+            [-96.5589322, 39.1897185],
+            [-96.5589597, 39.1898219],
+            [-96.5589775, 39.1898191],
+            [-96.5589911, 39.1898169],
+            [-96.5590023, 39.189859],
+            [-96.558981, 39.1898624],
+            [-96.5590024, 39.1899427],
+            [-96.5591388, 39.1899209],
+          ],
+        ],
       },
-      "id": "way/155236849"
+      id: "way/155236849",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/168353294",
         "addr:city": "Manhattan",
         "addr:housenumber": "622",
         "addr:postcode": "66502",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "restaurant",
-        "building": "yes",
-        "cuisine": "mexican",
-        "name": "Carlos O'Kelly's",
-        "opening_hours": "Mo-Th,Su 11:00-20:00; Fr-Sa 11:00-21:00"
+        amenity: "restaurant",
+        building: "yes",
+        cuisine: "mexican",
+        name: "Carlos O'Kelly's",
+        opening_hours: "Mo-Th,Su 11:00-20:00; Fr-Sa 11:00-21:00",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5567959,
-              39.1843467
-            ],
-            [
-              -96.5567958,
-              39.1842867
-            ],
-            [
-              -96.5568304,
-              39.1842867
-            ],
-            [
-              -96.5568301,
-              39.1840869
-            ],
-            [
-              -96.5564008,
-              39.1840874
-            ],
-            [
-              -96.5564011,
-              39.1842883
-            ],
-            [
-              -96.5565253,
-              39.1842882
-            ],
-            [
-              -96.5565254,
-              39.1843469
-            ],
-            [
-              -96.5567959,
-              39.1843467
-            ]
-          ]
-        ]
+            [-96.5567959, 39.1843467],
+            [-96.5567958, 39.1842867],
+            [-96.5568304, 39.1842867],
+            [-96.5568301, 39.1840869],
+            [-96.5564008, 39.1840874],
+            [-96.5564011, 39.1842883],
+            [-96.5565253, 39.1842882],
+            [-96.5565254, 39.1843469],
+            [-96.5567959, 39.1843467],
+          ],
+        ],
       },
-      "id": "way/168353294"
+      id: "way/168353294",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/168353295",
         "addr:city": "Manhattan",
         "addr:housenumber": "325",
         "addr:postcode": "66502",
         "addr:street": "East Poyntz Avenue",
-        "amenity": "fast_food",
-        "building": "yes",
-        "highchair": "yes",
-        "name": "Hawaiian Bros Island Grill",
-        "opening_hours": "Mo-Th,Su 11:00-24:00; Fr-Sa 11:00-02:00",
-        "outdoor_seating": "yes",
-        "phone": "+1 785-229-0079",
-        "ref": "61",
-        "takeaway": "yes",
-        "toilets": "yes",
-        "website": "https://hawaiianbros.com/locations/manhattan-ks/"
+        amenity: "fast_food",
+        building: "yes",
+        highchair: "yes",
+        name: "Hawaiian Bros Island Grill",
+        opening_hours: "Mo-Th,Su 11:00-24:00; Fr-Sa 11:00-02:00",
+        outdoor_seating: "yes",
+        phone: "+1 785-229-0079",
+        ref: "61",
+        takeaway: "yes",
+        toilets: "yes",
+        website: "https://hawaiianbros.com/locations/manhattan-ks/",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5534464,
-              39.1827679
-            ],
-            [
-              -96.5534038,
-              39.1828013
-            ],
-            [
-              -96.5533872,
-              39.1827885
-            ],
-            [
-              -96.5533586,
-              39.1828109
-            ],
-            [
-              -96.5533758,
-              39.1828241
-            ],
-            [
-              -96.553288,
-              39.1828927
-            ],
-            [
-              -96.5533162,
-              39.1829144
-            ],
-            [
-              -96.5533203,
-              39.1829112
-            ],
-            [
-              -96.553408,
-              39.1829786
-            ],
-            [
-              -96.5534308,
-              39.1829607
-            ],
-            [
-              -96.5534965,
-              39.1830112
-            ],
-            [
-              -96.5536285,
-              39.1829079
-            ],
-            [
-              -96.5534464,
-              39.1827679
-            ]
-          ]
-        ]
+            [-96.5534464, 39.1827679],
+            [-96.5534038, 39.1828013],
+            [-96.5533872, 39.1827885],
+            [-96.5533586, 39.1828109],
+            [-96.5533758, 39.1828241],
+            [-96.553288, 39.1828927],
+            [-96.5533162, 39.1829144],
+            [-96.5533203, 39.1829112],
+            [-96.553408, 39.1829786],
+            [-96.5534308, 39.1829607],
+            [-96.5534965, 39.1830112],
+            [-96.5536285, 39.1829079],
+            [-96.5534464, 39.1827679],
+          ],
+        ],
       },
-      "id": "way/168353295"
+      id: "way/168353295",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/168658668",
         "addr:city": "Manhattan",
         "addr:housenumber": "223",
         "addr:street": "McCall Road",
-        "amenity": "restaurant",
-        "building": "restaurant",
-        "cuisine": "barbecue",
-        "name": "Cox Bros. BBQ",
-        "opening_hours": "Mo-Th,Su 11:00-21:00; Fr-Sa 11:00-22:00",
-        "phone": "785-539-0770",
-        "source": "survey"
+        amenity: "restaurant",
+        building: "restaurant",
+        cuisine: "barbecue",
+        name: "Cox Bros. BBQ",
+        opening_hours: "Mo-Th,Su 11:00-21:00; Fr-Sa 11:00-22:00",
+        phone: "785-539-0770",
+        source: "survey",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5560819,
-              39.189847
-            ],
-            [
-              -96.5559572,
-              39.1898474
-            ],
-            [
-              -96.5559574,
-              39.1898809
-            ],
-            [
-              -96.555956,
-              39.1898813
-            ],
-            [
-              -96.5559392,
-              39.1898696
-            ],
-            [
-              -96.5559244,
-              39.1898691
-            ],
-            [
-              -96.5559113,
-              39.189873
-            ],
-            [
-              -96.5559022,
-              39.1898868
-            ],
-            [
-              -96.5559031,
-              39.1898956
-            ],
-            [
-              -96.5559065,
-              39.1899028
-            ],
-            [
-              -96.5559108,
-              39.1899074
-            ],
-            [
-              -96.5559197,
-              39.189912
-            ],
-            [
-              -96.555921,
-              39.1901417
-            ],
-            [
-              -96.5560969,
-              39.1901411
-            ],
-            [
-              -96.5560955,
-              39.1898844
-            ],
-            [
-              -96.5560821,
-              39.1898845
-            ],
-            [
-              -96.5560819,
-              39.189847
-            ]
-          ]
-        ]
+            [-96.5560819, 39.189847],
+            [-96.5559572, 39.1898474],
+            [-96.5559574, 39.1898809],
+            [-96.555956, 39.1898813],
+            [-96.5559392, 39.1898696],
+            [-96.5559244, 39.1898691],
+            [-96.5559113, 39.189873],
+            [-96.5559022, 39.1898868],
+            [-96.5559031, 39.1898956],
+            [-96.5559065, 39.1899028],
+            [-96.5559108, 39.1899074],
+            [-96.5559197, 39.189912],
+            [-96.555921, 39.1901417],
+            [-96.5560969, 39.1901411],
+            [-96.5560955, 39.1898844],
+            [-96.5560821, 39.1898845],
+            [-96.5560819, 39.189847],
+          ],
+        ],
       },
-      "id": "way/168658668"
+      id: "way/168658668",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/168658670",
         "addr:city": "Manhattan",
         "addr:housenumber": "229",
         "addr:postcode": "66502",
         "addr:street": "McCall Road",
-        "amenity": "fast_food",
-        "brand": "Freddy's",
+        amenity: "fast_food",
+        brand: "Freddy's",
         "brand:wikidata": "Q5496837",
-        "building": "restaurant",
-        "cuisine": "ice_cream;burger",
-        "name": "Freddy's",
-        "official_name": "Freddy's Frozen Custard & Steakburgers",
-        "opening_hours": "Su-Th 10:30-22:00; Fr-Sa 10:30-23:00",
-        "source": "survey",
-        "takeaway": "yes"
+        building: "restaurant",
+        cuisine: "burger",
+        name: "Freddy's",
+        official_name: "Freddy's Frozen Custard & Steakburgers",
+        opening_hours: "Su-Th 10:30-22:00; Fr-Sa 10:30-23:00",
+        source: "survey",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5554857,
-              39.189868
-            ],
-            [
-              -96.5553039,
-              39.1898696
-            ],
-            [
-              -96.5553068,
-              39.190064
-            ],
-            [
-              -96.5554886,
-              39.1900624
-            ],
-            [
-              -96.5554857,
-              39.189868
-            ]
-          ]
-        ]
+            [-96.5554857, 39.189868],
+            [-96.5553039, 39.1898696],
+            [-96.5553068, 39.190064],
+            [-96.5554886, 39.1900624],
+            [-96.5554857, 39.189868],
+          ],
+        ],
       },
-      "id": "way/168658670"
+      id: "way/168658670",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/266068935",
         "addr:city": "Manhattan",
         "addr:housenumber": "421",
         "addr:postcode": "66502",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "fast_food",
-        "building": "yes",
-        "cuisine": "chinese",
-        "drive_through": "yes",
-        "name": "Imperial Garden Express",
-        "phone": "785-537-1888",
-        "takeaway": "yes",
-        "website": "https://www.imperialmanhattanks.com/"
+        amenity: "fast_food",
+        building: "yes",
+        cuisine: "chinese",
+        drive_through: "yes",
+        name: "Imperial Garden Express",
+        phone: "785-537-1888",
+        takeaway: "yes",
+        website: "https://www.imperialmanhattanks.com/",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5590534,
-              39.1836776
-            ],
-            [
-              -96.5591846,
-              39.1836798
-            ],
-            [
-              -96.5591883,
-              39.1835414
-            ],
-            [
-              -96.5590571,
-              39.1835393
-            ],
-            [
-              -96.5590534,
-              39.1836776
-            ]
-          ]
-        ]
+            [-96.5590534, 39.1836776],
+            [-96.5591846, 39.1836798],
+            [-96.5591883, 39.1835414],
+            [-96.5590571, 39.1835393],
+            [-96.5590534, 39.1836776],
+          ],
+        ],
       },
-      "id": "way/266068935"
+      id: "way/266068935",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/266069319",
         "addr:city": "Manhattan",
         "addr:housenumber": "822",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "North 4th Street",
-        "amenity": "fast_food",
-        "brand": "McDonald's",
+        amenity: "fast_food",
+        brand: "McDonald's",
         "brand:wikidata": "Q38076",
-        "building": "yes",
-        "cuisine": "burger",
-        "drive_through": "yes",
-        "internet_access": "wlan",
-        "name": "McDonald's",
-        "opening_hours": "06:00-22:00",
-        "phone": "+1 785-789-1008",
-        "takeaway": "yes",
-        "website": "https://www.mcdonalds.com/us/en-us/location/2753.html"
+        building: "yes",
+        cuisine: "burger",
+        drive_through: "yes",
+        internet_access: "wlan",
+        name: "McDonald's",
+        opening_hours: "06:00-22:00",
+        phone: "+1 785-789-1008",
+        takeaway: "yes",
+        website: "https://www.mcdonalds.com/us/en-us/location/2753.html",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5609485,
-              39.1872814
-            ],
-            [
-              -96.5613556,
-              39.1872872
-            ],
-            [
-              -96.5613602,
-              39.1870933
-            ],
-            [
-              -96.5612314,
-              39.1870914
-            ],
-            [
-              -96.5612013,
-              39.187091
-            ],
-            [
-              -96.5611999,
-              39.1871509
-            ],
-            [
-              -96.5609558,
-              39.1871474
-            ],
-            [
-              -96.5609517,
-              39.1871474
-            ],
-            [
-              -96.5609485,
-              39.1872814
-            ]
-          ]
-        ]
+            [-96.5609485, 39.1872814],
+            [-96.5613556, 39.1872872],
+            [-96.5613602, 39.1870933],
+            [-96.5612314, 39.1870914],
+            [-96.5612013, 39.187091],
+            [-96.5611999, 39.1871509],
+            [-96.5609558, 39.1871474],
+            [-96.5609517, 39.1871474],
+            [-96.5609485, 39.1872814],
+          ],
+        ],
       },
-      "id": "way/266069319"
+      id: "way/266069319",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/266069321",
         "addr:city": "Manhattan",
         "addr:housenumber": "901",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "North 3rd Street",
-        "alt_name": "Kentucky Fried Chicken",
-        "amenity": "fast_food",
-        "brand": "KFC",
+        alt_name: "Kentucky Fried Chicken",
+        amenity: "fast_food",
+        brand: "KFC",
         "brand:wikidata": "Q524757",
-        "building": "yes",
-        "cuisine": "chicken",
-        "name": "KFC",
-        "phone": "+1 785-776-9031",
-        "ref": "C937002",
-        "takeaway": "yes",
-        "website": "https://locations.kfc.com/ks/manhattan/901-n-third-street"
+        building: "yes",
+        cuisine: "chicken",
+        name: "KFC",
+        phone: "+1 785-776-9031",
+        ref: "C937002",
+        takeaway: "yes",
+        website: "https://locations.kfc.com/ks/manhattan/901-n-third-street",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5602189,
-              39.1880567
-            ],
-            [
-              -96.5605473,
-              39.1880599
-            ],
-            [
-              -96.5605489,
-              39.1879618
-            ],
-            [
-              -96.5602205,
-              39.1879587
-            ],
-            [
-              -96.5602189,
-              39.1880567
-            ]
-          ]
-        ]
+            [-96.5602189, 39.1880567],
+            [-96.5605473, 39.1880599],
+            [-96.5605489, 39.1879618],
+            [-96.5602205, 39.1879587],
+            [-96.5602189, 39.1880567],
+          ],
+        ],
       },
-      "id": "way/266069321"
+      id: "way/266069321",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/292349537",
         "addr:city": "Manhattan",
         "addr:housenumber": "636",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "fast_food",
-        "branch": "Manhattan",
-        "brand": "Chick-fil-A",
+        amenity: "fast_food",
+        branch: "Manhattan",
+        brand: "Chick-fil-A",
         "brand:wikidata": "Q491516",
-        "building": "yes",
-        "cuisine": "chicken",
-        "delivery": "yes",
-        "drive_through": "yes",
-        "indoor_seating": "no",
-        "internet_access": "wlan",
+        building: "yes",
+        cuisine: "chicken",
+        delivery: "yes",
+        drive_through: "yes",
+        indoor_seating: "no",
+        internet_access: "wlan",
         "internet_access:fee": "no",
-        "name": "Chick-fil-A",
-        "opening_hours": "Mo-Sa 6:30-22:00",
-        "phone": "+1 785-537-2130",
-        "ref": "03278",
-        "takeaway": "yes",
-        "website": "https://www.chick-fil-a.com/locations/ks/manhattan-ks"
+        name: "Chick-fil-A",
+        opening_hours: "Mo-Sa 6:30-22:00",
+        phone: "+1 785-537-2130",
+        ref: "03278",
+        takeaway: "yes",
+        website: "https://www.chick-fil-a.com/locations/ks/manhattan-ks",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5580944,
-              39.1852326
-            ],
-            [
-              -96.5580932,
-              39.1851682
-            ],
-            [
-              -96.5577126,
-              39.1851726
-            ],
-            [
-              -96.5577144,
-              39.1852667
-            ],
-            [
-              -96.5577566,
-              39.1852663
-            ],
-            [
-              -96.5577568,
-              39.1852783
-            ],
-            [
-              -96.5578066,
-              39.1852777
-            ],
-            [
-              -96.5578065,
-              39.1852723
-            ],
-            [
-              -96.5579482,
-              39.1852705
-            ],
-            [
-              -96.5579484,
-              39.1852799
-            ],
-            [
-              -96.5579967,
-              39.1852793
-            ],
-            [
-              -96.5579963,
-              39.185261
-            ],
-            [
-              -96.5580548,
-              39.1852602
-            ],
-            [
-              -96.5580781,
-              39.1852514
-            ],
-            [
-              -96.5580944,
-              39.1852326
-            ]
-          ]
-        ]
+            [-96.5580944, 39.1852326],
+            [-96.5580932, 39.1851682],
+            [-96.5577126, 39.1851726],
+            [-96.5577144, 39.1852667],
+            [-96.5577566, 39.1852663],
+            [-96.5577568, 39.1852783],
+            [-96.5578066, 39.1852777],
+            [-96.5578065, 39.1852723],
+            [-96.5579482, 39.1852705],
+            [-96.5579484, 39.1852799],
+            [-96.5579967, 39.1852793],
+            [-96.5579963, 39.185261],
+            [-96.5580548, 39.1852602],
+            [-96.5580781, 39.1852514],
+            [-96.5580944, 39.1852326],
+          ],
+        ],
       },
-      "id": "way/292349537"
+      id: "way/292349537",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/362493652",
-        "amenity": "restaurant",
-        "brand": "Chili's",
+        amenity: "restaurant",
+        brand: "Chili's",
         "brand:wikidata": "Q1072948",
-        "building": "yes",
-        "cuisine": "tex-mex",
-        "name": "Chili's",
-        "official_name": "Chili's Grill & Bar"
+        building: "yes",
+        cuisine: "tex-mex",
+        name: "Chili's",
+        official_name: "Chili's Grill & Bar",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5561763,
-              39.1781912
-            ],
-            [
-              -96.5562094,
-              39.1780063
-            ],
-            [
-              -96.5559062,
-              39.1779737
-            ],
-            [
-              -96.5558731,
-              39.1781587
-            ],
-            [
-              -96.5561763,
-              39.1781912
-            ]
-          ]
-        ]
+            [-96.5561763, 39.1781912],
+            [-96.5562094, 39.1780063],
+            [-96.5559062, 39.1779737],
+            [-96.5558731, 39.1781587],
+            [-96.5561763, 39.1781912],
+          ],
+        ],
       },
-      "id": "way/362493652"
+      id: "way/362493652",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/362684493",
         "addr:city": "Manhattan",
         "addr:housenumber": "1103",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "North 3rd Street",
-        "amenity": "restaurant",
-        "building": "yes",
-        "cuisine": "mexican",
-        "name": "Antojitos El Sol"
+        amenity: "restaurant",
+        building: "yes",
+        cuisine: "mexican",
+        name: "Antojitos El Sol",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5605142,
-              39.190144
-            ],
-            [
-              -96.5606001,
-              39.190144
-            ],
-            [
-              -96.5606242,
-              39.1900567
-            ],
-            [
-              -96.5606243,
-              39.1899632
-            ],
-            [
-              -96.5605491,
-              39.1899632
-            ],
-            [
-              -96.5605276,
-              39.1899361
-            ],
-            [
-              -96.5604955,
-              39.1899278
-            ],
-            [
-              -96.5604579,
-              39.1899278
-            ],
-            [
-              -96.560423,
-              39.1899465
-            ],
-            [
-              -96.5604096,
-              39.1899777
-            ],
-            [
-              -96.5604284,
-              39.1900068
-            ],
-            [
-              -96.5604713,
-              39.1900193
-            ],
-            [
-              -96.5605142,
-              39.190144
-            ]
-          ]
-        ]
+            [-96.5605142, 39.190144],
+            [-96.5606001, 39.190144],
+            [-96.5606242, 39.1900567],
+            [-96.5606243, 39.1899632],
+            [-96.5605491, 39.1899632],
+            [-96.5605276, 39.1899361],
+            [-96.5604955, 39.1899278],
+            [-96.5604579, 39.1899278],
+            [-96.560423, 39.1899465],
+            [-96.5604096, 39.1899777],
+            [-96.5604284, 39.1900068],
+            [-96.5604713, 39.1900193],
+            [-96.5605142, 39.190144],
+          ],
+        ],
       },
-      "id": "way/362684493"
+      id: "way/362684493",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/439967662",
         "addr:city": "Manhattan",
         "addr:housenumber": "1620",
         "addr:postcode": "66502",
         "addr:street": "Fort Riley Boulevard",
         "addr:suite": "113",
-        "amenity": "restaurant",
-        "building": "yes",
-        "name": "Baan Thai",
-        "opening_hours": "Mo-Sa 10:30-22:00; Su 11:00-21:00",
-        "phone": "785-320-5990",
-        "smoking": "no",
-        "website": "http://www.baanthaikansas.com"
+        amenity: "restaurant",
+        building: "yes",
+        name: "Baan Thai",
+        opening_hours: "Mo-Sa 10:30-22:00; Su 11:00-21:00",
+        phone: "785-320-5990",
+        smoking: "no",
+        website: "http://www.baanthaikansas.com",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.583735,
-              39.1745863
-            ],
-            [
-              -96.5837376,
-              39.1744858
-            ],
-            [
-              -96.5835553,
-              39.1744829
-            ],
-            [
-              -96.5835211,
-              39.1744293
-            ],
-            [
-              -96.5834781,
-              39.1744817
-            ],
-            [
-              -96.5834453,
-              39.1744812
-            ],
-            [
-              -96.5834426,
-              39.1745816
-            ],
-            [
-              -96.583735,
-              39.1745863
-            ]
-          ]
-        ]
+            [-96.583735, 39.1745863],
+            [-96.5837376, 39.1744858],
+            [-96.5835553, 39.1744829],
+            [-96.5835211, 39.1744293],
+            [-96.5834781, 39.1744817],
+            [-96.5834453, 39.1744812],
+            [-96.5834426, 39.1745816],
+            [-96.583735, 39.1745863],
+          ],
+        ],
       },
-      "id": "way/439967662"
+      id: "way/439967662",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/556923790",
         "addr:city": "Manhattan",
         "addr:housenumber": "1115",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Bluemont Avenue",
-        "amenity": "fast_food",
-        "brand": "Popeyes",
+        amenity: "fast_food",
+        brand: "Popeyes",
         "brand:wikidata": "Q1330910",
-        "building": "yes",
-        "cuisine": "chicken",
-        "delivery": "yes",
-        "drive_through": "yes",
-        "indoor_seating": "yes",
-        "internet_access": "wlan",
-        "name": "Popeyes",
-        "official_name": "Popeyes Louisiana Kitchen",
-        "opening_hours": "Su-We 10:30-22:00; Th-Sa 10:30-24:00",
-        "operator": "SmitCo Eateries",
-        "phone": "+1 785-320-5030",
-        "ref": "12235",
-        "takeaway": "yes",
-        "website": "https://www.popeyes.com/store-locator/store/restaurant_85393"
+        building: "yes",
+        cuisine: "chicken",
+        delivery: "yes",
+        drive_through: "yes",
+        indoor_seating: "yes",
+        internet_access: "wlan",
+        name: "Popeyes",
+        official_name: "Popeyes Louisiana Kitchen",
+        opening_hours: "Su-We 10:30-22:00; Th-Sa 10:30-24:00",
+        operator: "SmitCo Eateries",
+        phone: "+1 785-320-5030",
+        ref: "12235",
+        takeaway: "yes",
+        website: "https://www.popeyes.com/store-locator/store/restaurant_85393",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5737397,
-              39.1865738
-            ],
-            [
-              -96.5738247,
-              39.1865747
-            ],
-            [
-              -96.5738257,
-              39.1865151
-            ],
-            [
-              -96.5738342,
-              39.1865152
-            ],
-            [
-              -96.5738368,
-              39.186362
-            ],
-            [
-              -96.5737364,
-              39.186361
-            ],
-            [
-              -96.5737346,
-              39.1864631
-            ],
-            [
-              -96.5737245,
-              39.186463
-            ],
-            [
-              -96.5737234,
-              39.1865256
-            ],
-            [
-              -96.5737405,
-              39.1865258
-            ],
-            [
-              -96.5737397,
-              39.1865738
-            ]
-          ]
-        ]
+            [-96.5737397, 39.1865738],
+            [-96.5738247, 39.1865747],
+            [-96.5738257, 39.1865151],
+            [-96.5738342, 39.1865152],
+            [-96.5738368, 39.186362],
+            [-96.5737364, 39.186361],
+            [-96.5737346, 39.1864631],
+            [-96.5737245, 39.186463],
+            [-96.5737234, 39.1865256],
+            [-96.5737405, 39.1865258],
+            [-96.5737397, 39.1865738],
+          ],
+        ],
       },
-      "id": "way/556923790"
+      id: "way/556923790",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/561131043",
         "addr:city": "Manhattan",
         "addr:housenumber": "409",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "McCall Road",
-        "alt_name": "Dunkin' Donuts",
-        "amenity": "fast_food",
-        "brand": "Dunkin'",
+        alt_name: "Dunkin' Donuts",
+        amenity: "fast_food",
+        brand: "Dunkin'",
         "brand:wikidata": "Q847743",
-        "building": "yes",
-        "cuisine": "donut;coffee_shop",
-        "drive_through": "yes",
-        "name": "Dunkin'",
-        "opening_hours": "05:00-21:00",
-        "phone": "+1 785-539-4993",
-        "ref": "354483",
-        "takeaway": "yes",
-        "website": "https://locations.dunkindonuts.com/en/ks/manhattan/409-mccall-rd/354483"
+        building: "yes",
+        cuisine: "donut",
+        drive_through: "yes",
+        name: "Dunkin'",
+        opening_hours: "05:00-21:00",
+        phone: "+1 785-539-4993",
+        ref: "354483",
+        takeaway: "yes",
+        website:
+          "https://locations.dunkindonuts.com/en/ks/manhattan/409-mccall-rd/354483",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5530661,
-              39.1899928
-            ],
-            [
-              -96.5530659,
-              39.1899369
-            ],
-            [
-              -96.5530752,
-              39.1899369
-            ],
-            [
-              -96.5530751,
-              39.1899005
-            ],
-            [
-              -96.5530658,
-              39.1899005
-            ],
-            [
-              -96.5530656,
-              39.189846
-            ],
-            [
-              -96.5529449,
-              39.1898463
-            ],
-            [
-              -96.5529454,
-              39.189993
-            ],
-            [
-              -96.5530031,
-              39.1899929
-            ],
-            [
-              -96.5530033,
-              39.1900482
-            ],
-            [
-              -96.5530499,
-              39.1900481
-            ],
-            [
-              -96.5530497,
-              39.1899928
-            ],
-            [
-              -96.5530661,
-              39.1899928
-            ]
-          ]
-        ]
+            [-96.5530661, 39.1899928],
+            [-96.5530659, 39.1899369],
+            [-96.5530752, 39.1899369],
+            [-96.5530751, 39.1899005],
+            [-96.5530658, 39.1899005],
+            [-96.5530656, 39.189846],
+            [-96.5529449, 39.1898463],
+            [-96.5529454, 39.189993],
+            [-96.5530031, 39.1899929],
+            [-96.5530033, 39.1900482],
+            [-96.5530499, 39.1900481],
+            [-96.5530497, 39.1899928],
+            [-96.5530661, 39.1899928],
+          ],
+        ],
       },
-      "id": "way/561131043"
+      id: "way/561131043",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/561131044",
         "addr:city": "Manhattan",
         "addr:housenumber": "401",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "McCall Road",
-        "amenity": "fast_food",
-        "brand": "Burger King",
+        amenity: "fast_food",
+        brand: "Burger King",
         "brand:wikidata": "Q177054",
-        "building": "yes",
-        "cuisine": "burger",
-        "drive_through": "yes",
-        "internet_access": "wlan",
-        "name": "Burger King",
-        "opening_hours": "Mo-Th 06:00-23:00; Fr-Sa 06:00-02:30; Su 07:00-23:00",
-        "phone": "+1 785-537-5170",
-        "ref": "21514",
-        "takeaway": "yes",
-        "website": "https://www.bk.com/store-locator/store/restaurant_26121"
+        building: "yes",
+        cuisine: "burger",
+        drive_through: "yes",
+        internet_access: "wlan",
+        name: "Burger King",
+        opening_hours: "Mo-Th 06:00-23:00; Fr-Sa 06:00-02:30; Su 07:00-23:00",
+        phone: "+1 785-537-5170",
+        ref: "21514",
+        takeaway: "yes",
+        website: "https://www.bk.com/store-locator/store/restaurant_26121",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5546255,
-              39.190025
-            ],
-            [
-              -96.5546258,
-              39.189846
-            ],
-            [
-              -96.5544533,
-              39.1898458
-            ],
-            [
-              -96.5544532,
-              39.1899078
-            ],
-            [
-              -96.5544378,
-              39.1899078
-            ],
-            [
-              -96.5544377,
-              39.1899444
-            ],
-            [
-              -96.5544532,
-              39.1899444
-            ],
-            [
-              -96.554453,
-              39.1900093
-            ],
-            [
-              -96.5545524,
-              39.1900094
-            ],
-            [
-              -96.5545524,
-              39.1900249
-            ],
-            [
-              -96.5546255,
-              39.190025
-            ]
-          ]
-        ]
+            [-96.5546255, 39.190025],
+            [-96.5546258, 39.189846],
+            [-96.5544533, 39.1898458],
+            [-96.5544532, 39.1899078],
+            [-96.5544378, 39.1899078],
+            [-96.5544377, 39.1899444],
+            [-96.5544532, 39.1899444],
+            [-96.554453, 39.1900093],
+            [-96.5545524, 39.1900094],
+            [-96.5545524, 39.1900249],
+            [-96.5546255, 39.190025],
+          ],
+        ],
       },
-      "id": "way/561131044"
+      id: "way/561131044",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/561131045",
         "addr:city": "Manhattan",
         "addr:housenumber": "405",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "McCall Road",
-        "amenity": "fast_food",
-        "brand": "Arby's",
+        amenity: "fast_food",
+        brand: "Arby's",
         "brand:wikidata": "Q630866",
-        "building": "commercial",
-        "capacity": "95",
-        "check_date": "2024-06-21",
-        "cuisine": "sandwich",
-        "drive_through": "yes",
-        "name": "Arby's",
-        "opening_hours": "09:30-23:00",
-        "phone": "+1 785-537-0990",
-        "ref": "8507",
-        "takeaway": "yes",
-        "website": "https://www.arbys.com/locations/us/ks/manhattan/405-mccall-rd/store-8507/"
+        building: "commercial",
+        capacity: "95",
+        check_date: "2024-06-21",
+        cuisine: "sandwich",
+        drive_through: "yes",
+        name: "Arby's",
+        opening_hours: "09:30-23:00",
+        phone: "+1 785-537-0990",
+        ref: "8507",
+        takeaway: "yes",
+        website:
+          "https://www.arbys.com/locations/us/ks/manhattan/405-mccall-rd/store-8507/",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5540065,
-              39.1901019
-            ],
-            [
-              -96.5540062,
-              39.190066
-            ],
-            [
-              -96.5540121,
-              39.190066
-            ],
-            [
-              -96.5540109,
-              39.1899227
-            ],
-            [
-              -96.5540049,
-              39.1899227
-            ],
-            [
-              -96.5540044,
-              39.1898712
-            ],
-            [
-              -96.553887,
-              39.1898718
-            ],
-            [
-              -96.553888,
-              39.189986
-            ],
-            [
-              -96.5538742,
-              39.1899861
-            ],
-            [
-              -96.553875,
-              39.1900725
-            ],
-            [
-              -96.5538888,
-              39.1900724
-            ],
-            [
-              -96.553889,
-              39.1901026
-            ],
-            [
-              -96.5540065,
-              39.1901019
-            ]
-          ]
-        ]
+            [-96.5540065, 39.1901019],
+            [-96.5540062, 39.190066],
+            [-96.5540121, 39.190066],
+            [-96.5540109, 39.1899227],
+            [-96.5540049, 39.1899227],
+            [-96.5540044, 39.1898712],
+            [-96.553887, 39.1898718],
+            [-96.553888, 39.189986],
+            [-96.5538742, 39.1899861],
+            [-96.553875, 39.1900725],
+            [-96.5538888, 39.1900724],
+            [-96.553889, 39.1901026],
+            [-96.5540065, 39.1901019],
+          ],
+        ],
       },
-      "id": "way/561131045"
+      id: "way/561131045",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/561131056",
         "addr:city": "Manhattan",
         "addr:housenumber": "511",
         "addr:postcode": "66502",
         "addr:street": "McCall Road",
-        "amenity": "restaurant",
-        "brand": "Pizza Ranch",
+        amenity: "restaurant",
+        brand: "Pizza Ranch",
         "brand:wikidata": "Q7199978",
-        "building": "yes",
-        "cuisine": "pizza",
-        "drive_through": "yes",
-        "name": "Pizza Ranch",
-        "phone": "785-537-2200",
-        "ref": "4340"
+        building: "yes",
+        cuisine: "pizza",
+        drive_through: "yes",
+        name: "Pizza Ranch",
+        phone: "785-537-2200",
+        ref: "4340",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5510903,
-              39.1902573
-            ],
-            [
-              -96.5510914,
-              39.190103
-            ],
-            [
-              -96.5511182,
-              39.1901031
-            ],
-            [
-              -96.551119,
-              39.1899917
-            ],
-            [
-              -96.5508293,
-              39.1899905
-            ],
-            [
-              -96.5508281,
-              39.19016
-            ],
-            [
-              -96.5508496,
-              39.1901601
-            ],
-            [
-              -96.5508489,
-              39.1902563
-            ],
-            [
-              -96.5510903,
-              39.1902573
-            ]
-          ]
-        ]
+            [-96.5510903, 39.1902573],
+            [-96.5510914, 39.190103],
+            [-96.5511182, 39.1901031],
+            [-96.551119, 39.1899917],
+            [-96.5508293, 39.1899905],
+            [-96.5508281, 39.19016],
+            [-96.5508496, 39.1901601],
+            [-96.5508489, 39.1902563],
+            [-96.5510903, 39.1902573],
+          ],
+        ],
       },
-      "id": "way/561131056"
+      id: "way/561131056",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/572891476",
-        "amenity": "restaurant",
-        "building": "yes",
-        "cuisine": "pizza",
-        "name": "Old Chicago"
+        amenity: "restaurant",
+        building: "yes",
+        cuisine: "pizza",
+        name: "Old Chicago",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6342529,
-              39.2042133
-            ],
-            [
-              -96.6342552,
-              39.2040013
-            ],
-            [
-              -96.6342702,
-              39.2040014
-            ],
-            [
-              -96.6342706,
-              39.2039589
-            ],
-            [
-              -96.6342048,
-              39.2039585
-            ],
-            [
-              -96.6342046,
-              39.2039748
-            ],
-            [
-              -96.6340188,
-              39.2039735
-            ],
-            [
-              -96.6340162,
-              39.2042118
-            ],
-            [
-              -96.6342529,
-              39.2042133
-            ]
-          ]
-        ]
+            [-96.6342529, 39.2042133],
+            [-96.6342552, 39.2040013],
+            [-96.6342702, 39.2040014],
+            [-96.6342706, 39.2039589],
+            [-96.6342048, 39.2039585],
+            [-96.6342046, 39.2039748],
+            [-96.6340188, 39.2039735],
+            [-96.6340162, 39.2042118],
+            [-96.6342529, 39.2042133],
+          ],
+        ],
       },
-      "id": "way/572891476"
+      id: "way/572891476",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/603499223",
         "addr:city": "Manhattan",
         "addr:housenumber": "2020",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "fast_food",
-        "brand": "Domino's",
+        amenity: "fast_food",
+        brand: "Domino's",
         "brand:wikidata": "Q839466",
-        "building": "yes",
+        building: "yes",
         "contact:phone": "785-776-7788",
-        "cuisine": "pizza",
-        "delivery": "yes",
-        "drive_through": "no",
-        "name": "Domino's",
-        "opening_hours": "Su-Th 10:30-01:00; Fr-Sa 10:30-02:00",
-        "phone": "+1 785-776-7788",
-        "ref": "6311",
-        "takeaway": "yes",
-        "website": "https://pizza.dominos.com/kansas/manhattan/2020-tuttle-creek-blvd"
+        cuisine: "pizza",
+        delivery: "yes",
+        drive_through: "no",
+        name: "Domino's",
+        opening_hours: "Su-Th 10:30-01:00; Fr-Sa 10:30-02:00",
+        phone: "+1 785-776-7788",
+        ref: "6311",
+        takeaway: "yes",
+        website:
+          "https://pizza.dominos.com/kansas/manhattan/2020-tuttle-creek-blvd",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5677588,
-              39.2052086
-            ],
-            [
-              -96.5679306,
-              39.205398
-            ],
-            [
-              -96.5680322,
-              39.2053421
-            ],
-            [
-              -96.5678554,
-              39.20515
-            ],
-            [
-              -96.5677588,
-              39.2052086
-            ]
-          ]
-        ]
+            [-96.5677588, 39.2052086],
+            [-96.5679306, 39.205398],
+            [-96.5680322, 39.2053421],
+            [-96.5678554, 39.20515],
+            [-96.5677588, 39.2052086],
+          ],
+        ],
       },
-      "id": "way/603499223"
+      id: "way/603499223",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/603812622",
         "addr:city": "Manhattan",
         "addr:housenumber": "2026",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "cafe",
-        "building": "yes",
-        "description": "Smoothie & Juice Bar",
+        amenity: "cafe",
+        building: "yes",
+        description: "Smoothie & Juice Bar",
         "drink:juice": "served",
         "drink:smoothie": "served",
-        "name": "Little Apple Nutrition"
+        name: "Little Apple Nutrition",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5682583,
-              39.2055493
-            ],
-            [
-              -96.5681807,
-              39.2054679
-            ],
-            [
-              -96.5680679,
-              39.2055328
-            ],
-            [
-              -96.5681461,
-              39.205614
-            ],
-            [
-              -96.5682583,
-              39.2055493
-            ]
-          ]
-        ]
+            [-96.5682583, 39.2055493],
+            [-96.5681807, 39.2054679],
+            [-96.5680679, 39.2055328],
+            [-96.5681461, 39.205614],
+            [-96.5682583, 39.2055493],
+          ],
+        ],
       },
-      "id": "way/603812622"
+      id: "way/603812622",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/603812623",
         "addr:city": "Manhattan",
         "addr:housenumber": "2006",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "fast_food",
-        "brand": "Subway",
+        amenity: "fast_food",
+        brand: "Subway",
         "brand:wikidata": "Q244457",
-        "building": "yes",
-        "cuisine": "sandwich",
-        "name": "Subway",
-        "opening_hours": "09:00-22:00",
-        "phone": "+1 785-539-0152",
-        "takeaway": "yes",
-        "website": "https://restaurants.subway.com/united-states/ks/manhattan/2006-n-tuttlecreek-blvd"
+        building: "yes",
+        cuisine: "sandwich",
+        name: "Subway",
+        opening_hours: "09:00-22:00",
+        phone: "+1 785-539-0152",
+        takeaway: "yes",
+        website:
+          "https://restaurants.subway.com/united-states/ks/manhattan/2006-n-tuttlecreek-blvd",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5674356,
-              39.2048059
-            ],
-            [
-              -96.5675404,
-              39.2047428
-            ],
-            [
-              -96.5674741,
-              39.2046766
-            ],
-            [
-              -96.5673693,
-              39.2047397
-            ],
-            [
-              -96.5674356,
-              39.2048059
-            ]
-          ]
-        ]
+            [-96.5674356, 39.2048059],
+            [-96.5675404, 39.2047428],
+            [-96.5674741, 39.2046766],
+            [-96.5673693, 39.2047397],
+            [-96.5674356, 39.2048059],
+          ],
+        ],
       },
-      "id": "way/603812623"
+      id: "way/603812623",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/606810539",
         "addr:city": "Manhattan",
         "addr:housenumber": "1911",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "fast_food",
-        "building": "yes",
-        "cuisine": "burger",
-        "drive_through": "yes",
-        "name": "Vista Drive In",
-        "opening_hours": "Mo-Su 07:00-23:00",
-        "phone": "+1 785 537 0100",
-        "website": "http://www.vistadrivein.com"
+        amenity: "fast_food",
+        building: "yes",
+        cuisine: "burger",
+        drive_through: "yes",
+        name: "Vista Drive In",
+        opening_hours: "Mo-Su 07:00-23:00",
+        phone: "+1 785 537 0100",
+        website: "http://www.vistadrivein.com",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5653759,
-              39.2011939
-            ],
-            [
-              -96.5655136,
-              39.2013633
-            ],
-            [
-              -96.5657056,
-              39.2012695
-            ],
-            [
-              -96.5655679,
-              39.2011002
-            ],
-            [
-              -96.5653759,
-              39.2011939
-            ]
-          ]
-        ]
+            [-96.5653759, 39.2011939],
+            [-96.5655136, 39.2013633],
+            [-96.5657056, 39.2012695],
+            [-96.5655679, 39.2011002],
+            [-96.5653759, 39.2011939],
+          ],
+        ],
       },
-      "id": "way/606810539"
+      id: "way/606810539",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/610883015",
         "addr:city": "Manhattan",
         "addr:housenumber": "702",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "North 11th Street",
-        "amenity": "restaurant",
-        "building": "yes",
-        "cuisine": "chinese;japanese",
-        "delivery": "yes",
-        "name": "Bi Bim Bap Korean Japanese Sushi Restaurant",
-        "opening_hours": "Su 11:30-22:30; Tu-Th 11:00-22:30; Fr-Sa 11:00-23:00",
-        "outdoor_seating": "no",
+        amenity: "restaurant",
+        building: "yes",
+        cuisine: "sushi",
+        delivery: "yes",
+        name: "Bi Bim Bap Korean Japanese Sushi Restaurant",
+        opening_hours: "Su 11:30-22:30; Tu-Th 11:00-22:30; Fr-Sa 11:00-23:00",
+        outdoor_seating: "no",
         "payment:cash": "yes",
         "payment:credit_cards": "yes",
         "payment:debit_cards": "yes",
         "payment:paypal": "yes",
-        "phone": "+1-785-537-2888",
-        "smoking": "no",
-        "takeaway": "yes",
-        "website": "https://www.bibimbapmanhattan.com/"
+        phone: "+1-785-537-2888",
+        smoking: "no",
+        takeaway: "yes",
+        website: "https://www.bibimbapmanhattan.com/",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5729546,
-              39.185963
-            ],
-            [
-              -96.5729555,
-              39.1859191
-            ],
-            [
-              -96.5729579,
-              39.1858445
-            ],
-            [
-              -96.572777,
-              39.1858411
-            ],
-            [
-              -96.5727734,
-              39.18596
-            ],
-            [
-              -96.5729546,
-              39.185963
-            ]
-          ]
-        ]
+            [-96.5729546, 39.185963],
+            [-96.5729555, 39.1859191],
+            [-96.5729579, 39.1858445],
+            [-96.572777, 39.1858411],
+            [-96.5727734, 39.18596],
+            [-96.5729546, 39.185963],
+          ],
+        ],
       },
-      "id": "way/610883015"
+      id: "way/610883015",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/612852850",
         "addr:city": "Manhattan",
         "addr:housenumber": "2707",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "amenity": "fast_food",
-        "brand": "Jimmy John's",
+        amenity: "fast_food",
+        brand: "Jimmy John's",
         "brand:wikidata": "Q1689380",
-        "building": "yes",
-        "cuisine": "sandwich",
-        "drive_through": "yes",
-        "name": "Jimmy John's",
-        "official_name": "Jimmy John's Gourmet Sandwiches",
-        "phone": "+1 785-320-7755",
-        "takeaway": "yes",
-        "website": "https://locations.jimmyjohns.com/ks/manhattan/sandwiches-2272.html"
+        building: "yes",
+        cuisine: "sandwich",
+        drive_through: "yes",
+        name: "Jimmy John's",
+        official_name: "Jimmy John's Gourmet Sandwiches",
+        phone: "+1 785-320-7755",
+        takeaway: "yes",
+        website:
+          "https://locations.jimmyjohns.com/ks/manhattan/sandwiches-2272.html",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6057327,
-              39.189893
-            ],
-            [
-              -96.6058517,
-              39.1898949
-            ],
-            [
-              -96.6058557,
-              39.1897433
-            ],
-            [
-              -96.6057367,
-              39.1897414
-            ],
-            [
-              -96.6057327,
-              39.189893
-            ]
-          ]
-        ]
+            [-96.6057327, 39.189893],
+            [-96.6058517, 39.1898949],
+            [-96.6058557, 39.1897433],
+            [-96.6057367, 39.1897414],
+            [-96.6057327, 39.189893],
+          ],
+        ],
       },
-      "id": "way/612852850"
+      id: "way/612852850",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/619024137",
         "addr:city": "Manhattan",
         "addr:housenumber": "518",
@@ -3823,321 +2271,213 @@ const displayPointsData =
         "addr:state": "KS",
         "addr:street": "Tuttle Creek Boulevard",
         "addr:unit": "Suite 120",
-        "amenity": "fast_food",
-        "branch": "Manhattan",
-        "brand": "Five Guys",
+        amenity: "fast_food",
+        branch: "Manhattan",
+        brand: "Five Guys",
         "brand:wikidata": "Q1131810",
-        "building": "yes",
-        "cuisine": "burger",
-        "name": "Five Guys",
-        "official_name": "Five Guys Burgers and Fries",
-        "opening_hours": "11:00-22:00",
-        "outdoor_seating": "yes",
-        "phone": "+1 785-789-3139",
-        "takeaway": "yes",
-        "website": "https://restaurants.fiveguys.com/518-tuttle-creek-blvd"
+        building: "yes",
+        cuisine: "burger",
+        name: "Five Guys",
+        official_name: "Five Guys Burgers and Fries",
+        opening_hours: "11:00-22:00",
+        outdoor_seating: "yes",
+        phone: "+1 785-789-3139",
+        takeaway: "yes",
+        website: "https://restaurants.fiveguys.com/518-tuttle-creek-blvd",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5575159,
-              39.1839863
-            ],
-            [
-              -96.5575172,
-              39.1841431
-            ],
-            [
-              -96.557691,
-              39.1841422
-            ],
-            [
-              -96.5576897,
-              39.1839855
-            ],
-            [
-              -96.5575159,
-              39.1839863
-            ]
-          ]
-        ]
+            [-96.5575159, 39.1839863],
+            [-96.5575172, 39.1841431],
+            [-96.557691, 39.1841422],
+            [-96.5576897, 39.1839855],
+            [-96.5575159, 39.1839863],
+          ],
+        ],
       },
-      "id": "way/619024137"
+      id: "way/619024137",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/621358314",
         "addr:city": "Manhattan",
         "addr:housenumber": "2745",
         "addr:postcode": "66502",
         "addr:street": "Claflin Road",
-        "amenity": "fast_food",
-        "brand": "Papa Murphy's",
+        amenity: "fast_food",
+        brand: "Papa Murphy's",
         "brand:wikidata": "Q7132349",
-        "building": "yes",
-        "cuisine": "pizza",
-        "name": "Papa Murphy's",
-        "official_name": "Papa Murphy's Take 'N' Bake Pizza",
-        "opening_hours": "Su-Th 10:00-20:00; Fr,Sa 10:00-21:00",
-        "takeaway": "only"
+        building: "yes",
+        cuisine: "pizza",
+        name: "Papa Murphy's",
+        official_name: "Papa Murphy's Take 'N' Bake Pizza",
+        opening_hours: "Su-Th 10:00-20:00; Fr,Sa 10:00-21:00",
+        takeaway: "only",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6071658,
-              39.1925076
-            ],
-            [
-              -96.6071658,
-              39.1926217
-            ],
-            [
-              -96.6072882,
-              39.1926217
-            ],
-            [
-              -96.6072882,
-              39.1925076
-            ],
-            [
-              -96.6071658,
-              39.1925076
-            ]
-          ]
-        ]
+            [-96.6071658, 39.1925076],
+            [-96.6071658, 39.1926217],
+            [-96.6072882, 39.1926217],
+            [-96.6072882, 39.1925076],
+            [-96.6071658, 39.1925076],
+          ],
+        ],
       },
-      "id": "way/621358314"
+      id: "way/621358314",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/630260791",
         "addr:city": "Manhattan",
         "addr:housenumber": "214",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Leavenworth Street",
-        "amenity": "fast_food",
-        "brand": "Taco John's",
+        amenity: "fast_food",
+        brand: "Taco John's",
         "brand:wikidata": "Q7673962",
-        "building": "yes",
-        "cuisine": "mexican",
-        "drive_through": "yes",
-        "name": "Taco John's",
-        "opening_hours": "07:00-22:00",
-        "phone": "785-320-6133",
-        "ref": "9987",
-        "takeaway": "yes"
+        building: "yes",
+        cuisine: "mexican",
+        drive_through: "yes",
+        name: "Taco John's",
+        opening_hours: "07:00-22:00",
+        phone: "785-320-6133",
+        ref: "9987",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5595393,
-              39.1816599
-            ],
-            [
-              -96.559427,
-              39.1816597
-            ],
-            [
-              -96.5594267,
-              39.1817479
-            ],
-            [
-              -96.5594037,
-              39.1817479
-            ],
-            [
-              -96.5594036,
-              39.1817692
-            ],
-            [
-              -96.5594283,
-              39.1817693
-            ],
-            [
-              -96.559428,
-              39.1818924
-            ],
-            [
-              -96.5595386,
-              39.1818926
-            ],
-            [
-              -96.5595393,
-              39.1816599
-            ]
-          ]
-        ]
+            [-96.5595393, 39.1816599],
+            [-96.559427, 39.1816597],
+            [-96.5594267, 39.1817479],
+            [-96.5594037, 39.1817479],
+            [-96.5594036, 39.1817692],
+            [-96.5594283, 39.1817693],
+            [-96.559428, 39.1818924],
+            [-96.5595386, 39.1818926],
+            [-96.5595393, 39.1816599],
+          ],
+        ],
       },
-      "id": "way/630260791"
+      id: "way/630260791",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/651303522",
         "addr:city": "Manhattan",
         "addr:housenumber": "501",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "McCall Road",
-        "amenity": "fast_food",
-        "branch": "McCall & Carlson",
-        "brand": "Panda Express",
+        amenity: "fast_food",
+        branch: "McCall & Carlson",
+        brand: "Panda Express",
         "brand:wikidata": "Q1358690",
-        "building": "yes",
-        "cuisine": "chinese",
-        "drive_through": "yes",
-        "name": "Panda Express",
-        "opening_hours": "Mo-Th 10:00-21:00; Fr-Sa 10:00-21:30; Su 10:00-21:00",
-        "phone": "+1 785-770-8888",
-        "takeaway": "yes",
-        "website": "https://www.pandaexpress.com/locations/ks/manhattan/2776"
+        building: "yes",
+        cuisine: "chinese",
+        drive_through: "yes",
+        name: "Panda Express",
+        opening_hours: "Mo-Th 10:00-21:00; Fr-Sa 10:00-21:30; Su 10:00-21:00",
+        phone: "+1 785-770-8888",
+        takeaway: "yes",
+        website: "https://www.pandaexpress.com/locations/ks/manhattan/2776",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5515215,
-              39.1899897
-            ],
-            [
-              -96.5515228,
-              39.1897963
-            ],
-            [
-              -96.5513762,
-              39.1897957
-            ],
-            [
-              -96.5513748,
-              39.189989
-            ],
-            [
-              -96.5515215,
-              39.1899897
-            ]
-          ]
-        ]
+            [-96.5515215, 39.1899897],
+            [-96.5515228, 39.1897963],
+            [-96.5513762, 39.1897957],
+            [-96.5513748, 39.189989],
+            [-96.5515215, 39.1899897],
+          ],
+        ],
       },
-      "id": "way/651303522"
+      id: "way/651303522",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/652924422",
         "addr:city": "Manhattan",
         "addr:housenumber": "329",
         "addr:postcode": "66502",
         "addr:street": "East Poyntz Avenue",
-        "amenity": "fast_food",
-        "brand": "Raising Cane's",
+        amenity: "fast_food",
+        brand: "Raising Cane's",
         "brand:wikidata": "Q7285144",
-        "building": "yes",
-        "cuisine": "chicken",
-        "name": "Raising Cane's",
-        "official_name": "Raising Cane's Chicken Fingers",
-        "opening_hours": "Mo-Th,Su 10:00-23:00; Fr-Sa 10:00-24:00",
-        "phone": "+1-785-539-8862",
-        "takeaway": "yes"
+        building: "yes",
+        cuisine: "chicken",
+        name: "Raising Cane's",
+        official_name: "Raising Cane's Chicken Fingers",
+        opening_hours: "Mo-Th,Su 10:00-23:00; Fr-Sa 10:00-24:00",
+        phone: "+1-785-539-8862",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5531282,
-              39.1831768
-            ],
-            [
-              -96.5533039,
-              39.183317
-            ],
-            [
-              -96.5533623,
-              39.1832731
-            ],
-            [
-              -96.5534017,
-              39.1833045
-            ],
-            [
-              -96.5534319,
-              39.1832819
-            ],
-            [
-              -96.5532167,
-              39.1831102
-            ],
-            [
-              -96.5531282,
-              39.1831768
-            ]
-          ]
-        ]
+            [-96.5531282, 39.1831768],
+            [-96.5533039, 39.183317],
+            [-96.5533623, 39.1832731],
+            [-96.5534017, 39.1833045],
+            [-96.5534319, 39.1832819],
+            [-96.5532167, 39.1831102],
+            [-96.5531282, 39.1831768],
+          ],
+        ],
       },
-      "id": "way/652924422"
+      id: "way/652924422",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/1050103444",
         "addr:city": "Manhattan",
         "addr:housenumber": "3268",
         "addr:postcode": "66503",
         "addr:state": "KS",
         "addr:street": "Kimball Avenue",
-        "amenity": "restaurant",
-        "brand": "Pizza Hut",
+        amenity: "restaurant",
+        brand: "Pizza Hut",
         "brand:wikidata": "Q191615",
-        "building": "yes",
-        "cuisine": "pizza",
-        "delivery": "yes",
-        "name": "Pizza Hut",
-        "phone": "+1 785-539-7447",
-        "takeaway": "only",
-        "website": "https://locations.pizzahut.com/ks/manhattan/3268-kimball-ave"
+        building: "yes",
+        cuisine: "pizza",
+        delivery: "yes",
+        name: "Pizza Hut",
+        phone: "+1 785-539-7447",
+        takeaway: "only",
+        website: "https://locations.pizzahut.com/ks/manhattan/3268-kimball-ave",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.6186924,
-              39.2041017
-            ],
-            [
-              -96.6186462,
-              39.2041406
-            ],
-            [
-              -96.6187975,
-              39.2042504
-            ],
-            [
-              -96.6188445,
-              39.2042109
-            ],
-            [
-              -96.6186924,
-              39.2041017
-            ]
-          ]
-        ]
+            [-96.6186924, 39.2041017],
+            [-96.6186462, 39.2041406],
+            [-96.6187975, 39.2042504],
+            [-96.6188445, 39.2042109],
+            [-96.6186924, 39.2041017],
+          ],
+        ],
       },
-      "id": "way/1050103444"
+      id: "way/1050103444",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "way/1298035794",
         "addr:city": "Manhattan",
         "addr:housename": "Sonic Drive-In",
@@ -4145,397 +2485,323 @@ const displayPointsData =
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "North 3rd Street",
-        "amenity": "fast_food",
-        "brand": "Sonic",
+        amenity: "fast_food",
+        brand: "Sonic",
         "brand:wikidata": "Q7561808",
-        "building": "yes",
-        "cuisine": "burger",
-        "drive_in": "yes",
-        "drive_through": "yes",
-        "name": "Sonic",
-        "opening_hours": "Mo-Su 06:00-23:00",
-        "outdoor_seating": "yes",
-        "takeaway": "yes",
-        "website": "https://locations.sonicdrivein.com/ks/manhattan/800-n.-third.html"
+        building: "yes",
+        cuisine: "burger",
+        drive_in: "yes",
+        drive_through: "yes",
+        name: "Sonic",
+        opening_hours: "Mo-Su 06:00-23:00",
+        outdoor_seating: "yes",
+        takeaway: "yes",
+        website:
+          "https://locations.sonicdrivein.com/ks/manhattan/800-n.-third.html",
       },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
-            [
-              -96.5597136,
-              39.1873797
-            ],
-            [
-              -96.5597913,
-              39.1873804
-            ],
-            [
-              -96.5597931,
-              39.1872572
-            ],
-            [
-              -96.5598207,
-              39.1872574
-            ],
-            [
-              -96.5598213,
-              39.1872116
-            ],
-            [
-              -96.5598101,
-              39.1872115
-            ],
-            [
-              -96.5597638,
-              39.1872111
-            ],
-            [
-              -96.5597642,
-              39.1871846
-            ],
-            [
-              -96.5597394,
-              39.1871844
-            ],
-            [
-              -96.559739,
-              39.1872109
-            ],
-            [
-              -96.559716,
-              39.1872107
-            ],
-            [
-              -96.5597154,
-              39.1872497
-            ],
-            [
-              -96.5597136,
-              39.1873797
-            ]
-          ]
-        ]
+            [-96.5597136, 39.1873797],
+            [-96.5597913, 39.1873804],
+            [-96.5597931, 39.1872572],
+            [-96.5598207, 39.1872574],
+            [-96.5598213, 39.1872116],
+            [-96.5598101, 39.1872115],
+            [-96.5597638, 39.1872111],
+            [-96.5597642, 39.1871846],
+            [-96.5597394, 39.1871844],
+            [-96.559739, 39.1872109],
+            [-96.559716, 39.1872107],
+            [-96.5597154, 39.1872497],
+            [-96.5597136, 39.1873797],
+          ],
+        ],
       },
-      "id": "way/1298035794"
+      id: "way/1298035794",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/464765632",
         "addr:city": "Manhattan",
         "addr:housenumber": "1110",
         "addr:postcode": "66502",
         "addr:street": "Westloop Place",
-        "amenity": "restaurant",
-        "name": "Little Apple Brewery",
-        "phone": "+1-785-539-5500",
-        "website": "https://www.littleapplebrewery.com/"
+        amenity: "restaurant",
+        name: "Little Apple Brewery",
+        phone: "+1-785-539-5500",
+        website: "https://www.littleapplebrewery.com/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.6083689,
-          39.1915231
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.6083689, 39.1915231],
       },
-      "id": "node/464765632"
+      id: "node/464765632",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/464766734",
         "addr:city": "Manhattan",
         "addr:housenumber": "3033",
         "addr:postcode": "66503",
         "addr:street": "Anderson Avenue",
-        "amenity": "restaurant",
-        "capacity": "49",
-        "cuisine": "breakfast;burger",
-        "name": "Guilty Biscuit",
-        "opening_hours": "Mo-Fr 10:00-20:00; Sa-Su 08:00-15:00",
-        "outdoor_seating": "yes",
-        "phone": "+1-785-537-6800",
-        "takeaway": "yes",
-        "website": "https://www.guiltybiscuit.com/"
+        amenity: "restaurant",
+        capacity: "49",
+        cuisine: "breakfast",
+        name: "Guilty Biscuit",
+        opening_hours: "Mo-Fr 10:00-20:00; Sa-Su 08:00-15:00",
+        outdoor_seating: "yes",
+        phone: "+1-785-537-6800",
+        takeaway: "yes",
+        website: "https://www.guiltybiscuit.com/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.6157713,
-          39.1883651
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.6157713, 39.1883651],
       },
-      "id": "node/464766734"
+      id: "node/464766734",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/696114862",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Manhattan Town Center",
         "addr:suite": "100",
-        "amenity": "restaurant",
-        "brand": "Applebee's Neighborhood Grill & Bar",
+        amenity: "restaurant",
+        brand: "Applebee's Neighborhood Grill & Bar",
         "brand:wikidata": "Q621532",
-        "cuisine": "american",
-        "name": "Applebee's",
-        "official_name": "Applebee's Neighborhood Grill & Bar",
-        "phone": "+1-785-537-0408",
-        "website": "https://restaurants.applebees.com/en-us/ks/manhattan/3rd-poyntz-86095",
-        "website:menu": "https://www.applebees.com/en/menu?StoreNumber=86095&action=viewmenu"
+        cuisine: "american",
+        name: "Applebee's",
+        official_name: "Applebee's Neighborhood Grill & Bar",
+        phone: "+1-785-537-0408",
+        website:
+          "https://restaurants.applebees.com/en-us/ks/manhattan/3rd-poyntz-86095",
+        "website:menu":
+          "https://www.applebees.com/en/menu?StoreNumber=86095&action=viewmenu",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5599706,
-          39.178901
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5599706, 39.178901],
       },
-      "id": "node/696114862"
+      id: "node/696114862",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/700433714",
         "addr:city": "Manhattan",
         "addr:housenumber": "3041",
         "addr:postcode": "66503",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "amenity": "fast_food",
-        "brand": "Subway",
+        amenity: "fast_food",
+        brand: "Subway",
         "brand:wikidata": "Q244457",
-        "cuisine": "sandwich",
-        "name": "Subway",
-        "opening_hours": "Mo-Su 09:00-21:00",
-        "phone": "+1 785-539-2252",
-        "takeaway": "yes",
-        "website": "https://restaurants.subway.com/united-states/ks/manhattan/3041-anderson-ave"
+        cuisine: "sandwich",
+        name: "Subway",
+        opening_hours: "Mo-Su 09:00-21:00",
+        phone: "+1 785-539-2252",
+        takeaway: "yes",
+        website:
+          "https://restaurants.subway.com/united-states/ks/manhattan/3041-anderson-ave",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.6157635,
-          39.1886174
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.6157635, 39.1886174],
       },
-      "id": "node/700433714"
+      id: "node/700433714",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/738212648",
         "addr:city": "Manhattan",
         "addr:housenumber": "1131",
         "addr:street": "Moro Street",
-        "amenity": "fast_food",
-        "cuisine": "burger",
-        "delivery": "doordash",
-        "drive_through": "no",
-        "facebook": "https://www.facebook.com/fatshackmanhattanks",
-        "name": "Fat Shack",
-        "opening_hours": "Su-We 11:00-01:00, Th-Sa 11:00-03:00",
-        "phone": "+1-785-706-2020",
-        "takeaway": "yes",
-        "wheelchair": "no"
+        amenity: "fast_food",
+        cuisine: "burger",
+        delivery: "doordash",
+        drive_through: "no",
+        facebook: "https://www.facebook.com/fatshackmanhattanks",
+        name: "Fat Shack",
+        opening_hours: "Su-We 11:00-01:00, Th-Sa 11:00-03:00",
+        phone: "+1-785-706-2020",
+        takeaway: "yes",
+        wheelchair: "no",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5747192,
-          39.1856097
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5747192, 39.1856097],
       },
-      "id": "node/738212648"
+      id: "node/738212648",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/738212694",
         "addr:city": "Manhattan",
         "addr:housenumber": "1231",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Moro Street",
-        "amenity": "restaurant",
-        "brand": "Buffalo Wild Wings",
+        amenity: "restaurant",
+        brand: "Buffalo Wild Wings",
         "brand:wikidata": "Q509255",
         "check_date:opening_hours": "2022-01-23",
-        "cuisine": "wings",
-        "name": "Buffalo Wild Wings",
-        "opening_hours": "Mo-Th 11:00-24:00, Fr-Sa 11:00-01:00, Su 11:00-23:00",
-        "phone": "+1-785-323-9464",
+        cuisine: "wings",
+        name: "Buffalo Wild Wings",
+        opening_hours: "Mo-Th 11:00-24:00, Fr-Sa 11:00-01:00, Su 11:00-23:00",
+        phone: "+1-785-323-9464",
         "ref:buffalowildwings": "0074",
-        "short_name": "BW3",
-        "smoking": "no",
-        "website": "https://www.buffalowildwings.com/"
+        short_name: "BW3",
+        smoking: "no",
+        website: "https://www.buffalowildwings.com/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5762943,
-          39.1856011
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5762943, 39.1856011],
       },
-      "id": "node/738212694"
+      id: "node/738212694",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/767040578",
-        "amenity": "fast_food",
-        "cuisine": "concessions"
+        amenity: "fast_food",
+        cuisine: "concessions",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.61884,
-          39.2023048
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.61884, 39.2023048],
       },
-      "id": "node/767040578"
+      id: "node/767040578",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/792088837",
         "addr:housenumber": "100",
         "addr:street": "Manhattan Town Center",
         "addr:suite": "345",
-        "amenity": "fast_food",
-        "brand": "HuHot Mongolian Grill",
+        amenity: "fast_food",
+        brand: "HuHot Mongolian Grill",
         "brand:website": "https://www.huhot.com/",
         "brand:wikidata": "Q5924606",
-        "cuisine": "mongolian_grill",
-        "name": "HuHot Mongolian Grill",
-        "opening_hours": "Mo-Su 11:00-22:00",
-        "phone": "+1-785-320-7320",
-        "short_name": "HuHot",
-        "takeaway": "yes",
-        "website": "https://www.huhot.com/location/manhattan-ks/"
+        cuisine: "mongolian_grill",
+        name: "HuHot Mongolian Grill",
+        opening_hours: "Mo-Su 11:00-22:00",
+        phone: "+1-785-320-7320",
+        short_name: "HuHot",
+        takeaway: "yes",
+        website: "https://www.huhot.com/location/manhattan-ks/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5583238,
-          39.1791195
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5583238, 39.1791195],
       },
-      "id": "node/792088837"
+      id: "node/792088837",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/793874581",
         "addr:housenumber": "1150",
-        "amenity": "fast_food",
-        "brand": "Little Caesars",
+        amenity: "fast_food",
+        brand: "Little Caesars",
         "brand:wikidata": "Q1393809",
-        "cuisine": "pizza",
-        "name": "Little Caesars",
-        "opening_hours": "10:30-23:00",
-        "takeaway": "yes",
-        "website": "https://littlecaesars.com/en-us/store/3504/"
+        cuisine: "pizza",
+        name: "Little Caesars",
+        opening_hours: "10:30-23:00",
+        takeaway: "yes",
+        website: "https://littlecaesars.com/en-us/store/3504/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.6087402,
-          39.1916765
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.6087402, 39.1916765],
       },
-      "id": "node/793874581"
+      id: "node/793874581",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/864316453",
-        "amenity": "fast_food"
+        amenity: "fast_food",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5686399,
-          39.217033
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5686399, 39.217033],
       },
-      "id": "node/864316453"
+      id: "node/864316453",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/877652485",
-        "amenity": "restaurant",
-        "cuisine": "snack",
-        "name": "Colbert Hills Golf Course"
+        amenity: "restaurant",
+        cuisine: "snack",
+        name: "Colbert Hills Golf Course",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.6405934,
-          39.2128451
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.6405934, 39.2128451],
       },
-      "id": "node/877652485"
+      id: "node/877652485",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/977250555",
         "addr:city": "Manhattan",
         "addr:housenumber": "1800",
         "addr:postcode": "66502",
         "addr:street": "Claflin Road",
         "addr:suite": "170",
-        "amenity": "cafe",
+        amenity: "cafe",
         "contact:phone": "+1 785 706 3595",
-        "cuisine": "breakfast;coffee_shop",
-        "name": "Arrow Coffe"
+        cuisine: "coffee",
+        name: "Arrow Coffee",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5856689,
-          39.1934475
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5856689, 39.1934475],
       },
-      "id": "node/977250555"
+      id: "node/977250555",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1074300426",
         "addr:city": "Manhattan",
         "addr:housenumber": "2301",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Tuttle Creek Boulevard",
-        "amenity": "restaurant",
-        "cuisine": "mexican",
-        "name": "La Fiesta Mexican Restaurant",
-        "opening_hours": "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00",
+        amenity: "restaurant",
+        cuisine: "mexican",
+        name: "La Fiesta Mexican Restaurant",
+        opening_hours: "Mo-Th 11:00-22:00; Fr-Sa 11:00-23:00; Su 11:00-21:00",
         "payment:american_express": "yes",
         "payment:cash": "yes",
         "payment:discover_card": "yes",
         "payment:mastercard": "yes",
         "payment:visa": "yes",
-        "phone": "+1-785-587-5258",
-        "website": "https://restaurantlafiesta.com"
+        phone: "+1-785-587-5258",
+        website: "https://restaurantlafiesta.com",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5726182,
-          39.2075432
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5726182, 39.2075432],
       },
-      "id": "node/1074300426"
+      id: "node/1074300426",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1088798972",
         "addr:city": "Manhattan",
         "addr:housenumber": "1800",
@@ -4543,658 +2809,578 @@ const displayPointsData =
         "addr:state": "KS",
         "addr:street": "Claflin Road",
         "addr:unit": "120",
-        "amenity": "restaurant",
-        "cuisine": "pizza",
-        "name": "Pizza Shuttle",
-        "opening_hours": "Su-Th 11:00-01:00; Fr-Sa 11:00-03:00",
-        "phone": "+1-785-776-5577",
-        "website": "http://www.pizzashuttle.org/"
+        amenity: "restaurant",
+        cuisine: "pizza",
+        name: "Pizza Shuttle",
+        opening_hours: "Su-Th 11:00-01:00; Fr-Sa 11:00-03:00",
+        phone: "+1-785-776-5577",
+        website: "http://www.pizzashuttle.org/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.585949,
-          39.1933467
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.585949, 39.1933467],
       },
-      "id": "node/1088798972"
+      id: "node/1088798972",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1235444215",
         "addr:city": "Manhattan",
         "addr:housenumber": "3901",
         "addr:postcode": "66502",
         "addr:street": "Vanesta Drive",
-        "amenity": "cafe",
-        "internet_access": "wlan",
-        "name": "Mr. K's Cafe & Bar",
-        "phone": "+1-785-320-2730",
-        "website": "http://www.MrKsCafee.com"
+        amenity: "cafe",
+        internet_access: "wlan",
+        name: "Mr. K's Cafe & Bar",
+        phone: "+1-785-320-2730",
+        website: "http://www.MrKsCafee.com",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.634694,
-          39.2051808
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.634694, 39.2051808],
       },
-      "id": "node/1235444215"
+      id: "node/1235444215",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1300332328",
         "addr:city": "Manhattan",
         "addr:housenumber": "320",
         "addr:postcode": "66502",
         "addr:street": "Poyntz Avenue",
-        "amenity": "restaurant",
-        "cuisine": "american",
-        "name": "Tallgrass Taphouse",
-        "opening_hours": "Su-Th 11:00-22:00; Fr-Sa 11:00-01:00",
-        "operator": "Tallgrass Brewing Co",
-        "phone": "+1-785-320-2933",
-        "smoking": "no"
+        amenity: "restaurant",
+        cuisine: "american",
+        name: "Tallgrass Taphouse",
+        opening_hours: "Su-Th 11:00-22:00; Fr-Sa 11:00-01:00",
+        operator: "Tallgrass Brewing Co",
+        phone: "+1-785-320-2933",
+        smoking: "no",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5613631,
-          39.1795067
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5613631, 39.1795067],
       },
-      "id": "node/1300332328"
+      id: "node/1300332328",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1300332332",
         "addr:city": "Manhattan",
         "addr:housenumber": "312",
         "addr:postcode": "66502",
         "addr:street": "Poyntz Avenue",
-        "amenity": "restaurant",
-        "name": "Bourbon & Baker",
-        "opening_hours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-24:00",
-        "phone": "+1-785-320-4959",
-        "website": "https://www.bourbonandbakermanhattan.com/"
+        amenity: "restaurant",
+        name: "Bourbon & Baker",
+        opening_hours: "Mo-Th 11:00-23:00; Fr-Sa 11:00-24:00",
+        phone: "+1-785-320-4959",
+        website: "https://www.bourbonandbakermanhattan.com/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5608842,
-          39.1795029
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5608842, 39.1795029],
       },
-      "id": "node/1300332332"
+      id: "node/1300332332",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1365737014",
         "addr:city": "Manhattan",
         "addr:housenumber": "3011",
         "addr:postcode": "66503",
         "addr:street": "Anderson Avenue",
-        "amenity": "restaurant",
-        "internet_access": "wlan",
+        amenity: "restaurant",
+        internet_access: "wlan",
         "internet_access:fee": "no",
-        "name": "Powercat Sports Grill",
-        "opening_hours": "11:00-24:00",
-        "website": "https://www.powercatsportsgrill.com/"
+        name: "Powercat Sports Grill",
+        opening_hours: "11:00-24:00",
+        website: "https://www.powercatsportsgrill.com/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.6144362,
-          39.1882844
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.6144362, 39.1882844],
       },
-      "id": "node/1365737014"
+      id: "node/1365737014",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1422328711",
         "addr:city": "Manhattan",
         "addr:housenumber": "616",
         "addr:street": "North Manhattan Avenue",
-        "amenity": "cafe",
-        "name": "Radina's Coffee House and Roastery",
-        "opening_hours": "Mo-Fr 06:30-23:00; Sa-Su 07:00-23:00"
+        amenity: "cafe",
+        name: "Radina's Coffee House and Roastery",
+        opening_hours: "Mo-Fr 06:30-23:00; Sa-Su 07:00-23:00",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5763015,
-          39.1853085
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5763015, 39.1853085],
       },
-      "id": "node/1422328711"
+      id: "node/1422328711",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1450161114",
         "addr:city": "Manhattan",
         "addr:housenumber": "1120-B",
         "addr:street": "Moro Street",
-        "amenity": "restaurant",
-        "cuisine": "pizza",
-        "name": "D.P. Dough",
-        "opening_hours": "Mo-Su 16:00-04:00"
+        amenity: "restaurant",
+        cuisine: "pizza",
+        name: "D.P. Dough",
+        opening_hours: "Mo-Su 16:00-04:00",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5742096,
-          39.1858266
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5742096, 39.1858266],
       },
-      "id": "node/1450161114"
+      id: "node/1450161114",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1450161157",
         "addr:city": "Manhattan",
         "addr:housenumber": "1120 C",
         "addr:postcode": "66502",
         "addr:street": "Moro Street",
-        "amenity": "restaurant",
-        "cuisine": "chinese",
-        "name": "Tasty China House",
-        "opening_hours": "Mo-Th,Su 11:00-22:15;Fr-Sa 11:00-22:45;Mo 16:00-22:15",
-        "phone": "+1-785-320-7768",
-        "website": "http://www.tastychinahouse.net",
-        "wheelchair": "no"
+        amenity: "restaurant",
+        cuisine: "chinese",
+        name: "Tasty China House",
+        opening_hours: "Mo-Th,Su 11:00-22:15;Fr-Sa 11:00-22:45;Mo 16:00-22:15",
+        phone: "+1-785-320-7768",
+        website: "http://www.tastychinahouse.net",
+        wheelchair: "no",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5743774,
-          39.1858302
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5743774, 39.1858302],
       },
-      "id": "node/1450161157"
+      id: "node/1450161157",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1468386431",
         "addr:city": "Manhattan",
         "addr:housenumber": "111",
         "addr:postcode": "66502",
         "addr:street": "South 4th Street",
-        "amenity": "restaurant",
-        "cuisine": "breakfast",
-        "name": "The Chef",
-        "opening_hours": "Mo-Fr 6:00-14:00; Sa-Su 7:00-15:00",
+        amenity: "restaurant",
+        cuisine: "breakfast",
+        name: "The Chef",
+        opening_hours: "Mo-Fr 6:00-14:00; Sa-Su 7:00-15:00",
         "phone:US": "785 537 6843",
-        "source": "survey",
-        "website": "http://www.thechefcafe.com"
+        source: "survey",
+        website: "http://www.thechefcafe.com",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5616572,
-          39.1788794
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5616572, 39.1788794],
       },
-      "id": "node/1468386431"
+      id: "node/1468386431",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1483865248",
         "addr:city": "Manhattan",
         "addr:housenumber": "1120",
         "addr:postcode": "66502",
         "addr:street": "Laramie Street",
-        "amenity": "restaurant",
+        amenity: "restaurant",
         "contact:phone": "785-539-9888",
-        "cuisine": "sushi",
-        "description": "BTC payment via Menufy.",
-        "name": "Green Tea Sushi Bar",
-        "opening_hours": "Mo-Fr 11:00-15:00, 16:30-22:00; Sa 12:00-23:00; Su 12:00-22:00",
-        "phone": "+1-785-539-9888",
-        "wheelchair": "limited"
+        cuisine: "sushi",
+        description: "BTC payment via Menufy.",
+        name: "Green Tea Sushi Bar",
+        opening_hours:
+          "Mo-Fr 11:00-15:00, 16:30-22:00; Sa 12:00-23:00; Su 12:00-22:00",
+        phone: "+1-785-539-9888",
+        wheelchair: "limited",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5741221,
-          39.1849923
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5741221, 39.1849923],
       },
-      "id": "node/1483865248"
+      id: "node/1483865248",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1500954576",
         "addr:city": "Manhattan",
         "addr:housenumber": "2304",
         "addr:postcode": "66502",
         "addr:street": "Stagg Hill Road",
-        "amenity": "restaurant",
-        "cuisine": "chinese",
-        "name": "Bamboo Buffet",
-        "phone": "+1-785-539-8299"
+        amenity: "restaurant",
+        cuisine: "chinese",
+        name: "Bamboo Buffet",
+        phone: "+1-785-539-8299",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5961037,
-          39.1680623
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5961037, 39.1680623],
       },
-      "id": "node/1500954576"
+      id: "node/1500954576",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1529086408",
         "addr:suite": "420",
-        "amenity": "fast_food",
-        "brand": "Pretzelmaker",
+        amenity: "fast_food",
+        brand: "Pretzelmaker",
         "brand:wikidata": "Q7242321",
-        "cuisine": "pretzel",
-        "name": "Pretzelmaker",
-        "source": "survey",
-        "takeaway": "yes"
+        cuisine: "pretzel",
+        name: "Pretzelmaker",
+        source: "survey",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5589501,
-          39.179232
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5589501, 39.179232],
       },
-      "id": "node/1529086408"
+      id: "node/1529086408",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1642087211",
         "addr:city": "Manhattan",
         "addr:housenumber": "1130",
         "addr:street": "Moro Street",
         "addr:suite": "B",
-        "amenity": "restaurant",
-        "cuisine": "mexican",
-        "name": "Taco Lucha",
-        "opening_hours": "Tu-Su 11:00-22:00",
-        "outdoor_seating": "yes",
-        "phone": "+1-785-320-5255",
-        "website": "http://tacoluchamanhattan.com"
+        amenity: "restaurant",
+        cuisine: "mexican",
+        name: "Taco Lucha",
+        opening_hours: "Tu-Su 11:00-22:00",
+        outdoor_seating: "yes",
+        phone: "+1-785-320-5255",
+        website: "http://tacoluchamanhattan.com",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5746726,
-          39.1860922
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5746726, 39.1860922],
       },
-      "id": "node/1642087211"
+      id: "node/1642087211",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1675161734",
         "addr:city": "Manhattan",
         "addr:housenumber": "501-B",
         "addr:postcode": "66502",
         "addr:street": "North 3rd Place",
-        "amenity": "restaurant",
-        "cuisine": "ice_cream",
-        "name": "Orange Leaf",
-        "note": "Self Serve Frozen Yogurt",
-        "source": "survey"
+        amenity: "restaurant",
+        cuisine: "ice_cream",
+        name: "Orange Leaf",
+        note: "Self Serve Frozen Yogurt",
+        source: "survey",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.560525,
-          39.1836219
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.560525, 39.1836219],
       },
-      "id": "node/1675161734"
+      id: "node/1675161734",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1675161899",
         "addr:city": "Manhattan",
         "addr:housenumber": "501",
         "addr:postcode": "66502",
         "addr:street": "North 3rd Place",
         "addr:unit": "F",
-        "amenity": "fast_food",
-        "brand": "Firehouse Subs",
+        amenity: "fast_food",
+        brand: "Firehouse Subs",
         "brand:wikidata": "Q5451873",
-        "cuisine": "sandwich",
-        "name": "Firehouse Subs",
-        "opening_hours": "Mo-Th,Su 10:30-21:00; Fr-Sa 10:30-22:00",
-        "phone": "+1-785-473-7346",
-        "takeaway": "yes"
+        cuisine: "sandwich",
+        name: "Firehouse Subs",
+        opening_hours: "Mo-Th,Su 10:30-21:00; Fr-Sa 10:30-22:00",
+        phone: "+1-785-473-7346",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5605192,
-          39.1838751
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5605192, 39.1838751],
       },
-      "id": "node/1675161899"
+      id: "node/1675161899",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1675162009",
         "addr:city": "Manhattan",
         "addr:housenumber": "705 A",
         "addr:postcode": "66502",
         "addr:street": "3rd Place",
-        "amenity": "restaurant",
-        "cuisine": "mexican",
-        "name": "Frida's",
-        "opening_hours": "Mo-Sa 11:00-21:00; Su 11:00-18:00"
+        amenity: "restaurant",
+        cuisine: "mexican",
+        name: "Frida's",
+        opening_hours: "Mo-Sa 11:00-21:00; Su 11:00-18:00",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5603788,
-          39.1859187
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5603788, 39.1859187],
       },
-      "id": "node/1675162009"
+      id: "node/1675162009",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1675162035",
         "addr:city": "Manhattan",
         "addr:housenumber": "705",
         "addr:street": "North 3rd Street",
         "addr:suite": "F",
-        "amenity": "restaurant",
-        "brand": "Noodles & Company",
+        amenity: "restaurant",
+        brand: "Noodles & Company",
         "brand:wikidata": "Q7049673",
-        "cuisine": "pasta",
-        "name": "Noodles & Company",
-        "opening_hours": "Su-Th 11:00-21:00; Fr-Sa 11:00-22:00",
-        "phone": "+1-785-539-5373",
-        "ref": "966",
-        "source": "survey"
+        cuisine: "pasta",
+        name: "Noodles & Company",
+        opening_hours: "Su-Th 11:00-21:00; Fr-Sa 11:00-22:00",
+        phone: "+1-785-539-5373",
+        ref: "966",
+        source: "survey",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5603722,
-          39.1862432
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5603722, 39.1862432],
       },
-      "id": "node/1675162035"
+      id: "node/1675162035",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1776258703",
         "addr:city": "Manhattan",
         "addr:housenumber": "900",
         "addr:postcode": "66502",
         "addr:street": "Hayes Drive",
         "addr:suite": "E",
-        "amenity": "restaurant",
-        "cuisine": "japanese",
-        "email": "umimanhattan@gmail.com",
-        "fax": "785-320-7790",
-        "name": "Umi Japanese Steak House & Sushi",
-        "opening_hours": "Mo-Th 11:00-14:30, 16:30-22:00; Fr 11:00-14:30, 16:30-22:30; Sa 11:30-22:30; Su 11:30-22:00",
+        amenity: "restaurant",
+        cuisine: "japanese",
+        email: "umimanhattan@gmail.com",
+        fax: "785-320-7790",
+        name: "Umi Japanese Steak House & Sushi",
+        opening_hours:
+          "Mo-Th 11:00-14:30, 16:30-22:00; Fr 11:00-14:30, 16:30-22:30; Sa 11:30-22:30; Su 11:30-22:00",
         "payment:american_express": "yes",
         "payment:discover_card": "yes",
         "payment:mastercard": "yes",
         "payment:visa": "yes",
-        "phone": "+1-785-320-7788",
-        "source": "survey",
-        "website": "https://www.umicuisine.com/"
+        phone: "+1-785-320-7788",
+        source: "survey",
+        website: "https://www.umicuisine.com/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5539679,
-          39.1882019
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5539679, 39.1882019],
       },
-      "id": "node/1776258703"
+      id: "node/1776258703",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1892795820",
         "addr:city": "Manhattan",
         "addr:housenumber": "1101",
         "addr:street": "Moro Street",
         "addr:unit": "111",
-        "amenity": "restaurant",
-        "cuisine": "italian",
-        "name": "Nico's Little Italy",
-        "opening_hours": "Mo-Sa 11:00-22:00; Su 11:00-21:00",
-        "phone": "+1-785-775-1101",
-        "toilets": "yes"
+        amenity: "restaurant",
+        cuisine: "italian",
+        name: "Nico's Little Italy",
+        opening_hours: "Mo-Sa 11:00-22:00; Su 11:00-21:00",
+        phone: "+1-785-775-1101",
+        toilets: "yes",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5734092,
-          39.1855266
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5734092, 39.1855266],
       },
-      "id": "node/1892795820"
+      id: "node/1892795820",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/1971026522",
-        "amenity": "cafe",
-        "name": "Cornerstone",
-        "opening_hours": "Mo-Fr 07:30-23:00; Sa-Su 09:00-24:00"
+        amenity: "cafe",
+        name: "Cornerstone",
+        opening_hours: "Mo-Fr 07:30-23:00; Sa-Su 09:00-24:00",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5893482,
-          39.1976251
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5893482, 39.1976251],
       },
-      "id": "node/1971026522"
+      id: "node/1971026522",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/2115186642",
         "addr:city": "Manhattan",
         "addr:housenumber": "405",
         "addr:postcode": "66502",
         "addr:street": "Poyntz Avenue",
-        "amenity": "restaurant",
-        "name": "della Voce"
+        amenity: "restaurant",
+        name: "della Voce",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5621764,
-          39.1791653
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5621764, 39.1791653],
       },
-      "id": "node/2115186642"
+      id: "node/2115186642",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/2136834731",
-        "amenity": "cafe",
-        "name": "Radina's Coffeehouse & Roastery",
-        "opening_hours": "Mo-Th 7:00-21:00; Fr 7:00-17:00"
+        amenity: "cafe",
+        name: "Radina's Coffeehouse & Roastery",
+        opening_hours: "Mo-Th 7:00-21:00; Fr 7:00-17:00",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5793943,
-          39.192578
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5793943, 39.192578],
       },
-      "id": "node/2136834731"
+      id: "node/2136834731",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/2209428369",
         "addr:city": "Manhattan",
         "addr:housenumber": "475",
         "addr:postcode": "66502",
         "addr:street": "McCall Road",
-        "amenity": "fast_food",
-        "brand": "Tropical Smoothie Cafe",
+        amenity: "fast_food",
+        brand: "Tropical Smoothie Cafe",
         "brand:wikidata": "Q7845817",
-        "changing_table": "yes",
+        changing_table: "yes",
         "changing_table:count": "1",
         "changing_table:location": "unisex_toilet",
-        "cuisine": "juice",
-        "drive_through": "yes",
-        "name": "Tropical Smoothie Cafe",
-        "outdoor_seating": "yes",
-        "phone": "+1 785-268-8656",
-        "ref": "KS-018",
-        "takeaway": "yes",
-        "toilets": "yes",
-        "toilets:wheelchair": "yes"
+        cuisine: "juice",
+        drive_through: "yes",
+        name: "Tropical Smoothie Cafe",
+        outdoor_seating: "yes",
+        phone: "+1 785-268-8656",
+        ref: "KS-018",
+        takeaway: "yes",
+        toilets: "yes",
+        "toilets:wheelchair": "yes",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5519522,
-          39.1898561
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5519522, 39.1898561],
       },
-      "id": "node/2209428369"
+      id: "node/2209428369",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/2331896556",
         "addr:city": "Manhattan",
         "addr:housenumber": "101",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "East Bluemont Avenue",
-        "amenity": "fast_food",
-        "brand": "Subway",
+        amenity: "fast_food",
+        brand: "Subway",
         "brand:wikidata": "Q244457",
-        "cuisine": "sandwich",
-        "name": "Subway",
-        "opening_hours": "Mo-Sa 08:30-21:00; Su 09:00-21:00",
-        "phone": "+1 785-539-6555",
-        "takeaway": "yes",
-        "website": "https://restaurants.subway.com/united-states/ks/manhattan/101-e-bluemont-ave"
+        cuisine: "sandwich",
+        name: "Subway",
+        opening_hours: "Mo-Sa 08:30-21:00; Su 09:00-21:00",
+        phone: "+1 785-539-6555",
+        takeaway: "yes",
+        website:
+          "https://restaurants.subway.com/united-states/ks/manhattan/101-e-bluemont-ave",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5568985,
-          39.1880938
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5568985, 39.1880938],
       },
-      "id": "node/2331896556"
+      id: "node/2331896556",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/2480338486",
         "addr:city": "Manhattan",
         "addr:housenumber": "908",
         "addr:postcode": "66506",
         "addr:state": "KS",
         "addr:street": "Ksu Student Union",
-        "amenity": "fast_food",
-        "brand": "Subway",
+        amenity: "fast_food",
+        brand: "Subway",
         "brand:wikidata": "Q244457",
-        "cuisine": "sandwich",
-        "level": "-1",
-        "name": "Subway",
-        "opening_hours": "Mo-Fr 11:00-20:30; Sa,Su 12:00-20:30",
-        "phone": "+1 785-532-0600",
-        "ref": "16703",
-        "takeaway": "yes",
-        "website": "https://restaurants.subway.com/united-states/ks/manhattan/908-ksu-student-union"
+        cuisine: "sandwich",
+        level: "-1",
+        name: "Subway",
+        opening_hours: "Mo-Fr 11:00-20:30; Sa,Su 12:00-20:30",
+        phone: "+1 785-532-0600",
+        ref: "16703",
+        takeaway: "yes",
+        website:
+          "https://restaurants.subway.com/united-states/ks/manhattan/908-ksu-student-union",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5826377,
-          39.1880802
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5826377, 39.1880802],
       },
-      "id": "node/2480338486"
+      id: "node/2480338486",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/2679823982",
-        "amenity": "cafe",
-        "level": "1",
-        "name": "Radina's Coffee",
-        "opening_hours": "Mo-Fr 07:30-14:30"
+        amenity: "cafe",
+        level: "1",
+        name: "Radina's Coffee",
+        opening_hours: "Mo-Fr 07:30-14:30",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5824393,
-          39.1884629
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5824393, 39.1884629],
       },
-      "id": "node/2679823982"
+      id: "node/2679823982",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/2753047291",
-        "amenity": "restaurant",
-        "name": "Boulevard Grill"
+        amenity: "restaurant",
+        name: "Boulevard Grill",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5971574,
-          39.1697953
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5971574, 39.1697953],
       },
-      "id": "node/2753047291"
+      id: "node/2753047291",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/2830705201",
-        "amenity": "fast_food",
-        "name": "Varsity Donuts Food Truck",
-        "opening_hours": "Th-Sa 22:00-02:30",
-        "wheelchair": "no"
+        amenity: "fast_food",
+        name: "Varsity Donuts Food Truck",
+        opening_hours: "Th-Sa 22:00-02:30",
+        wheelchair: "no",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5759079,
-          39.185982
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5759079, 39.185982],
       },
-      "id": "node/2830705201"
+      id: "node/2830705201",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/3283321505",
         "addr:city": "Manhattan",
         "addr:housenumber": "320",
@@ -5202,527 +3388,465 @@ const displayPointsData =
         "addr:state": "KS",
         "addr:street": "North 3rd Street",
         "addr:suite": "120",
-        "amenity": "fast_food",
-        "branch": "Manhattan Marketplace",
-        "brand": "Qdoba",
+        amenity: "fast_food",
+        branch: "Manhattan Marketplace",
+        brand: "Qdoba",
         "brand:wikidata": "Q1363885",
-        "cuisine": "mexican",
-        "name": "Qdoba",
-        "official_name": "Qdoba Mexican Grill",
-        "opening_hours": "Mo-Su 11:00-22:00",
-        "phone": "+1 785-537-2444",
-        "takeaway": "yes",
-        "website": "https://locations.qdoba.com/us/ks/manhattan/320-n-3rd-st.html"
+        cuisine: "mexican",
+        name: "Qdoba",
+        official_name: "Qdoba Mexican Grill",
+        opening_hours: "Mo-Su 11:00-22:00",
+        phone: "+1 785-537-2444",
+        takeaway: "yes",
+        website:
+          "https://locations.qdoba.com/us/ks/manhattan/320-n-3rd-st.html",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5599611,
-          39.18229
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5599611, 39.18229],
       },
-      "id": "node/3283321505"
+      id: "node/3283321505",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/3427873393",
         "addr:housenumber": "111",
         "addr:street": "Blue Earth Place",
-        "amenity": "restaurant",
-        "name": "Radina's Bakehouse",
-        "opening_hours": "Mo-Fr 06:30-19:00; Sa 07:00-19:00; Su 08:00-17:00"
+        amenity: "restaurant",
+        name: "Radina's Bakehouse",
+        opening_hours: "Mo-Fr 06:30-19:00; Sa 07:00-19:00; Su 08:00-17:00",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5596388,
-          39.1748101
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5596388, 39.1748101],
       },
-      "id": "node/3427873393"
+      id: "node/3427873393",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/3573441893",
         "addr:city": "Manhattan",
         "addr:housenumber": "121",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "South 4th Street",
-        "amenity": "restaurant",
-        "name": "Wine Dive + Ktichen",
-        "opening_hours": "Mo-Th 16:00-22:00; Fr 16:00-23:00; Sa 10:00-14:00, 16:00-23:00; Su 10:00-14:00, 16:00-22:00",
-        "phone": "+1-785-712-2413",
-        "website": "https://www.winedivekitchen.com"
+        amenity: "restaurant",
+        name: "Wine Dive + Ktichen",
+        opening_hours:
+          "Mo-Th 16:00-22:00; Fr 16:00-23:00; Sa 10:00-14:00, 16:00-23:00; Su 10:00-14:00, 16:00-22:00",
+        phone: "+1-785-712-2413",
+        website: "https://www.winedivekitchen.com",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5617271,
-          39.1783814
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5617271, 39.1783814],
       },
-      "id": "node/3573441893"
+      id: "node/3573441893",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/3665314725",
         "addr:city": "Manhattan",
         "addr:housenumber": "1116",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Moro Street",
-        "amenity": "restaurant",
-        "cuisine": "chinese",
-        "delivery": "yes",
-        "name": "Hunam Express",
-        "opening_hours": "Mo-We 10:30-23:00, Th-Sa 10:30-02:30, Su 11:00-23:00",
-        "takeaway": "yes"
+        amenity: "restaurant",
+        cuisine: "chinese",
+        delivery: "yes",
+        name: "Hunam Express",
+        opening_hours: "Mo-We 10:30-23:00, Th-Sa 10:30-02:30, Su 11:00-23:00",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5738943,
-          39.1858437
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5738943, 39.1858437],
       },
-      "id": "node/3665314725"
+      id: "node/3665314725",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/3966684338",
         "addr:city": "Manhattan",
         "addr:housenumber": "1701D",
         "addr:postcode": "66506",
         "addr:state": "KS",
         "addr:street": "Platt Street",
-        "amenity": "cafe",
-        "cuisine": "coffee_shop",
-        "internet_access": "wlan",
-        "name": "Radina's Coffee"
+        amenity: "cafe",
+        cuisine: "coffee_shop",
+        internet_access: "wlan",
+        name: "Radina's Coffee",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5841232,
-          39.1903852
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5841232, 39.1903852],
       },
-      "id": "node/3966684338"
+      id: "node/3966684338",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/4148051589",
         "addr:city": "Manhattan",
         "addr:housenumber": "1319",
         "addr:postcode": "66502",
         "addr:street": "Anderson Avenue",
-        "amenity": "fast_food",
-        "brand": "Insomnia Cookies",
+        amenity: "fast_food",
+        brand: "Insomnia Cookies",
         "brand:wikidata": "Q16997024",
-        "cuisine": "cookie",
-        "name": "Insomnia Cookies",
-        "opening_hours": "11:00-03:00",
-        "shop": "pastry"
+        cuisine: "cookie",
+        name: "Insomnia Cookies",
+        opening_hours: "11:00-03:00",
+        shop: "pastry",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5773596,
-          39.1857217
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5773596, 39.1857217],
       },
-      "id": "node/4148051589"
+      id: "node/4148051589",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/4394291889",
         "addr:housenumber": "219",
         "addr:postcode": "66502",
         "addr:street": "South 4th Street",
-        "amenity": "cafe",
-        "internet_access": "wlan",
-        "name": "Sparrow Specialty Coffee",
+        amenity: "cafe",
+        internet_access: "wlan",
+        name: "Sparrow Specialty Coffee",
         "name:en": "Sparrow Specialty Coffee",
-        "opening_hours": "Mo-Sa 07:00-20:00",
-        "phone": "+1-785-320-2542",
-        "website": "https://sparrowspecialtycoffee.com/"
+        opening_hours: "Mo-Sa 07:00-20:00",
+        phone: "+1-785-320-2542",
+        website: "https://sparrowspecialtycoffee.com/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5616639,
-          39.1774762
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5616639, 39.1774762],
       },
-      "id": "node/4394291889"
+      id: "node/4394291889",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/4931235533",
         "addr:city": "Manhattan",
         "addr:housenumber": "918",
         "addr:postcode": "66506",
         "addr:state": "KS",
         "addr:street": "North 17th Street",
-        "amenity": "fast_food",
-        "branch": "Ksu Student Union",
-        "brand": "Qdoba",
+        amenity: "fast_food",
+        branch: "Ksu Student Union",
+        brand: "Qdoba",
         "brand:wikidata": "Q1363885",
-        "cuisine": "mexican",
-        "name": "Qdoba",
-        "official_name": "Qdoba Mexican Grill",
-        "opening_hours": "Mo-Fr 10:00-14:00",
-        "phone": "+1 785-539-5599",
-        "takeaway": "yes",
-        "website": "https://locations.qdoba.com/us/ks/manhattan/918-n-17th-st.html"
+        cuisine: "mexican",
+        name: "Qdoba",
+        official_name: "Qdoba Mexican Grill",
+        opening_hours: "Mo-Fr 10:00-14:00",
+        phone: "+1 785-539-5599",
+        takeaway: "yes",
+        website:
+          "https://locations.qdoba.com/us/ks/manhattan/918-n-17th-st.html",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5828467,
-          39.1884223
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5828467, 39.1884223],
       },
-      "id": "node/4931235533"
+      id: "node/4931235533",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/4931235534",
         "addr:city": "Manhattan",
         "addr:housenumber": "918",
         "addr:postcode": "66506",
         "addr:state": "KS",
         "addr:street": "North 17th Street 121 K- State Student Union",
-        "amenity": "fast_food",
-        "branch": "Kansas State University",
-        "brand": "Chick-fil-A",
+        amenity: "fast_food",
+        branch: "Kansas State University",
+        brand: "Chick-fil-A",
         "brand:wikidata": "Q491516",
-        "cuisine": "chicken",
-        "delivery": "no",
-        "drive_through": "no",
-        "indoor_seating": "no",
-        "name": "Chick-fil-A",
-        "opening_hours": "Mo-Fr 11:00-14:00",
-        "phone": "+1 785-532-5111",
-        "ref": "80308",
-        "takeaway": "yes",
-        "website": "https://www.chick-fil-a.com/locations/ks/kansas-state-university"
+        cuisine: "chicken",
+        delivery: "no",
+        drive_through: "no",
+        indoor_seating: "no",
+        name: "Chick-fil-A",
+        opening_hours: "Mo-Fr 11:00-14:00",
+        phone: "+1 785-532-5111",
+        ref: "80308",
+        takeaway: "yes",
+        website:
+          "https://www.chick-fil-a.com/locations/ks/kansas-state-university",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5826574,
-          39.1884533
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5826574, 39.1884533],
       },
-      "id": "node/4931235534"
+      id: "node/4931235534",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/4931235535",
         "addr:city": "Student Union",
         "addr:housenumber": "918",
         "addr:postcode": "66506",
         "addr:state": "KS",
         "addr:street": "North 17th Street",
-        "amenity": "fast_food",
-        "branch": "Kansas State University",
-        "brand": "Panda Express",
+        amenity: "fast_food",
+        branch: "Kansas State University",
+        brand: "Panda Express",
         "brand:wikidata": "Q1358690",
-        "cuisine": "chinese",
-        "name": "Panda Express",
-        "opening_hours": "Mo-Fr 10:00-16:00",
-        "phone": "+1 785-532-3022",
-        "takeaway": "yes",
-        "website": "https://www.pandaexpress.com/locations/ks/manhattan/2660"
+        cuisine: "chinese",
+        name: "Panda Express",
+        opening_hours: "Mo-Fr 10:00-16:00",
+        phone: "+1 785-532-3022",
+        takeaway: "yes",
+        website: "https://www.pandaexpress.com/locations/ks/manhattan/2660",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5826655,
-          39.1882358
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5826655, 39.1882358],
       },
-      "id": "node/4931235535"
+      id: "node/4931235535",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/4931235536",
-        "amenity": "fast_food",
-        "brand": "Just Salad",
+        amenity: "fast_food",
+        brand: "Just Salad",
         "brand:wikidata": "Q23091823",
-        "cuisine": "salad",
-        "name": "Just Salad",
-        "takeaway": "yes"
+        cuisine: "salad",
+        name: "Just Salad",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5828659,
-          39.1881911
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5828659, 39.1881911],
       },
-      "id": "node/4931235536"
+      id: "node/4931235536",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/5943272959",
-        "amenity": "restaurant",
-        "name": "Rockin K's"
+        amenity: "restaurant",
+        name: "Rockin K's",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5880372,
-          39.2048235
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5880372, 39.2048235],
       },
-      "id": "node/5943272959"
+      id: "node/5943272959",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/6122620421",
-        "amenity": "fast_food",
-        "name": "Cargo Cafe"
+        amenity: "fast_food",
+        name: "Cargo Cafe",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.523249,
-          39.1936354
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.523249, 39.1936354],
       },
-      "id": "node/6122620421"
+      id: "node/6122620421",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/6318870857",
         "addr:city": "Manhattan",
         "addr:housenumber": "1620",
         "addr:street": "Fort Riley Boulevard",
         "addr:unit": "101",
-        "amenity": "restaurant",
-        "cuisine": "japanese",
-        "name": "Crunch Bear Market",
-        "opening_hours": "We-Mo11:00-21:30",
-        "phone": "+1 785-802-5040",
-        "shop": "supermarket",
-        "website": "https://www.crunchbearmarket.com/",
-        "wheelchair": "yes"
+        amenity: "restaurant",
+        cuisine: "japanese",
+        name: "Crunch Bear Market",
+        opening_hours: "We-Mo11:00-21:30",
+        phone: "+1 785-802-5040",
+        shop: "supermarket",
+        website: "https://www.crunchbearmarket.com/",
+        wheelchair: "yes",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5824928,
-          39.1746828
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5824928, 39.1746828],
       },
-      "id": "node/6318870857"
+      id: "node/6318870857",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/6318870858",
         "addr:city": "Manhattan",
         "addr:housenumber": "1620",
         "addr:postcode": "66502",
         "addr:street": "Fort Riley Boulevard",
         "addr:suite": "113",
-        "amenity": "restaurant",
-        "cuisine": "mexican",
-        "name": "Cinco de Mayo Taqueria",
-        "opening_hours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 11:00-17:00",
-        "phone": "+1-785-706-8262",
-        "website": "https://cincomhk.com/order.php"
+        amenity: "restaurant",
+        cuisine: "mexican",
+        name: "Cinco de Mayo Taqueria",
+        opening_hours: "Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 11:00-17:00",
+        phone: "+1-785-706-8262",
+        website: "https://cincomhk.com/order.php",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5829846,
-          39.174675
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5829846, 39.174675],
       },
-      "id": "node/6318870858"
+      id: "node/6318870858",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/9249131732",
-        "amenity": "restaurant",
-        "cuisine": "mexican",
-        "name": "Taqueria El Aguila"
+        amenity: "restaurant",
+        cuisine: "mexican",
+        name: "Taqueria El Aguila",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5621346,
-          39.1766424
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5621346, 39.1766424],
       },
-      "id": "node/9249131732"
+      id: "node/9249131732",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/9306571357",
         "addr:city": "Manhattan",
         "addr:housenumber": "2931",
         "addr:postcode": "66502",
         "addr:street": "Claflin Road",
-        "amenity": "cafe",
-        "cuisine": "coffee_shop",
-        "name": "Scooter's Coffee",
-        "opening_hours": "Mo-Fr 06:00-21:00; Sa 07:00-20:00; Su 07:00-19:00",
-        "phone": "+1-785-560-2055"
+        amenity: "cafe",
+        cuisine: "coffee_shop",
+        name: "Scooter's Coffee",
+        opening_hours: "Mo-Fr 06:00-21:00; Sa 07:00-20:00; Su 07:00-19:00",
+        phone: "+1-785-560-2055",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.6118348,
-          39.1924859
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.6118348, 39.1924859],
       },
-      "id": "node/9306571357"
+      id: "node/9306571357",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/10607383893",
         "addr:city": "Manhattan",
         "addr:housenumber": "423",
         "addr:postcode": "66502",
         "addr:street": "Poyntz Avenue",
-        "amenity": "cafe",
-        "cuisine": "coffee_shop",
-        "name": "Flight Crew Coffee",
-        "opening_hours": "Su-Th 07:00-19:00; Fr-Sa 07:00-21:00"
+        amenity: "cafe",
+        cuisine: "coffee_shop",
+        name: "Flight Crew Coffee",
+        opening_hours: "Su-Th 07:00-19:00; Fr-Sa 07:00-21:00",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5629483,
-          39.1791816
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5629483, 39.1791816],
       },
-      "id": "node/10607383893"
+      id: "node/10607383893",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/10607383894",
         "addr:city": "Manhattan",
         "addr:housenumber": "429",
         "addr:postcode": "66502",
         "addr:street": "Poyntz Avenue",
-        "amenity": "restaurant",
-        "cuisine": "mexican",
-        "email": "patronmhk@gmail.com",
-        "name": "El Patrón",
-        "opening_hours": "Mo-Sa 11:00-22:00; Su 11:00-21:00",
-        "phone": "+1-785-320-7385",
-        "takeaway": "yes",
-        "website": "https://patronmhk.com/"
+        amenity: "restaurant",
+        cuisine: "mexican",
+        email: "patronmhk@gmail.com",
+        name: "El Patrón",
+        opening_hours: "Mo-Sa 11:00-22:00; Su 11:00-21:00",
+        phone: "+1-785-320-7385",
+        takeaway: "yes",
+        website: "https://patronmhk.com/",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5631783,
-          39.179191
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5631783, 39.179191],
       },
-      "id": "node/10607383894"
+      id: "node/10607383894",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/11225872965",
         "addr:city": "Manhattan",
         "addr:housenumber": "1437",
         "addr:postcode": "66502",
         "addr:state": "KS",
         "addr:street": "Anderson Avenue",
-        "amenity": "cafe",
-        "cuisine": "coffee_shop",
-        "name": "Brothers Coffee Company"
+        amenity: "cafe",
+        cuisine: "coffee_shop",
+        name: "Brothers Coffee Company",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5796494,
-          39.1857118
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5796494, 39.1857118],
       },
-      "id": "node/11225872965"
+      id: "node/11225872965",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/12710075031",
         "addr:city": "Manhattan",
         "addr:country": "US",
         "addr:postcode": "66502",
         "addr:state": "KS",
-        "amenity": "fast_food",
-        "branch": "Manhattan, KS - McCall Rd",
-        "brand": "Culver's",
+        amenity: "fast_food",
+        branch: "Manhattan, KS - McCall Rd",
+        brand: "Culver's",
         "brand:wikidata": "Q1143589",
-        "cuisine": "burger",
-        "delivery": "no",
-        "drive_through": "no",
-        "indoor_seating": "yes",
-        "name": "Culver's",
-        "opening_hours": "Mo-Su 10:00-24:00",
+        cuisine: "burger",
+        delivery: "no",
+        drive_through: "no",
+        indoor_seating: "yes",
+        name: "Culver's",
+        opening_hours: "Mo-Su 10:00-24:00",
         "payment:mastercard": "no",
         "payment:visa": "no",
-        "phone": "+1 785-712-2540",
-        "ref": "962",
-        "takeaway": "yes",
-        "toilets": "no",
-        "website": "https://www.culvers.com/restaurants/manhattan-ks-mccall-rd"
+        phone: "+1 785-712-2540",
+        ref: "962",
+        takeaway: "yes",
+        toilets: "no",
+        website: "https://www.culvers.com/restaurants/manhattan-ks-mccall-rd",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5488604,
-          39.1900373
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5488604, 39.1900373],
       },
-      "id": "node/12710075031"
+      id: "node/12710075031",
     },
     {
-      "type": "Feature",
-      "properties": {
+      type: "Feature",
+      properties: {
         "@id": "node/12710075032",
-        "amenity": "cafe",
-        "brand": "Starbucks",
+        amenity: "cafe",
+        brand: "Starbucks",
         "brand:wikidata": "Q37158",
-        "cuisine": "coffee_shop",
-        "name": "Starbucks",
-        "official_name": "Starbucks Coffee",
-        "takeaway": "yes"
+        cuisine: "coffee_shop",
+        name: "Starbucks",
+        official_name: "Starbucks Coffee",
+        takeaway: "yes",
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.5603792,
-          39.1852549
-        ]
+      geometry: {
+        type: "Point",
+        coordinates: [-96.5603792, 39.1852549],
       },
-      "id": "node/12710075032"
-    }
-  ]
+      id: "node/12710075032",
+    },
+  ],
 };
