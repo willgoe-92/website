@@ -3588,7 +3588,7 @@ input[type="button"]:disabled,
 }
 
 .filter-sidebar {
-  width: 220px;
+  width: 250px;
   flex-shrink: 0;
 }
 
@@ -3617,12 +3617,23 @@ input[type="button"]:disabled,
   font-size: 14px;
   cursor: pointer;
   transition: border-color 0.2s ease;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+  min-height: 40px;
 }
 
 .filter-section select:focus {
   outline: none;
   border-color: #49bf9d;
   box-shadow: 0 0 0 2px rgba(73, 191, 157, 0.2);
+}
+
+.filter-section select option {
+  padding: 8px 12px;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 /* Table Section */
