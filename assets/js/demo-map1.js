@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function () {
     displayPointsLayer.addTo(map);
 
     // Dashboard functionality
-    let currentFilter = 'all';
+    let selectedCuisines = new Set(); // Use Set to store multiple selected cuisines
 
     // Get cuisine colors
     const cuisineColors = {
@@ -286,12 +286,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const tbody = document.getElementById('restaurants-tbody');
       tbody.innerHTML = '';
 
-      // Filter features based on current filter
+      // Filter features based on selected cuisines
       let filteredFeatures = featuresInView;
-      if (currentFilter !== 'all') {
+      if (selectedCuisines.size > 0) {
         filteredFeatures = featuresInView.filter(feature => {
           const cuisine = feature.properties.cuisine || 'cafe';
-          return cuisine === currentFilter;
+          return selectedCuisines.has(cuisine);
         });
       }
 
@@ -336,9 +336,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    // Function to populate filter dropdown
+    // Function to populate filter checkboxes
     function populateFilter() {
-      const select = document.getElementById('cuisine-filter');
+      const container = document.getElementById('cuisine-checkboxes');
       const allCuisines = new Set();
       
       convertedDisplayPointsData.features.forEach(feature => {
@@ -346,28 +346,49 @@ document.addEventListener("DOMContentLoaded", function () {
         allCuisines.add(cuisine);
       });
       
-      // Clear existing options except "All"
-      select.innerHTML = '<option value="all">All Cuisines</option>';
+      // Clear existing checkboxes
+      container.innerHTML = '';
       
-      // Add cuisine options
+      // Add cuisine checkboxes
       Array.from(allCuisines).sort().forEach(cuisine => {
-        const option = document.createElement('option');
-        option.value = cuisine;
-        option.textContent = cuisine.replace('_', ' ');
-        select.appendChild(option);
+        const checkboxWrapper = document.createElement('div');
+        checkboxWrapper.className = 'checkbox-item';
+        
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `cuisine-${cuisine}`;
+        checkbox.value = cuisine;
+        checkbox.className = 'cuisine-checkbox';
+        
+        const label = document.createElement('label');
+        label.htmlFor = `cuisine-${cuisine}`;
+        label.textContent = cuisine.replace('_', ' ');
+        
+        checkboxWrapper.appendChild(checkbox);
+        checkboxWrapper.appendChild(label);
+        container.appendChild(checkboxWrapper);
+        
+        // Add event listener
+        checkbox.addEventListener('change', function() {
+          if (this.checked) {
+            selectedCuisines.add(cuisine);
+          } else {
+            selectedCuisines.delete(cuisine);
+          }
+          updateSelectedCount();
+          filterFeatures();
+        });
       });
     }
 
     // Function to filter features
-    function filterFeatures(selectedCuisine) {
-      currentFilter = selectedCuisine;
-      
+    function filterFeatures() {
       displayPointsLayer.eachLayer(layer => {
         const feature = layer.feature;
         const cuisine = feature.properties.cuisine || 'cafe';
         
-        if (selectedCuisine === 'all' || cuisine === selectedCuisine) {
-          // Show the layer
+        if (selectedCuisines.size === 0 || selectedCuisines.has(cuisine)) {
+          // Show the layer if no filters selected or cuisine matches
           if (!map.hasLayer(layer)) {
             map.addLayer(layer);
           }
@@ -383,10 +404,50 @@ document.addEventListener("DOMContentLoaded", function () {
       updateTable();
     }
 
-    // Set up filter dropdown
+    // Set up filter checkboxes and buttons
     populateFilter();
-    document.getElementById('cuisine-filter').addEventListener('change', function() {
-      filterFeatures(this.value);
+    
+    // Dropdown toggle functionality
+    document.getElementById('cuisine-dropdown-btn').addEventListener('click', function() {
+      const container = document.querySelector('.dropdown-container');
+      container.classList.toggle('active');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      const container = document.querySelector('.dropdown-container');
+      if (!container.contains(e.target)) {
+        container.classList.remove('active');
+      }
+    });
+    
+    // Update selected count display
+    function updateSelectedCount() {
+      const countSpan = document.getElementById('selected-count');
+      const count = selectedCuisines.size;
+      
+      if (count === 0) {
+        countSpan.textContent = 'All Cuisines';
+      } else if (count === 1) {
+        const selected = Array.from(selectedCuisines)[0];
+        countSpan.textContent = selected.replace('_', ' ');
+      } else {
+        countSpan.textContent = `${count} cuisines selected`;
+      }
+    }
+    
+    
+    // Clear All button functionality
+    document.getElementById('clear-all-cuisines').addEventListener('click', function() {
+      const checkboxes = document.querySelectorAll('.cuisine-checkbox');
+      selectedCuisines.clear();
+      
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+      });
+      
+      updateSelectedCount();
+      filterFeatures();
     });
 
     // Update table on map move/zoom

@@ -149,9 +149,20 @@
                     <div class="map-controls">
                       <div class="filter-control">
                         <label for="cuisine-filter">Filter by Cuisine:</label>
-                        <select id="cuisine-filter">
-                          <option value="all">All Cuisines</option>
-                        </select>
+                        <div class="dropdown-container">
+                          <div class="dropdown-button" id="cuisine-dropdown-btn">
+                            <span id="selected-count">All Cuisines</span>
+                            <span class="dropdown-arrow">▼</span>
+                          </div>
+                          <div class="dropdown-content" id="cuisine-dropdown">
+                            <div class="dropdown-actions">
+                              <button id="clear-all-cuisines" type="button">Clear All</button>
+                            </div>
+                            <div id="cuisine-checkboxes">
+                              <!-- Checkboxes will be populated by JavaScript -->
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

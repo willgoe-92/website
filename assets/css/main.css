@@ -3742,6 +3742,133 @@ input[type="button"]:disabled,
   min-width: 150px;
 }
 
+.dropdown-container {
+  position: relative;
+  min-width: 220px;
+}
+
+.dropdown-button {
+  background: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.9em;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown-button:hover {
+  border-color: #007bff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+  font-size: 0.8em;
+}
+
+.dropdown-container.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+}
+
+.dropdown-container.active .dropdown-content {
+  display: block;
+}
+
+.dropdown-actions {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-actions button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 0.75em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-actions button:hover {
+  background: #0056b3;
+}
+
+.dropdown-actions button:active {
+  transform: translateY(1px);
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.checkbox-item:hover {
+  background-color: #f8f9fa;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: auto !important;
+  -webkit-appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  appearance: checkbox !important;
+}
+
+.checkbox-item label {
+  font-size: 0.85em;
+  color: #333;
+  cursor: pointer;
+  margin: 0;
+  flex: 1;
+  text-transform: capitalize;
+  padding-left: 0 !important;
+  position: static !important;
+}
+
+.checkbox-item label:before {
+  display: none !important;
+}
+
+.cuisine-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
 .table-info {
   display: flex;
   align-items: center;
