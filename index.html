@@ -133,42 +133,55 @@
               APIs and hosted GeoJSON files created in QGIS.
             </p>
 
-            <!-- Interactive Leaflet Map Demo -->
-            <div class="map-section">
-              <h4>Restaurants of Manhattan Kansas</h4>
-
-              <!-- Map and Filter Row -->
-              <div class="map-filter-row">
-                <div class="map-container">
-                  <div id="demo-map"></div>
-                </div>
-
-                <div class="filter-sidebar">
-                  <div class="filter-section">
-                    <label for="cuisine-filter">Filter by Cuisine:</label>
-                    <select id="cuisine-filter">
-                      <option value="all">All Cuisines</option>
-                    </select>
-                  </div>
-                </div>
+            <!-- Restaurant Dashboard -->
+            <div class="dashboard-container">
+              <!-- Dashboard Header -->
+              <div class="dashboard-header">
+                <h4>Restaurant Dashboard - Manhattan, Kansas</h4>
               </div>
 
-              <!-- Table Section Below Map -->
-              <div class="table-section">
-                <div class="table-container">
-                  <h5>Restaurants in Current View</h5>
-                  <div class="table-wrapper">
-                    <table id="restaurants-table">
-                      <thead>
-                        <tr>
-                          <th>Name</th>
-                          <th>Cuisine Type</th>
-                          <th>Hours</th>
-                          <th>Phone</th>
-                        </tr>
-                      </thead>
-                      <tbody id="restaurants-tbody"></tbody>
-                    </table>
+              <!-- Dashboard Content -->
+              <div class="dashboard-content">
+                <!-- Map Card -->
+                <div class="dashboard-card map-card">
+                  <div class="card-header">
+                    <h5>Interactive Map</h5>
+                    <div class="map-controls">
+                      <div class="filter-control">
+                        <label for="cuisine-filter">Filter by Cuisine:</label>
+                        <select id="cuisine-filter">
+                          <option value="all">All Cuisines</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div id="demo-map"></div>
+                  </div>
+                </div>
+
+                <!-- Table Card -->
+                <div class="dashboard-card table-card">
+                  <div class="card-header">
+                    <h5>Restaurant Details</h5>
+                    <div class="table-info">
+                      <span class="info-text">Click on any restaurant to zoom to location</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-wrapper">
+                      <table id="restaurants-table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Cuisine</th>
+                            <th>Hours</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody id="restaurants-tbody"></tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>

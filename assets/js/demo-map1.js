@@ -70,33 +70,49 @@ document.addEventListener("DOMContentLoaded", function () {
     // Convert polygon features to points
     const convertedDisplayPointsData = convertToPoints(displayPointsData);
 
-    // Function to get cuisine type and color
+    // Function to get cuisine type, color, and icon
     function getCuisineStyle(feature) {
       const cuisine = feature.properties.cuisine || 'cafe';
       
-      const cuisineColors = {
-        'mexican': '#E74C3C',        // Red
-        'american': '#3498DB',       // Blue  
-        'italian': '#27AE60',        // Green
-        'chinese': '#F39C12',        // Orange
-        'japanese': '#9B59B6',       // Purple
-        'indian': '#E67E22',         // Dark Orange
-        'thai': '#1ABC9C',           // Teal
-        'pizza': '#E74C3C',          // Red (similar to italian)
-        'burger': '#3498DB',         // Blue (similar to american)
-        'sandwich': '#F1C40F',       // Yellow
-        'coffee': '#8B4513',         // Brown
-        'ice_cream': '#FFB6C1',      // Light Pink
-        'bakery': '#DEB887',         // Tan
-        'seafood': '#20B2AA',        // Light Sea Green
-        'steak_house': '#8B0000',    // Dark Red
-        'barbecue': '#CD853F',       // Peru
-        'fast_food': '#FF4500',      // Orange Red
-        'cafe': '#6F4E37'            // Coffee Brown (default)
+      const cuisineConfig = {
+        'mexican': { color: '#E74C3C', icon: '🌮' },        // Red
+        'american': { color: '#3498DB', icon: '🍔' },       // Blue  
+        'italian': { color: '#27AE60', icon: '🍝' },        // Green
+        'chinese': { color: '#F39C12', icon: '🥡' },        // Orange
+        'japanese': { color: '#9B59B6', icon: '🍣' },       // Purple
+        'indian': { color: '#E67E22', icon: '🍛' },         // Dark Orange
+        'thai': { color: '#1ABC9C', icon: '🍜' },           // Teal
+        'pizza': { color: '#E74C3C', icon: '🍕' },          // Red
+        'burger': { color: '#3498DB', icon: '🍔' },         // Blue
+        'sandwich': { color: '#F1C40F', icon: '🥪' },       // Yellow
+        'coffee': { color: '#8B4513', icon: '☕' },         // Brown
+        'ice_cream': { color: '#FFB6C1', icon: '🍦' },      // Light Pink
+        'bakery': { color: '#DEB887', icon: '🥐' },         // Tan
+        'seafood': { color: '#20B2AA', icon: '🦐' },        // Light Sea Green
+        'steak_house': { color: '#8B0000', icon: '🥩' },    // Dark Red
+        'barbecue': { color: '#CD853F', icon: '🍖' },       // Peru
+        'fast_food': { color: '#FF4500', icon: '🍟' },      // Orange Red
+        'cafe': { color: '#6F4E37', icon: '☕' },           // Coffee Brown (default)
+        // New/Updated cuisine types
+        'breakfast': { color: '#F39C12', icon: '🥞' },      // Orange - pancakes
+        'chicken': { color: '#FF6347', icon: '🐔' },        // Tomato - chicken
+        'cookie': { color: '#D2691E', icon: '🍪' },         // Chocolate - cookie
+        'donut': { color: '#FF69B4', icon: '🍩' },          // Hot Pink - donut
+        'juice': { color: '#32CD32', icon: '🧃' },          // Lime Green - juice
+        'mongolian_grill': { color: '#CD853F', icon: '🍖' }, // Peru - same as barbecue
+        'pasta': { color: '#27AE60', icon: '🍝' },          // Green - same as italian
+        'pretzel': { color: '#8B4513', icon: '🥨' },        // Saddle Brown - pretzel
+        'salad': { color: '#228B22', icon: '🥗' },          // Forest Green - salad
+        'steak': { color: '#CD853F', icon: '🍖' },          // Peru - same as barbecue
+        'sushi': { color: '#9B59B6', icon: '🍣' },          // Purple - same as japanese
+        'tex-mex': { color: '#E74C3C', icon: '🌮' },        // Red - same as mexican
+        'wings': { color: '#FF6347', icon: '🐔' }           // Tomato - same as chicken
       };
 
+      const config = cuisineConfig[cuisine] || cuisineConfig['cafe'];
       return {
-        color: cuisineColors[cuisine] || cuisineColors['cafe'],
+        color: config.color,
+        icon: config.icon,
         cuisine: cuisine
       };
     }
@@ -106,14 +122,24 @@ document.addEventListener("DOMContentLoaded", function () {
       pointToLayer: function (feature, latlng) {
         // All features are now points
         const style = getCuisineStyle(feature);
-        return L.circleMarker(latlng, {
-          radius: 8,
-          fillColor: style.color,
-          color: "#fff",
-          weight: 2,
-          opacity: 1,
-          fillOpacity: 0.8,
+        
+        // Create custom HTML marker with icon and styling
+        const markerHtml = `
+          <div class="custom-marker" style="background-color: ${style.color}">
+            <div class="marker-icon">${style.icon}</div>
+            <div class="marker-pulse" style="background-color: ${style.color}"></div>
+          </div>
+        `;
+        
+        const customIcon = L.divIcon({
+          html: markerHtml,
+          className: 'custom-marker-wrapper',
+          iconSize: [40, 40],
+          iconAnchor: [20, 35],
+          popupAnchor: [0, -35]
         });
+        
+        return L.marker(latlng, { icon: customIcon });
       },
       onEachFeature: function (feature, layer) {
         if (feature.properties) {
@@ -366,7 +392,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update table on map move/zoom
     map.on('moveend zoomend', updateTable);
 
-    // Initial table update
+    // Initial table and stats update
     updateTable();
 
     console.log("Map initialized successfully");

@@ -2671,19 +2671,6 @@ const displayPointsData = {
     {
       type: "Feature",
       properties: {
-        "@id": "node/767040578",
-        amenity: "fast_food",
-        cuisine: "concessions",
-      },
-      geometry: {
-        type: "Point",
-        coordinates: [-96.61884, 39.2023048],
-      },
-      id: "node/767040578",
-    },
-    {
-      type: "Feature",
-      properties: {
         "@id": "node/792088837",
         "addr:housenumber": "100",
         "addr:street": "Manhattan Town Center",
@@ -2741,20 +2728,6 @@ const displayPointsData = {
     {
       type: "Feature",
       properties: {
-        "@id": "node/877652485",
-        amenity: "restaurant",
-        cuisine: "snack",
-        name: "Colbert Hills Golf Course",
-      },
-      geometry: {
-        type: "Point",
-        coordinates: [-96.6405934, 39.2128451],
-      },
-      id: "node/877652485",
-    },
-    {
-      type: "Feature",
-      properties: {
         "@id": "node/977250555",
         "addr:city": "Manhattan",
         "addr:housenumber": "1800",
@@ -2763,7 +2736,7 @@ const displayPointsData = {
         "addr:suite": "170",
         amenity: "cafe",
         "contact:phone": "+1 785 706 3595",
-        cuisine: "coffee",
+        cuisine: "coffee_shop",
         name: "Arrow Coffee",
       },
       geometry: {
