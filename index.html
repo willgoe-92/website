@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet Geocoder CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <!-- Leaflet Tree Control CSS -->
     <link
       rel="stylesheet"
@@ -197,6 +199,67 @@
                 </div>
               </div>
             </div>
+
+            <!-- Takoma Park Map -->
+            <div class="dashboard-container">
+              <!-- Map Header -->
+              <div class="dashboard-header">
+                <h4>Share Your Restaurant Recommendations</h4>
+              </div>
+
+              <!-- Map Content -->
+              <div class="dashboard-content">
+                <div class="dashboard-card map-card">
+                  <div class="card-header">
+                    <h5>DMV Food Map</h5>
+                    <div class="map-controls">
+                      <button id="create-point-btn" class="create-point-btn">Share A Rec!</button>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div id="takoma-park-map"></div>
+                    <!-- Create Point Form Modal -->
+                    <div id="create-point-modal" class="create-point-modal" style="display: none;">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4>Create New Point</h4>
+                          <button id="close-modal" class="close-btn">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Location selected! Please fill in the details below:</p>
+                          <form id="create-point-form">
+                            <div class="form-group">
+                              <label for="restaurant-name">Restaurant Name:</label>
+                              <input type="text" id="restaurant-name" name="restaurantName" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="restaurant-address">Restaurant Address:</label>
+                              <input type="text" id="restaurant-address" name="restaurantAddress" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="cuisine">Cuisine:</label>
+                              <input type="text" id="cuisine" name="cuisine" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="favorite-dish">Favorite Dish:</label>
+                              <input type="text" id="favorite-dish" name="favoriteDish" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="recommended-by">Recommended By:</label>
+                              <input type="text" id="recommended-by" name="recommendedBy" required>
+                            </div>
+                            <div class="form-actions">
+                              <button type="submit" class="submit-btn">Add Point</button>
+                              <button type="button" id="cancel-point" class="cancel-btn">Cancel</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -212,6 +275,8 @@
     <script src="assets/js/main.js"></script>
     <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Leaflet Geocoder JavaScript -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <!-- Esri Leaflet for ArcGIS services -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/esri-leaflet/3.0.12/esri-leaflet.js"></script>
     <!-- Chart.js for dashboard charts -->
@@ -222,5 +287,6 @@
 
     <!-- Custom Map Script (loads last) -->
     <script src="assets/js/demo-map1.js"></script>
+    <script src="assets/js/demo-map2.js"></script>
   </body>
 </html>
