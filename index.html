@@ -13,10 +13,14 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <!-- Leaflet Geocoder CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+    />
     <!-- Leaflet Tree Control CSS -->
     <link
       rel="stylesheet"
@@ -85,9 +89,9 @@
             </header>
             <p>
               Currently a GIS Solutions Engineer for geocgi, I work primarily on
-              the Marine Corps Critical Asset Management System (MCCAMS). I hold
-              a Bachelor's degree in Geography from Kansas State University and
-              am pursuing a Master's in Cybersecurity from the University of
+              the Marine Corps Critical Asset Management System (MC-CAMS). I
+              hold a Bachelor's degree in Geography from Kansas State University
+              and am pursuing a Master's in Cybersecurity from the University of
               Maryland, Baltimore County. I created this website as a working
               demo for my mentees in the Geospatial Professional Network.
             </p>
@@ -152,13 +156,18 @@
                       <div class="filter-control">
                         <label for="cuisine-filter">Filter by Cuisine:</label>
                         <div class="dropdown-container">
-                          <div class="dropdown-button" id="cuisine-dropdown-btn">
+                          <div
+                            class="dropdown-button"
+                            id="cuisine-dropdown-btn"
+                          >
                             <span id="selected-count">All Cuisines</span>
                             <span class="dropdown-arrow">▼</span>
                           </div>
                           <div class="dropdown-content" id="cuisine-dropdown">
                             <div class="dropdown-actions">
-                              <button id="clear-all-cuisines" type="button">Clear All</button>
+                              <button id="clear-all-cuisines" type="button">
+                                Clear All
+                              </button>
                             </div>
                             <div id="cuisine-checkboxes">
                               <!-- Checkboxes will be populated by JavaScript -->
@@ -178,7 +187,9 @@
                   <div class="card-header">
                     <h5>Restaurant Details</h5>
                     <div class="table-info">
-                      <span class="info-text">Click on any restaurant to zoom to location</span>
+                      <span class="info-text"
+                        >Click on any restaurant to zoom to location</span
+                      >
                     </div>
                   </div>
                   <div class="card-body">
@@ -213,44 +224,93 @@
                   <div class="card-header">
                     <h5>DMV Food Map</h5>
                     <div class="map-controls">
-                      <button id="create-point-btn" class="create-point-btn">Share A Rec!</button>
+                      <button id="create-point-btn" class="create-point-btn">
+                        Share A Rec!
+                      </button>
                     </div>
                   </div>
                   <div class="card-body">
                     <div id="takoma-park-map"></div>
                     <!-- Create Point Form Modal -->
-                    <div id="create-point-modal" class="create-point-modal" style="display: none;">
+                    <div
+                      id="create-point-modal"
+                      class="create-point-modal"
+                      style="display: none"
+                    >
                       <div class="modal-content">
                         <div class="modal-header">
                           <h4>Create New Point</h4>
-                          <button id="close-modal" class="close-btn">&times;</button>
+                          <button id="close-modal" class="close-btn">
+                            &times;
+                          </button>
                         </div>
                         <div class="modal-body">
-                          <p>Location selected! Please fill in the details below:</p>
+                          <p>
+                            Location selected! Please fill in the details below:
+                          </p>
                           <form id="create-point-form">
                             <div class="form-group">
-                              <label for="restaurant-name">Restaurant Name:</label>
-                              <input type="text" id="restaurant-name" name="restaurantName" required>
+                              <label for="restaurant-name"
+                                >Restaurant Name:</label
+                              >
+                              <input
+                                type="text"
+                                id="restaurant-name"
+                                name="restaurantName"
+                                required
+                              />
                             </div>
                             <div class="form-group">
-                              <label for="restaurant-address">Restaurant Address:</label>
-                              <input type="text" id="restaurant-address" name="restaurantAddress" required>
+                              <label for="restaurant-address"
+                                >Restaurant Address:</label
+                              >
+                              <input
+                                type="text"
+                                id="restaurant-address"
+                                name="restaurantAddress"
+                                required
+                              />
                             </div>
                             <div class="form-group">
                               <label for="cuisine">Cuisine:</label>
-                              <input type="text" id="cuisine" name="cuisine" required>
+                              <input
+                                type="text"
+                                id="cuisine"
+                                name="cuisine"
+                                required
+                              />
                             </div>
                             <div class="form-group">
                               <label for="favorite-dish">Favorite Dish:</label>
-                              <input type="text" id="favorite-dish" name="favoriteDish" required>
+                              <input
+                                type="text"
+                                id="favorite-dish"
+                                name="favoriteDish"
+                                required
+                              />
                             </div>
                             <div class="form-group">
-                              <label for="recommended-by">Recommended By:</label>
-                              <input type="text" id="recommended-by" name="recommendedBy" required>
+                              <label for="recommended-by"
+                                >Recommended By:</label
+                              >
+                              <input
+                                type="text"
+                                id="recommended-by"
+                                name="recommendedBy"
+                                required
+                              />
                             </div>
                             <div class="form-actions">
-                              <button type="submit" class="submit-btn">Add Point</button>
-                              <button type="button" id="cancel-point" class="cancel-btn">Cancel</button>
+                              <button type="submit" class="submit-btn">
+                                Add Point
+                              </button>
+                              <button
+                                type="button"
+                                id="cancel-point"
+                                class="cancel-btn"
+                              >
+                                Cancel
+                              </button>
                             </div>
                           </form>
                         </div>
