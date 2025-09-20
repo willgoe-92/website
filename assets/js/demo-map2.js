@@ -268,9 +268,13 @@ function setupUIControls() {
   const cancelBtn = document.getElementById("cancel-point");
   const form = document.getElementById("create-point-form");
 
-  // Create Point button click
+  // Create Point button click - toggle creation mode
   createBtn.addEventListener("click", function () {
-    enterCreationMode();
+    if (isCreatingPoint) {
+      exitCreationMode();
+    } else {
+      enterCreationMode();
+    }
   });
 
   // Close modal
@@ -300,8 +304,8 @@ function enterCreationMode() {
 
   // Show instruction message or change button text
   const createBtn = document.getElementById("create-point-btn");
-  createBtn.textContent = "Click on map to place point...";
-  createBtn.disabled = true;
+  createBtn.textContent = "Cancel Plotting";
+  createBtn.disabled = false;
 
   console.log("Entered creation mode - click on the map to place a point");
 }
