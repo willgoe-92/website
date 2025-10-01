@@ -23,11 +23,28 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     ).addTo(dogWalksMap);
 
-    // List of photos to load
-    const photoFiles = [
-      'photos/PXL_20250731_193633228.jpg',
-      'photos/PXL_20250807_162648686.jpg'
-    ];
+    // Automatically fetch all photos from the photos folder on GitHub
+    async function getPhotoFilesFromGitHub() {
+      try {
+        const response = await fetch('https://api.github.com/repos/willgoe-92/website/contents/photos');
+        const files = await response.json();
+
+        // Filter for image files only
+        const imageFiles = files
+          .filter(file => /\.(jpg|jpeg|png|gif)$/i.test(file.name))
+          .map(file => `photos/${file.name}`);
+
+        console.log('Found photos on GitHub:', imageFiles);
+        return imageFiles;
+      } catch (error) {
+        console.error('Error fetching photo list from GitHub:', error);
+        // Fallback to manual list if API fails
+        return [
+          'photos/PXL_20250731_193633228.jpg',
+          'photos/PXL_20250807_162648686.jpg'
+        ];
+      }
+    }
 
     // Function to convert DMS to Decimal Degrees
     function convertDMSToDD(degrees, minutes, seconds, direction) {
@@ -102,8 +119,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     photoLayer.addTo(dogWalksMap);
 
-    // Process each photo
-    Promise.all(photoFiles.map(photoUrl => {
+    // Get photo files from GitHub and process them
+    getPhotoFilesFromGitHub().then(photoFiles => {
+      // Process each photo
+      return Promise.all(photoFiles.map(photoUrl => {
       return getPhotoGPS(photoUrl)
         .then(gps => {
           const filename = photoUrl.split('/').pop();
@@ -121,8 +140,8 @@ document.addEventListener("DOMContentLoaded", function () {
           console.error(`Failed to load GPS from ${photoUrl}:`, err);
           return null;
         });
-    }))
-    .then(photoData => {
+      }))
+      .then(photoData => {
       // Filter out failed photos
       const validPhotos = photoData.filter(p => p !== null);
 
@@ -141,6 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         console.warn('No photos with GPS data could be loaded');
       }
+      });
     });
 
     console.log("Dog Walks map initialized successfully");
