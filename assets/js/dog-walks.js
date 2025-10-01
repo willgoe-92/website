@@ -41,20 +41,33 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to extract GPS from photo
     function getPhotoGPS(imageUrl) {
       return new Promise((resolve, reject) => {
+        console.log('Attempting to load image:', imageUrl);
         const img = new Image();
         img.crossOrigin = 'anonymous';
 
         img.onload = function() {
+          console.log('Image loaded successfully:', imageUrl);
           EXIF.getData(img, function() {
+            console.log('EXIF data retrieved for:', imageUrl);
             const lat = EXIF.getTag(this, "GPSLatitude");
             const latRef = EXIF.getTag(this, "GPSLatitudeRef");
             const lng = EXIF.getTag(this, "GPSLongitude");
             const lngRef = EXIF.getTag(this, "GPSLongitudeRef");
             const dateTime = EXIF.getTag(this, "DateTime");
 
+            console.log('GPS Data:', {
+              lat: lat,
+              latRef: latRef,
+              lng: lng,
+              lngRef: lngRef,
+              dateTime: dateTime
+            });
+
             if (lat && lng) {
               const latitude = convertDMSToDD(lat[0], lat[1], lat[2], latRef);
               const longitude = convertDMSToDD(lng[0], lng[1], lng[2], lngRef);
+
+              console.log('Converted coordinates:', { latitude, longitude });
 
               resolve({
                 lat: latitude,
@@ -62,12 +75,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 dateTime: dateTime
               });
             } else {
+              console.warn('No GPS coordinates found in EXIF for:', imageUrl);
               reject('No GPS data found in image');
             }
           });
         };
 
-        img.onerror = () => reject('Failed to load image');
+        img.onerror = (e) => {
+          console.error('Failed to load image:', imageUrl, e);
+          reject('Failed to load image');
+        };
         img.src = imageUrl;
       });
     }
