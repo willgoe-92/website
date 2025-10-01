@@ -1,3 +1,27 @@
+/**
+ * RESTAURANT DASHBOARD MAP - Manhattan, Kansas
+ *
+ * Interactive dashboard displaying restaurant data from OpenStreetMap
+ *
+ * Key Features:
+ * 1. Custom markers with cuisine-specific colors and emoji icons
+ * 2. Multi-select cuisine filter dropdown
+ * 3. Dynamic table showing restaurants in current map view
+ * 4. Click restaurant rows to zoom to location and open popup
+ *
+ * Data Source:
+ * - Restaurant GeoJSON loaded from displaypoints-data.js
+ * - Data scraped from OpenStreetMap for Manhattan, KS
+ *
+ * Map Sections:
+ * 1. Map initialization and basemap
+ * 2. Centroid calculation (converts polygon buildings to point markers)
+ * 3. Cuisine styling configuration (colors and icons)
+ * 4. Marker creation and popups
+ * 5. Cuisine filter functionality
+ * 6. Dynamic table updates based on map view
+ */
+
 // assets/js/demo-map1.js
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Initializing map...");
@@ -7,12 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
   try {
+    // ============================================================================
+    // 1. CREATE BASE MAP
+    // ============================================================================
+
     // Create map centered on Manhattan, Kansas (K-State area)
     var map = L.map("demo-map", {
-      renderer: L.canvas({ tolerance: 10 }),
-    }).setView([39.19, -96.59], 13);
+      renderer: L.canvas({ tolerance: 10 }), // Canvas for better performance with many markers
+    }).setView([39.19, -96.59], 13); // Lat/Lng of Manhattan, KS
 
-    // Add MapTiler streets basemap
+    // Add MapTiler streets basemap (tile layer)
     var streetsLayer = L.tileLayer(
       "https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=WcjuUvQEzg8QoDzAiDZB",
       {
@@ -22,10 +50,18 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     streetsLayer.addTo(map);
 
+    // ============================================================================
+    // 2. GEOMETRY CONVERSION FUNCTIONS
+    // ============================================================================
 
     // GeoJSON data is loaded from displaypoints-data.js file
+    // Some restaurants are polygons (building footprints), need to convert to points
 
-    // Function to calculate centroid of a polygon
+    /**
+     * Calculate centroid (center point) of a polygon
+     * Uses the shoelace formula to find geometric center
+     * Needed because some OSM features are building polygons, not points
+     */
     function calculateCentroid(coordinates) {
       let x = 0, y = 0, area = 0;
       const ring = coordinates[0]; // Use outer ring for polygons

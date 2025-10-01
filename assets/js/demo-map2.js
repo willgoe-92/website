@@ -1,26 +1,66 @@
-// JSONBin configuration
+/**
+ * RESTAURANT RECOMMENDATIONS MAP - DMV Area
+ *
+ * Interactive map allowing users to share restaurant recommendations
+ *
+ * Key Features:
+ * 1. Click map to add new restaurant recommendation
+ * 2. Fill out form with restaurant details (name, address, cuisine, dish)
+ * 3. Data persists in JSONBin.io cloud storage
+ * 4. Custom red food markers for all restaurants
+ *
+ * Data Storage:
+ * - Uses JSONBin.io API for free cloud JSON storage
+ * - All user submissions are saved and publicly visible
+ * - Data format: GeoJSON FeatureCollection
+ *
+ * Map Sections:
+ * 1. Configuration and global variables
+ * 2. Map initialization
+ * 3. Data fetching from JSONBin
+ * 4. Marker display
+ * 5. Point creation workflow
+ * 6. Data saving to JSONBin
+ */
+
+// ============================================================================
+// 1. CONFIGURATION
+// ============================================================================
+
+// JSONBin configuration - Cloud storage for user-submitted restaurant data
 const JSONBIN_CONFIG = {
-  binId: "68cc599343b1c97be94779b8",
-  apiKey: "$2a$10$oCZEFoL6ke394dMwV1Y1e.kLpGqcuo0bbVD7iJaociIqOHvG3DQsK",
-  baseUrl: "https://api.jsonbin.io/v3/b/",
+  binId: "68cc599343b1c97be94779b8",  // Unique ID for the JSON storage bin
+  apiKey: "$2a$10$oCZEFoL6ke394dMwV1Y1e.kLpGqcuo0bbVD7iJaociIqOHvG3DQsK", // API key for authentication
+  baseUrl: "https://api.jsonbin.io/v3/b/",  // JSONBin API base URL
 };
 
-// Global variables
-let takomaParkMap;
-let takomaParkData = [];
-let takomaParkMarkers = [];
-let isCreatingPoint = false;
-let pendingPointLocation = null;
+// ============================================================================
+// 2. GLOBAL VARIABLES
+// ============================================================================
+
+// Map and data state
+let takomaParkMap;           // Leaflet map object
+let takomaParkData = [];     // Restaurant data loaded from JSONBin
+let takomaParkMarkers = [];  // Array of marker objects on the map
+let isCreatingPoint = false; // Boolean: is user currently adding a new point?
+let pendingPointLocation = null; // Stores lat/lng when user clicks to add point
+
+// ============================================================================
+// 3. INITIALIZATION
+// ============================================================================
 
 // Initialize Takoma Park map when DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM loaded, initializing Takoma Park map...");
-  initializeMap();
-  fetchDisplayPoints();
-  setupUIControls();
+  initializeMap();        // Create the Leaflet map
+  fetchDisplayPoints();   // Load existing data from JSONBin
+  setupUIControls();      // Set up button and form event listeners
 });
 
-// Initialize the map
+/**
+ * Initialize the Leaflet map
+ * Creates map, adds basemap tiles, adds geocoder (address search)
+ */
 function initializeMap() {
   console.log("Initializing map...");
   const mapElement = document.getElementById("takoma-park-map");
