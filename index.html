@@ -26,6 +26,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/leaflet.control.layers.tree@1.1.1/L.Control.Layers.Tree.css"
     />
+    <!-- Leaflet MarkerCluster CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+    />
+    <!-- Leaflet.Photo CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/Leaflet.Photo.css"
+    />
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -352,6 +366,38 @@
                 </div>
               </div>
             </div>
+
+            <!-- Dog Walks Map -->
+            <div class="dashboard-container">
+              <!-- Map Header -->
+              <div class="dashboard-header">
+                <h4>Dog Walks</h4>
+                <p
+                  style="
+                    font-size: 0.7em;
+                    margin: 0.2em 0;
+                    color: #666;
+                    line-height: 1.2;
+                  "
+                >
+                  This interactive map displays geotagged photos from dog walks around the DMV area.
+                  Click on any photo marker to view the full image and details. The photos are
+                  automatically plotted using GPS data embedded in the image files via Leaflet.Photo.
+                </p>
+              </div>
+
+              <!-- Map Content -->
+              <div class="dashboard-content">
+                <div class="dashboard-card map-card">
+                  <div class="card-header">
+                    <h5>Photo Map</h5>
+                  </div>
+                  <div class="card-body">
+                    <div id="dog-walks-map"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -377,8 +423,18 @@
     <!-- Display Points Layer (MUST load before demo-map1.js) -->
     <script src="assets/js/displaypoints-data.js"></script>
 
+    <!-- Leaflet MarkerCluster JavaScript -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- EXIF.js for reading photo GPS data -->
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+
+    <!-- Leaflet.Photo JavaScript -->
+    <script src="assets/js/Leaflet.Photo.js"></script>
+
     <!-- Custom Map Script (loads last) -->
     <script src="assets/js/demo-map1.js"></script>
     <script src="assets/js/demo-map2.js"></script>
+    <script src="assets/js/dog-walks.js"></script>
   </body>
 </html>

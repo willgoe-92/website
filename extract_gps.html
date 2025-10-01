@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extract GPS from Photos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .drop-zone {
+            border: 3px dashed #ccc;
+            border-radius: 10px;
+            padding: 50px;
+            text-align: center;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .drop-zone:hover {
+            border-color: #999;
+            background: #f9f9f9;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .photo-info {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e8f4f8;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+</head>
+<body>
+    <h1>Extract GPS Coordinates from Photos</h1>
+    <p>Drop your geotagged photos here or click to select files:</p>
+
+    <div class="drop-zone" id="dropZone">
+        <p>📸 Drop photos here or click to browse</p>
+        <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+    </div>
+
+    <div id="output"></div>
+    <div id="jsCode"></div>
+
+    <script>
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const output = document.getElementById('output');
+        const jsCode = document.getElementById('jsCode');
+
+        dropZone.addEventListener('click', () => fileInput.click());
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#333';
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.style.borderColor = '#ccc';
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.borderColor = '#ccc';
+            handleFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        function convertDMSToDD(degrees, minutes, seconds, direction) {
+            let dd = degrees + (minutes / 60) + (seconds / 3600);
+            if (direction === 'S' || direction === 'W') {
+                dd = dd * -1;
+            }
+            return dd;
+        }
+
+        function handleFiles(files) {
+            output.innerHTML = '<h2>Photo GPS Data:</h2>';
+            const photoDataArray = [];
+
+            let processed = 0;
+
+            Array.from(files).forEach((file, index) => {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    const img = new Image();
+                    img.onload = function() {
+                        EXIF.getData(img, function() {
+                            const lat = EXIF.getTag(this, "GPSLatitude");
+                            const latRef = EXIF.getTag(this, "GPSLatitudeRef");
+                            const lng = EXIF.getTag(this, "GPSLongitude");
+                            const lngRef = EXIF.getTag(this, "GPSLongitudeRef");
+                            const dateTime = EXIF.getTag(this, "DateTime");
+
+                            const photoDiv = document.createElement('div');
+                            photoDiv.className = 'photo-info';
+
+                            if (lat && lng) {
+                                const latitude = convertDMSToDD(lat[0], lat[1], lat[2], latRef);
+                                const longitude = convertDMSToDD(lng[0], lng[1], lng[2], lngRef);
+
+                                photoDiv.innerHTML = `
+                                    <strong>${file.name}</strong><br>
+                                    Latitude: ${latitude.toFixed(6)}<br>
+                                    Longitude: ${longitude.toFixed(6)}<br>
+                                    ${dateTime ? 'Date: ' + dateTime : ''}
+                                `;
+
+                                photoDataArray.push({
+                                    filename: file.name,
+                                    lat: latitude,
+                                    lng: longitude,
+                                    dateTime: dateTime
+                                });
+                            } else {
+                                photoDiv.innerHTML = `
+                                    <strong>${file.name}</strong><br>
+                                    <span style="color: red;">❌ No GPS data found</span>
+                                `;
+                            }
+
+                            output.appendChild(photoDiv);
+
+                            processed++;
+                            if (processed === files.length) {
+                                generateJavaScriptCode(photoDataArray);
+                            }
+                        });
+                    };
+                    img.src = e.target.result;
+                };
+
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function generateJavaScriptCode(photoData) {
+            if (photoData.length === 0) return;
+
+            let code = '    // Photo layer data with GPS coordinates from EXIF\n';
+            code += '    const photoData = [\n';
+
+            photoData.forEach((photo, index) => {
+                const date = photo.dateTime ? new Date(photo.dateTime.replace(/:/g, '-').replace(/-/, ':').replace(/-/, ':')).toLocaleDateString() : 'Unknown date';
+                code += `      {\n`;
+                code += `        lat: ${photo.lat.toFixed(6)},\n`;
+                code += `        lng: ${photo.lng.toFixed(6)},\n`;
+                code += `        url: 'photos/${photo.filename}',\n`;
+                code += `        iconUrl: 'photos/${photo.filename}',\n`;
+                code += `        caption: 'Dog Walk - ${date}'\n`;
+                code += `      }${index < photoData.length - 1 ? ',' : ''}\n`;
+            });
+
+            code += '    ];\n';
+
+            jsCode.innerHTML = '<h2>Copy this code into dog-walks.js:</h2><pre>' + code + '</pre>';
+        }
+    </script>
+</body>
+</html>

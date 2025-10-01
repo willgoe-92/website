@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(exiftool:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

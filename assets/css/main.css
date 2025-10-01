@@ -3901,6 +3901,39 @@ input[type="button"]:disabled,
   border-radius: 0 0 12px 12px;
 }
 
+.map-card #dog-walks-map {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Leaflet.Photo popup styling */
+.leaflet-popup-photo {
+  max-width: 450px !important;
+}
+
+.leaflet-popup-photo .leaflet-popup-content-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.leaflet-popup-photo .leaflet-popup-content {
+  margin: 15px;
+  text-align: center;
+}
+
+.leaflet-popup-photo img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.leaflet-popup-photo p {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
+}
+
 /* Enhanced popup styling for restaurant recommendations */
 .point-popup {
   font-family: 'Lato', sans-serif;
@@ -4542,7 +4575,11 @@ input[type="button"]:disabled,
   #takoma-park-map {
     max-width: 100%;
   }
-  
+
+  #dog-walks-map {
+    max-width: 100%;
+  }
+
   .table-container {
     max-width: 100%;
   }
