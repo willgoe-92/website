@@ -110,12 +110,17 @@ document.addEventListener("DOMContentLoaded", function () {
       const validPhotos = photoData.filter(p => p !== null);
 
       if (validPhotos.length > 0) {
+        console.log('Photo data being added to map:', validPhotos);
         photoLayer.add(validPhotos);
         console.log(`Loaded ${validPhotos.length} photos with GPS data`);
+        console.log('PhotoLayer object:', photoLayer);
+        console.log('Number of layers in photoLayer:', photoLayer.getLayers().length);
 
         // Fit map to show all photos
         const bounds = L.latLngBounds(validPhotos.map(p => [p.lat, p.lng]));
         dogWalksMap.fitBounds(bounds, { padding: [50, 50] });
+
+        console.log('Map bounds set to:', bounds);
       } else {
         console.warn('No photos with GPS data could be loaded');
       }
